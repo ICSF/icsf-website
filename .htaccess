@@ -2,14 +2,12 @@ AddDefaultCharset UTF-8
 
 DirectoryIndex index.php index.html
 
-AddType 'text/html; charset=UTF-8' .html
-AddType 'text/html; charset=UTF-8' .php
+AddType 'text/html; charset=UTF-8' .html .php
 AddType 'image/png' .png
 AddType 'image/jpg' .jpg
 AddType 'text/css' .css
 AddType 'text/javascript' .js
 
-AddOutputFilterByType DEFLATE application/xhtml+xml
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE text/js
