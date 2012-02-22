@@ -3,7 +3,7 @@
 	<head>
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="/~bh308/new-icsf/resources/style.css" />
+		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
 	</head>
 	<body>
 	</body>
