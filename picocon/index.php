@@ -4,22 +4,6 @@
 		<title>Picocon 30 - ICSF</title>
 		<link type="text/css" rel="stylesheet" href="/scc/icsf/resources/style.css" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<style>
-			table#authors, table {
-			  border-collapse:collapse;
-			  margin: 0 auto;
-			}
-			td, th {
-			  border: 1px solid black;
-			  padding: 1px 4px 1px 4px;
-			}
-			table#authors td {
-			  vertical-align: top;
-			}
-			table#authors td p {
-			  text-align: left;
-			}
-		</style>
 	</head>
 	<body>
 		<h1 style="text-align: center;">
