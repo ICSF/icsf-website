@@ -26,7 +26,7 @@
 			<a href="/scc/icsf/history/picocon">Picocon's History</a>
 		</nav>
 
-		<p style="font-variant: small-caps; font-size: 16pt;">
+		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
 			Picocon 30 will be held on Saturday 16th February 2013,
 			in Imperial College Union.
 		</p>
