@@ -8,10 +8,8 @@
 	</head>
 	<body>
 		<h1 style="text-align: center;">
-			<img class="left" src="/scc/icsf/resources/logo.png" style="height:
-			80px;" />
-			<img class="right" src="/scc/icsf/resources/logo.png" style="height:
-			80px; margin-bottom: 5px;" />
+			<img class="left" src="/scc/icsf/resources/logo.png" style="height: 80px;" />
+			<img class="right" src="/scc/icsf/resources/logo.png" style="height: 80px;" />
 			Picocon 30
 			<div class="clear" />
 		</h1>

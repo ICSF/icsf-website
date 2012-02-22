@@ -58,7 +58,11 @@ h1
 	font-family: 'Lora', serif;
 	font-size: 3em;
 	text-align: center;
-	line-height: 1em;
+
+	line-height: 1.2em;
+	font-weight: normal;
+
+	padding-bottom: 5px;
 	border-bottom: 1px solid #EEEEEE;
 }
 
