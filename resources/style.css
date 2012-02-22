@@ -142,3 +142,8 @@ footer
 	clear: both;
 }
 
+td
+{
+	padding: 0 1em;
+}
+
