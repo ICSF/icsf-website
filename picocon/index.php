@@ -84,7 +84,7 @@
 			all are welcome.
 		</p>
 
-		<a name="#directions"><h2>Directions to Picocon</h2></a>
+		<a name="directions"><h2>Directions to Picocon</h2></a>
 		<p>
 			Here's a general <a href="http://g.co/maps/7ahv7">map</a> of the
 			area, pointing at the entrance to Beit Quad (which houses the
