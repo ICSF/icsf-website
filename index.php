@@ -18,6 +18,13 @@
 			<div class="clear"></div>
 		</h1>
 
+		<nav>
+			<a href="/scc/icsf/">Home</a>
+			<a href="/scc/icsf/library/">Library</a>
+			<a href="/scc/icsf/committee/">Committee</a>
+			<a href="/scc/icsf/picocon/">Picocon</a>
+		</nav>
+
 		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
 		style="width: 320px; height: 240px;" />
 
