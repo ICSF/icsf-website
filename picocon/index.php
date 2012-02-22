@@ -21,7 +21,7 @@
 			<a href="#directions">Directions</a>
 			<a href="#contact">Contact Us</a>
 			<hr />
-			<a href="/scc/icsf">ICSF Webiste</a>
+			<a href="/scc/icsf">ICSF Website</a>
 			<a href="/scc/icsf/history/picocon">Picocon's History</a>
 		</nav>
 
@@ -68,7 +68,7 @@
 			Entry for the day will cost (subject to change up to Feb 2013):
 			<ul>
 				<li><b>&#x00A3;5</b> for ICSF members;</li>
-				<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DHSS/OAP/children;</li>
+				<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
 				<li><b>&#x00A3;10</b> full price;</li>
 				<li><b>FREE</b> for past Guests of Honour.</li>
 			</ul>
@@ -92,7 +92,7 @@
 		<p>
 			The easiest way to get to Picocon is by tube; both Gloucester
 			Road Station and South Kensington Station are within easy reach;
-			for your conveinience, these maps shoe the routes we suggest from
+			for your convenience, these maps shoe the routes we suggest from
 			both <a href="http://g.co/maps/ne7kr">Gloucester Road Station</a>
 			and from <a href="http://g.co/maps/akrjw">South Kensington Station</a>.
 		</p>
@@ -135,7 +135,7 @@
 				The first Picocon was in 1984.
 				If you're curious, we have a record of <a href="/scc/icsf/history/">Picocons of years gone by</a>.
 			</p>
-			<p class="copyright">Imperial College Science Fiction Scoiety</p>
+			<p class="copyright">Imperial College Science Fiction Society</p>
 		</footer>
 
 	</body>
