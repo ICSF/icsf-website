@@ -60,7 +60,7 @@
 
 		<footer>
 			<p class="copyright">Imperial College Science Fiction Society.
-			Please report issues to <a
+			Please report issues to <a class="sans"
 			href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a></p>
 		</footer>
 	</body>

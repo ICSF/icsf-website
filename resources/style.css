@@ -142,6 +142,11 @@ footer
 	clear: both;
 }
 
+.sans
+{
+	font-family: sans-serif;
+}
+
 td
 {
 	padding: 0 1em;
