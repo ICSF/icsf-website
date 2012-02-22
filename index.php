@@ -4,6 +4,7 @@
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
+		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<h1>

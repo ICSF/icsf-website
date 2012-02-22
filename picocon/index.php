@@ -3,6 +3,7 @@
 	<head>
 		<title>Picocon 30 - ICSF</title>
 		<link type="text/css" rel="stylesheet" href="/scc/icsf/resources/style.css" />
+		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	<body>
