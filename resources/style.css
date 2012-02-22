@@ -1,0 +1,134 @@
+/* Root stylesheet for harcourtprogramming.co.uk
+ *
+ * Author: Benedict Harcourt <ben.harcourt@harcourtprogramming.co.uk>
+ *
+ * This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
+ * Unported License. To view a copy of this license, visit
+ *   http://creativecommons.org/licenses/by-sa/3.0/
+ * or send a letter to
+ *   Creative Commons,
+ *   444 Castro Street,
+ *   Suite 900,
+ *   Mountain View,
+ *   California,
+ *   94041, USA.
+ */
+
+/*****************************************************
+ * General Element Definitions
+ *****************************************************/
+html
+{
+	position: relative;
+	height: 100%;
+
+	background: #ffffff;
+
+	font-family: Calibri, Georgia, Helvetica, Arial, sans-serif;
+	font-size: 11pt;
+}
+
+body {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+
+	padding: 0 3em 1em 9em;
+	overflow-y: auto;
+}
+
+body.no-nav
+{
+	padding-left: 3em;
+}
+
+p
+{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 6pt;
+	line-height: 1.15em;
+	text-align: justify;
+}
+
+h1
+{
+	font-family: serif;
+	font-size: 3em;
+	text-align: center;
+	line-height: 1em;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+a>img, img>a
+{
+	border: none;
+}
+
+nav
+{
+	position: relative;
+	float: left;
+	margin-left: -9em;
+	width: 8em;
+	height: 100%;
+}
+
+nav>a
+{
+	display: block;
+	text-align: right;
+
+	height: 1.4em;
+	margin: 0;
+}
+
+nav>hr
+{
+	border: none;
+	border-bottom: 1px solid #eee;
+	width: 6em;
+	margin-right: 0
+}
+
+footer
+{
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #EEEEEE;
+	padding-top: 1em;
+	margin-top: 2em;
+}
+
+/*****************************************************
+ * General Classes
+ *****************************************************/
+
+.copyright:before
+{
+	content: '© 2010-12 ';
+}
+
+.hang-right
+{
+	float: right;
+	margin: 0.2em 0 0.5em 1em;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
