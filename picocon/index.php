@@ -135,7 +135,7 @@
 		<a name="contact"><h2>Contact Us</h2></a>
 		<p>
 			For more information, please contact <b>Maciej Matuszewski</b>,
-			the Picocon Sofa (as opposed to chair), at
+			the Picocon Sofa (comfier than a chair), at
 			<a href="mailto:picocon@icsf.org.uk">picocon@icsf.org.uk</a>.
 		</p>
 		<p>Our mail address is the following:</p>
