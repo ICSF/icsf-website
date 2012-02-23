@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# HTML variable substitution script
+#
+# Usage:
+#  input output [name=value]
+#
+# Replaces <!--NAME--> with value
+
+if [ ! -f "$1" ]; then
+	printf 'File %s not found\n' "$1" >&2
+	exit 1
+fi
+
+INPUT=$1
+OUTPUT=$2
+
+shift 2
+
+if [ $# -eq 0 ]; then
+	cp $1 $2
+	exit 0
+fi
+
+FLAGS=''
+
+while [ $# -gt 0 ];
+do
+	FLAG=$(echo "$1" | cut -d'=' -f1- --output-delimiter="-->|")
+	FLAGS="$FLAGS -e s|<!--$FLAG|"
+	shift
+done
+
+echo $FLAGS
+sed $FLAGS "$INPUT" > "$OUTPUT"
+

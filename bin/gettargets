@@ -3,5 +3,5 @@
 # Gets a list of all targets that should be built
 #
 
-find src | sed -e 's:^src:build:'
+find src | sed -e 's:^src:build:' | sed -e ':a;N;$!ba;s/\n/ /g'
 

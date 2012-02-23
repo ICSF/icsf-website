@@ -3,13 +3,13 @@
 	<head>
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
+		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/style.css" />
 		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<h1>
-			<img class="left" src="/scc/icsf/resources/logo.png" style="height: 80px;" />
-			<img class="right" src="/scc/icsf/resources/logo.png" style="height: 80px;" />
+			<img class="left" src="<!--SRVROOT-->/resources/logo.png" style="height: 80px;" />
+			<img class="right" src="<!--SRVROOT-->/resources/logo.png" style="height: 80px;" />
 			ICSF
 			<div style="font-size: 0.3em; line-height: normal;">
 				Imperial College Science Fiction, Fantasy, and Gothic Horror Society
@@ -18,13 +18,13 @@
 		</h1>
 
 		<nav>
-			<a href="/scc/icsf/">Home</a>
-			<a href="/scc/icsf/library/">Library</a>
-			<a href="/scc/icsf/committee/">Committee</a>
-			<a href="/scc/icsf/picocon/">Picocon</a>
+			<a href="<!--SRVROOT-->/">Home</a>
+			<a href="<!--SRVROOT-->/library/">Library</a>
+			<a href="<!--SRVROOT-->/committee/">Committee</a>
+			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
 		</nav>
 
-		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
+		<img class="hang-right" src="http://union.ic.ac.uk<!--SRVROOT-->/ftpupload/icsfcam.jpeg"
 		style="width: 320px; height: 240px;" />
 
 		<p>

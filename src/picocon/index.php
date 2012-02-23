@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Picocon 30 - ICSF</title>
-		<link type="text/css" rel="stylesheet" href="/scc/icsf/resources/style.css" />
+		<link type="text/css" rel="stylesheet" href="<!--SRVROOT-->/resources/style.css" />
 		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	<body>
 		<h1 style="text-align: center;">
-			<img class="left" src="/scc/icsf/resources/logo.png" style="height: 80px;" />
-			<img class="right" src="/scc/icsf/resources/logo.png" style="height: 80px;" />
+			<img class="left" src="<!--SRVROOT-->/resources/logo.png" style="height: 80px;" />
+			<img class="right" src="<!--SRVROOT-->/resources/logo.png" style="height: 80px;" />
 			Picocon 30
 			<div class="clear" />
 		</h1>
@@ -20,8 +20,8 @@
 			<a href="#directions">Directions</a>
 			<a href="#contact">Contact Us</a>
 			<hr />
-			<a href="/scc/icsf">ICSF Website</a>
-			<a href="/scc/icsf/history/picocon">Picocon's History</a>
+			<a href="<!--SRVROOT-->">ICSF Website</a>
+			<a href="<!--SRVROOT-->/history/picocon">Picocon's History</a>
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
@@ -152,7 +152,7 @@
 		<footer>
 			<p>
 				The first Picocon was in 1984.
-				If you're curious, we have a record of <a href="/scc/icsf/history/">Picocons of years gone by</a>.
+				If you're curious, we have a record of <a href="<!--$SRVROOT-->/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society</p>
 		</footer>
