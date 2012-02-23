@@ -1,0 +1,78 @@
+#!/bin/sh
+
+TARGET=Makefile
+SKEL=./etc/Makefile
+
+if [ -f $TARGET ]; then
+	printf '[WARNING] $TARGET already exists. Running configure will override your current settings\n'
+
+	while true
+	do
+		printf 'Please confirm that you wish to continue (y or n): '
+		read CONFIRM
+		case "$CONFIRM" in
+			y|Y|YES|yes|Yes) break ;;
+			n|N|no|NO|No) printf 'Aborting\n' && exit ;;
+			*) printf 'Please enter only y or n\n'
+		esac
+	done
+
+	rm $TARGET
+
+	if [ $? -ne 0 ]; then
+		printf '[FATAL] Unable to delete old makefile\n'
+	fi
+fi
+
+touch $TARGET
+
+if [ $? -ne 0 ]; then
+	printf '[FATAL] Unable to create makefile\n'
+fi
+
+if [ ! -r "$SKEL" ]; then
+	printf 'Unable to read skeleton file %s\nAborting\n' "$SKEL"
+	exit
+fi
+
+printf 'Please enter the location that the website is to be deployed to\n'
+printf 'Currently, only local file-systems are supported\n'
+printf '\tExample: /srv/www/\n'
+
+while true
+do
+	printf '[DOCROOT]: '
+	read DOCROOT
+
+	if [ ! -z "$DOCROOT" ]; then
+		if [ ! -d "$DOCROOT" ]; then
+			if [ -f "$DOCROOT" ]; then
+				printf '%s appears to be a regular file; try again?\n' "$DOCROOT"
+			else
+				printf '%s does not exist - we will run with this, but be wary\n' "$DOCROOT"
+				break
+			fi
+		else
+			if [ ! -w $DOCROOT ]; then
+				printf '%s is not writable - we will run with this, but be wary\n' "$DOCROOT"
+			fi
+			break
+		fi
+	else
+		printf 'Please enter a value\n' "$DOCROOT"
+	fi
+done
+
+printf '\nPlease specify the website path\n'
+printf 'This is the section from the first / of the web page on the internet\n'
+printf 'eg, if I access it through www.doc.ic.ac.uk/~bh308/icsf, this should be\n'
+printf '\t/~bh308/icsf\n'
+
+printf '[SRVROOT (default /)]: '
+read SRVROOT
+
+printf 'DOCROOT=%s\nSRVROOT=%s\n\n' "$DOCROOT" "$SRVROOT" > $TARGET
+cat $SKEL >> $TARGET
+
+printf '\n\nDone.\n'
+
