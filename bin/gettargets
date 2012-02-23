@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Gets a list of all targets that should be built
+#
+
+find src | sed -e 's:^src:build:'
+
