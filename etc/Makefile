@@ -39,7 +39,11 @@ build/%.php : src/%.php Makefile
 
 build/%.css : src/%.css bin/MinifyCss.class
 	@mkdir -p -v $(@D)
-	java bin.MinifyCss $< $@
+	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	java bin.MinifyCss $@
+
+src/%.html : src/%.min
+	./bin/minute-gen $< > $@
 
 build/% : src/%
 	@mkdir -p -v $(@D)

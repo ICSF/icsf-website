@@ -11,14 +11,16 @@ public class MinifyCss
 {
 	public static void main(String[] args) throws IOException
 	{
-		if (args.length != 2)
+		if (args.length != 1)
 		{
-			System.err.println("Usage: MinifyCss <input> <output>");
+			System.err.println("Usage: MinifyCss <file>");
 			System.exit(-1);
 		}
 
-		CssCompressor c = new CssCompressor(new FileReader(args[0]));
-		c.compress(new FileWriter(args[1]), 1000);
+		FileReader f = new FileReader(args[0]);
+		CssCompressor c = new CssCompressor(f);
+		f.close();
+		c.compress(new FileWriter(args[0]), 1000);
 	}
 
 	private MinifyCss()
