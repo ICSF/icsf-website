@@ -22,6 +22,11 @@ remote-clean:
 clean:
 	rm build -rf
 
+# ======= TOOL BUILDING =======
+
+bin/MinifyCss.class : bin/MinifyCss.java bin/CssCompressor.java
+	javac $<
+
 # ======= FILE TYPE HANDLERS =======
 
 build/%.html : src/%.html Makefile
@@ -31,6 +36,10 @@ build/%.html : src/%.html Makefile
 build/%.php : src/%.php Makefile
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+
+build/%.css : src/%.css bin/MinifyCss.class
+	@mkdir -p -v $(@D)
+	java bin.MinifyCss $< $@
 
 build/% : src/%
 	@mkdir -p -v $(@D)
