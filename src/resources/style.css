@@ -97,6 +97,13 @@ nav>a
 	padding: 1px 1em;
 }
 
+nav>a:hover
+{
+	background-color: rgba(32,32,200,0.2);
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
 nav>hr
 {
 	border: none;
