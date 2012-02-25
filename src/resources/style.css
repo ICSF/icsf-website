@@ -55,8 +55,7 @@ body
 	max-width: 80em;
 	margin: 0 auto;
 
-	/* Left = 3em + 9em for the menu bar */
-	padding: 0 1em 1em 11em;
+	padding: 0 1em 1em 9em;
 }
 
 body.no-nav
@@ -195,10 +194,13 @@ td
 
 #logo
 {
+	padding: 8px;
+	width: 93px;
+	height: 60px;
 	background-color: rgb(0,0,128);
 	box-shadow: inset 0 0 10px black;
 	border-radius: 5px;
 	float: left;
-	margin-left: -3.5em;
+	margin-left: -2.75em;
 }
 
