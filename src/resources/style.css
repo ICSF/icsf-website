@@ -19,24 +19,19 @@
  *****************************************************/
 html
 {
-	position: relative;
-	height: 100%;
-
-	background: #ffffff;
+	background: #fff;
 
 	font-family: 'Lora', serif;
 	font-size: 11pt;
 }
 
-body {
-	position: relative;
+body
+{
 	max-width: 1440px;
 	margin: 0 auto;
 
-	box-sizing: border-box;
-
-	padding: 0 3em 1em 9em;
-	overflow-y: auto;
+	/* Left = 3em + 9em for the menu bar */
+	padding: 0 3em 1em 12em;
 }
 
 body.no-nav
@@ -79,7 +74,6 @@ a>img, img>a
 
 nav
 {
-	position: relative;
 	float: left;
 	margin-left: -9em;
 	width: 8em;
