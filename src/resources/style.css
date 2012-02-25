@@ -121,6 +121,12 @@ footer
 	margin: 0.2em 0.2em 0.5em 1em;
 }
 
+.hang-left
+{
+	float: left;
+	margin: 0.2em 1em 0.5em 0.2em;
+}
+
 .left
 {
 	float: left;
