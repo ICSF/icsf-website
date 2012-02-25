@@ -152,3 +152,18 @@ td
 	padding: 0 1em;
 }
 
+.invisible
+{
+	visibility: hidden;
+}
+
+.logo
+{
+	background-color: navy;
+	padding: 5px;
+	width: 124px;
+	height: 80px;
+	box-shadow: inset 0.05em 0 0.25em black;
+	border-radius: 5px;
+}
+

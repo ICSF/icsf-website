@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<h1>
-			<img class="left" src="<!--SRVROOT-->/resources/logo.png" style="height: 80px;" />
-			<img class="right" src="<!--SRVROOT-->/resources/logo.png" style="height: 80px;" />
+			<img class="left logo" src="<!--SRVROOT-->/resources/logo.png" />
+			<div class="right logo invisible" ></div>
 			ICSF
 			<div style="font-size: 0.3em; line-height: normal;">
 				Imperial College Science Fiction, Fantasy, and Gothic Horror Society
