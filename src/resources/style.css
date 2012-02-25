@@ -25,6 +25,29 @@ html
 	font-size: 11pt;
 }
 
+body
+{
+	background: rgba(255,255,255,0.7);
+
+	/* Little hack like thing - use the border as an second
+	margin, so that we can be centered, and have a minimum
+	margin, without using the padding box (which houses the
+	background layer */
+	border-width: 0 1em;
+	border-style: solid;
+	border-color: transparent;
+	background-clip: padding-box;
+	box-sizing: border-box;
+
+	border-radius: 1em;
+
+	min-width: 33.6em;
+	max-width: 80em;
+	margin: 0 auto 1em auto;
+
+	padding: 0 1em 0.5em 9em;
+}
+
 @media screen and (min-color: 5) and (min-width: 600px)
 {
 	html
@@ -36,31 +59,11 @@ html
 		background-attachment: fixed;
 		height: 100%;
 	}
-}
 
-body
-{
-	background: rgba(255,255,255,0.7);
-
-	/* Little hack like thing - use the border as an second
-	margin, so that we can be centered, and have a minimum
-	margin, without using the padding box (which houses the
-	background layer */
-	border-width: 0 3em;
-	border-style: solid;
-	border-color: transparent;
-	background-clip: padding-box;
-
-	border-radius: 1em;
-	max-width: 80em;
-	margin: 0 auto;
-
-	padding: 0 1em 1em 9em;
-}
-
-body.no-nav
-{
-	padding-left: 3em;
+	body
+	{
+		border-width: 0 3em;
+	}
 }
 
 p
