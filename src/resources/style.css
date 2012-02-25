@@ -63,7 +63,8 @@ h1
 
 h2, h3
 {
-	font-family: 'Alica', serif;
+	font-family: 'Alice', serif;
+	font-weight: normal;
 	margin: 0.8em 0 0.5em 0;
 }
 
