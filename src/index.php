@@ -9,7 +9,6 @@
 	<body>
 		<h1>
 			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
-			<div id="logo-balance" ></div>
 			ICSF
 			<div style="font-size: 0.3em; line-height: normal;">
 				Imperial College Science Fiction, Fantasy, and Gothic Horror Society
