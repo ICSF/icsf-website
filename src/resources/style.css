@@ -85,7 +85,7 @@ nav>a
 	display: block;
 	text-align: right;
 
-	height: 1.4em;
+	min-height: 1.4em;
 	margin: 0;
 }
 
