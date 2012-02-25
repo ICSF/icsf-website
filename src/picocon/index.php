@@ -9,7 +9,6 @@
 	<body>
 		<h1 style="text-align: center;">
 			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
-			<div id="logo-balance"></div>
 			Picocon 30
 			<div class="clear" />
 		</h1>

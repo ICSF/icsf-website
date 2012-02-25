@@ -27,16 +27,43 @@ html
 
 body
 {
-	max-width: 80em;
-	margin: 0 auto;
+	background: rgba(255,255,255,0.8);
 
-	/* Left = 3em + 9em for the menu bar */
-	padding: 0 3em 1em 12em;
+	/* Little hack like thing - use the border as an second
+	margin, so that we can be centered, and have a minimum
+	margin, without using the padding box (which houses the
+	background layer */
+	border-width: 0 1em;
+	border-style: solid;
+	border-color: transparent;
+	background-clip: padding-box;
+	box-sizing: border-box;
+
+	border-radius: 1em;
+
+	min-width: 33.6em;
+	max-width: 80em;
+	margin: 0 auto 1em auto;
+
+	padding: 0 1em 0.5em 9em;
 }
 
-body.no-nav
+@media screen and (min-color: 5) and (min-width: 600px)
 {
-	padding-left: 3em;
+	html
+	{
+		background-image: url(http://www.freebestwallpapers.info/bulkupload//20082010//Places/future-city.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	body
+	{
+		border-width: 0 3em;
+	}
 }
 
 p
@@ -57,7 +84,7 @@ h1
 	line-height: 1.2em;
 	font-weight: normal;
 
-	padding-bottom: 5px;
+	padding: 0.25em 0;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -189,39 +216,15 @@ td
 	padding: 0 1em;
 }
 
-#logo, #logo-balance
-{
-	padding: 8px;
-	width: 124px;
-	height: 80px;
-}
-
-#logo-balance
-{
-	visibility: hidden;
-	float: right;
-}
-
 #logo
 {
+	padding: 8px;
+	width: 93px;
+	height: 60px;
 	background-color: rgb(0,0,128);
 	box-shadow: inset 0 0 10px black;
 	border-radius: 5px;
 	float: left;
-}
-
-@media all and (max-width: 800px)
-{
-	#logo
-	{
-		display: block;
-		margin: 0 auto;
-		float: none;
-	}
-
-	#logo-balance
-	{
-		display: none;
-	}
+	margin-left: -2.75em;
 }
 
