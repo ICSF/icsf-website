@@ -1,0 +1,109 @@
+div.peoples
+{
+	column-width: 250px;
+	white-space: pre-line;
+	-webkit-column-width: 250px;
+	-moz-column-width: 250px;
+	font-size: smaller;
+	text-indent: 0;
+	text-align: left;
+}
+
+.opened,.closed
+{
+	font-style: italic;
+	font-weight: normal;
+	font-size: larger;
+	color: #444;
+	display: block;
+	margin: 5px;
+}
+
+.entrance,.exit
+{
+	font-style: italic;
+	display: block;
+	color: #141;
+}
+
+.entrance::before
+{
+	content: url('<!--SRVROOT-->/resources/enter.png');
+}
+.exit::before
+{
+	content: url('<!--SRVROOT-->/resources/exit.gif');
+}
+
+.action, .motion
+{
+	color: #602;
+}
+
+.action::before
+{
+	font-weight: bold;
+	content: "ACTION: "
+}
+
+.motion::before
+{
+	font-weight: bold;
+	content: "MOTION: "
+}
+
+.passed
+{
+	background: #efe;
+}
+
+.passed::before
+{
+	content: url('<!--SRVROOT-->/resources/tick.png') " MOTION: ";
+}
+
+.failed
+{
+	background: #fee;
+}
+
+.failed::before
+{
+	content: url('<!--SRVROOT-->/resources/cross.png') " MOTION: ";
+}
+
+.actions
+{
+	float: right;
+}
+
+.actions:hover
+{
+	border: 1px solid black;
+	position: absolute;
+	right: 4%;
+	background-color: #f0f0ff;
+	padding: 0px 20px;
+}
+
+.actions>ul
+{
+	display: none;
+}
+
+.actions>h3::after
+{
+	content: '(Hover to show)';
+	font-size: 12pt;
+	padding-left: 10px;
+}
+
+.actions:hover>h3::after
+{
+	content: "";
+}
+
+.actions:hover>ul
+{
+	display: block;
+}
