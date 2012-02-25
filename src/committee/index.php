@@ -15,14 +15,14 @@
 		</h1>
 
 		<nav>
-			<a href="<!--SRVROOT-->/committee/">Committee</a>
-			<a href="<!--SRVROOT-->/committee/minutes/">Meetings</a>
-			<a href="#constitution">Constitution</a>
-			<hr />
 			<a href="<!--SRVROOT-->/">Home</a>
 			<a href="<!--SRVROOT-->/events/">Events</a>
 			<a href="<!--SRVROOT-->/library/">Library</a>
+			<a href="<!--SRVROOT-->/committee/">Committee</a>
 			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<hr />
+			<a href="<!--SRVROOT-->/committee/minutes/">Meetings</a>
+			<a href="#constitution">Constitution</a>
 		</nav>
 
 		<p>
