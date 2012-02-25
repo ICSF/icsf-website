@@ -1,14 +1,14 @@
 TARGETS=$(shell bin/gettargets)
 
-.DEFAULT: build-impl
-.PHONY: all deploy build-impl remote-clean
+.DEFAULT: build
+.PHONY: all deploy build clean remote-clean
 
 # ======= PHONY TARGETS =======
 
-build-impl: $(TARGETS)
+build: $(TARGETS)
 
 all:
-	$(MAKE) build-impl
+	$(MAKE) build
 	$(MAKE) deploy
 
 deploy:
