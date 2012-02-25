@@ -163,6 +163,22 @@ footer
 	font-family: sans-serif;
 }
 
+.no-break
+{
+	column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	-o-column-break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+}
+
+.columns
+{
+	column-width: 30em;
+	-moz-column-width: 30em;
+	-o-column-width: 30em;
+	-webkit-column-width: 30em;
+}
+
 td
 {
 	padding: 0 1em;
