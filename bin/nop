@@ -1,12 +1,8 @@
 #!/bin/sh
+#
+# nop - Copy without other operation
+# this wrapper is used because in case make tries to pass other arguments
+#
 
-if [ $# -ne 2 ]; then
-	exit 1
-fi
-
-if [ -d $1 ]; then
-	mkdir -p "$2"
-else
-	cp "$1" "$2"
-fi
+cp "$1" "$2"
 
