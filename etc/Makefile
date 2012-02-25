@@ -1,7 +1,11 @@
 TARGETS=$(shell bin/gettargets)
 
-.DEFAULT: all
+.DEFAULT: build-impl
 .PHONY: all deploy build-impl remote-clean
+
+# ======= PHONY TARGETS =======
+
+build-impl: $(TARGETS)
 
 all:
 	$(MAKE) build-impl
@@ -11,7 +15,14 @@ deploy:
 	@mkdir -p -v build/
 	cp build/. "${DOCROOT}" -r
 
-build-impl: $(TARGETS)
+remote-clean:
+	rm ${DOCROOT}/ -r
+	mkdir ${DOCROOT}
+
+clean:
+	rm build -rf
+
+# ======= FILE TYPE HANDLERS =======
 
 build/%.html : src/%.html Makefile
 	@mkdir -p -v $(@D)
@@ -24,11 +35,4 @@ build/%.php : src/%.php Makefile
 build/% : src/%
 	@mkdir -p -v $(@D)
 	./bin/nop $< $@
-
-remote-clean:
-	rm ${DOCROOT}/ -r
-	mkdir ${DOCROOT}
-
-clean:
-	rm build -rf
 
