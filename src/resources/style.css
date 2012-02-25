@@ -76,8 +76,15 @@ nav
 {
 	float: left;
 	margin-left: -9em;
+
 	width: 8em;
 	height: 100%;
+
+	padding: 0.3em 0;
+
+	border-right-color: rgba(32,32,200,0.5);
+	border-right-width: 2px;
+	border-right-style: solid;
 }
 
 nav>a
@@ -87,14 +94,15 @@ nav>a
 
 	min-height: 1.4em;
 	margin: 0;
+	padding: 1px 1em;
 }
 
 nav>hr
 {
 	border: none;
-	border-bottom: 1px solid #eee;
-	width: 6em;
-	margin-right: 0
+	border-bottom: 1px solid rgba(32,32,200,0.5);
+	width: 8em;
+	margin-right: 0;
 }
 
 footer
