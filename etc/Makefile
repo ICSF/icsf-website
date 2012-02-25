@@ -7,13 +7,11 @@ all:
 	$(MAKE) build-impl
 	$(MAKE) deploy
 
-deploy: build
+deploy:
+	@mkdir -p -v build/
 	cp build/. "${DOCROOT}" -r
 
 build-impl: $(TARGETS)
-
-build:
-	mkdir -p -v build/
 
 build/%.html : src/%.html Makefile
 	@mkdir -p -v $(@D)
