@@ -3,5 +3,11 @@
 # Gets a list of all targets that should be built
 #
 
-find src -type f ! -name '.*.swp' | sed -e 's:^src:build:'
+
+find src -type f ! -name '.*.swp' ! -name '*.min' | sed -e 's:^src:build:'
+
+# Files relating to minutes
+${0%/*}/gettargets-minutes
+
+printf 'build/committee/minutes/index.php\n'
 

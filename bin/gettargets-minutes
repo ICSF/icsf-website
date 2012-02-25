@@ -1,0 +1,4 @@
+#!/bin/sh
+
+find src -name '*.min' | sed -e 's:^src:build:' -e 's:.min$:.html:'
+

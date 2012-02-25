@@ -1,0 +1,102 @@
+#!/usr/bin/php -f
+<?php $folders=array(); ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+	<head>
+		<title>Minutes - ICSF</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/style.css" />
+		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/minutes.css" />
+		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>
+			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF" />
+			ICSF
+			<span style="font-size: 0.5em; line-height: normal;">
+				Minutes
+			</span>
+			<span class="clear"></span>
+		</h1>
+
+		<nav>
+			<a href="<!--SRVROOT-->/">Home</a>
+			<a href="<!--SRVROOT-->/library/">Library</a>
+			<a href="<!--SRVROOT-->/events/">Events</a>
+			<a href="<!--SRVROOT-->/committee/">Committee</a>
+			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<hr />
+			<a href="<!--SRVROOT-->/committee/minutes/">Meetings</a>
+			<a href="<!--SRVROOT-->/committee/#constitution">Constitution</a>
+		</nav>
+<?php
+	function tabs($num)
+	{
+		return str_repeat("\t", $num);
+	}
+
+	function index($file, $path)
+	{
+		$handle = fopen($file, 'r');
+		if (!$handle)
+		{
+			fputs(STDERR, 'Can not open file ' . $file);
+			return tabs(4) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . '">' .
+				$path[count($path) - 1] . '</a></li>' . PHP_EOL;
+		}
+
+		fgets($handle); // doctype
+		$committee = substr(fgets($handle), 4, -4);
+		$date = strtotime(substr(fgets($handle), 4, -4));
+		$comment = substr(fgets($handle), 4, -4);
+
+		return tabs(4) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . 
+			'">' . $committee . ', ' . date('M d', $date) . '</a>' .
+			(strlen($comment) > 0 ? ' - ' . $comment : '' ) . '</li>' . PHP_EOL;
+	}
+
+array_shift($argv);
+foreach ($argv as $file):
+	$path = explode(DIRECTORY_SEPARATOR, $file);
+	array_shift($path); // Remove 'build'
+	$newlist=false;
+
+	for ($i = 2; $i < count($path) - 1; ++$i)
+	{
+		$d = $i - 2;
+		if ($d == count($folders))
+		{
+			if (count($folders != 0)) 
+				echo tabs(3) . '</ul>' . PHP_EOL;
+			$folders[$d] = $path[$i];
+			echo tabs(3) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
+			$newlist=true;
+		}
+		else
+		{
+			if ($folders[$d] != $path[$i])
+			{
+				echo tabs(3) . '</ul>' . PHP_EOL;
+				array_splice($folders, $d+1);
+				echo tabs(3) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
+				$newlist=true;
+			}
+		}
+	}
+
+	if ($newlist)
+		echo tabs(3) . '<ul>' . PHP_EOL;
+
+	echo index($file, $path); 
+
+endforeach;
+?>
+
+		<footer>
+			<p class="copyright">Imperial College Science Fiction Society.
+			Please report issues to <a class="sans"
+			href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a></p>
+		</footer>
+	</body>
+</html>
+

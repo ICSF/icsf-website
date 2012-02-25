@@ -33,6 +33,10 @@ build/%.html : src/%.html Makefile
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
 
+build/%.html : src/%.tmp Makefile
+	@mkdir -p -v $(@D)
+	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+
 build/%.php : src/%.php Makefile
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
@@ -48,4 +52,9 @@ src/%.html : src/%.min
 build/% : src/%
 	@mkdir -p -v $(@D)
 	./bin/nop $< $@
+
+# ======= SPECIAL FILES =======
+
+src/committee/minutes/index.php : $(shell ./bin/gettargets-minutes)
+	./bin/minute-index $^ > $@
 
