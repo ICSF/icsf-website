@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<h1 style="text-align: center;">
-			<img class="left logo" src="<!--SRVROOT-->/resources/logo.png" />
-			<img class="right logo invisible" src="<!--SRVROOT-->/resources/logo.png" />
+			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
+			<img id="logo-balance" src="<!--SRVROOT-->/resources/logo.png" />
 			Picocon 30
 			<div class="clear" />
 		</h1>
