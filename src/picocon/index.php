@@ -56,20 +56,20 @@
 		</p>
 
 		<a name="goh"><h2>Guests of Honour</h2></a>
-		<table style="width: 40em; margin: 0 auto; text-align: center;"><tbody><tr>
-			<td style="vertical-align: top">
-				<h3>Peter F Hamilton</h3>
-				<img style="width:80px; height: 120px; margin: 0 auto;"
+		<div class="columns">
+			<div class="no-break">
+				<h3 style="margin-top: 0;">Peter F Hamilton</h3>
+				<img style="width:80px; height: 120px;"
 					src="images/peter-f-hamilton.jpg" />
 				<p>
 					Hamilton's works, often described as Space Opera, include
 					elements of hard SF, fantasy, and classic horror writing to
 					weave the complex intertwining stories of his characters.
 				</p>
-			</td>
-			<td style="vertical-align: top">
+			</div>
+			<div class="no-break">
 				<h3>Kate Griffin</h3>
-				<img style="width:80px; height: 120px; margin: 0 auto;"
+				<img style="width:80px; height: 120px;"
 					src="images/catherine-webb.jpg" />
 				<p>
 					Adult fantasy author Kate Griffin is a pen name for the
@@ -77,8 +77,8 @@
 					life-long Londoner whose first book was published when she
 					was 16.
 				</p>
-			</td>
-		</tr></tbody></table>
+			</div>
+		</div>
 
 		<a name="prices"><h2>Prices</h2></a>
 
