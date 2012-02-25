@@ -3,5 +3,5 @@
 # Gets a list of all targets that should be built
 #
 
-find src -type f | sed -e 's:^src:build:'
+find src -type f ! -name '.*.swp' | sed -e 's:^src:build:'
 
