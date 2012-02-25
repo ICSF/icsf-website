@@ -27,7 +27,7 @@ html
 
 body
 {
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.8);
 
 	/* Little hack like thing - use the border as an second
 	margin, so that we can be centered, and have a minimum
