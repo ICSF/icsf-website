@@ -27,7 +27,7 @@ html
 
 body
 {
-	max-width: 1440px;
+	max-width: 80em;
 	margin: 0 auto;
 
 	/* Left = 3em + 9em for the menu bar */
