@@ -52,7 +52,7 @@ body
 {
 	html
 	{
-		background-image: url(http://www.freebestwallpapers.info/bulkupload//20082010//Places/future-city.jpg);
+		background-image: url(<!--SRVROOT-->/resources/background.jpg);
 		background-position: center center;
 		background-size: cover;
 		background-repeat: no-repeat;
