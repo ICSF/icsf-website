@@ -24,7 +24,7 @@
 			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
 		</nav>
 
-		<img class="hang-right" src="http://union.ic.ac.uk<!--SRVROOT-->/ftpupload/icsfcam.jpeg"
+		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
 		style="width: 320px; height: 240px;" />
 
 		<p>
