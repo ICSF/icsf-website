@@ -135,8 +135,6 @@ nav>a
 nav>a:hover
 {
 	background-color: rgba(0,0,128,0.2);
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
 }
 
 nav>hr
