@@ -26,6 +26,23 @@ div.peoples
 	color: #141;
 }
 
+.exit
+{	
+	color: #411;
+}
+
+.continued
+{
+	color: #444;
+	font-style: italic;
+}
+
+.continued ul
+{
+	color: black;
+	font-style: normal;
+}
+
 .entrance::before
 {
 	content: url('<!--SRVROOT-->/resources/enter.png');
