@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
+		<!--include "stub/headers.html"-->
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/style.css" />
-		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>
-			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
-			ICSF
-			<div style="font-size: 0.3em; line-height: normal;">
-				Imperial College Science Fiction, Fantasy, and Gothic Horror Society
-			</div>
-			<div class="clear"></div>
-		</h1>
+		<!--include "stub/h1-start.html"-->
+			Imperial College Science Fiction, Fantasy, and Gothic Horror Society
+		<!--include "stub/h1-end.html"-->
 
 		<nav>
-			<a href="<!--SRVROOT-->/">Home</a>
-			<a href="<!--SRVROOT-->/library/">Library</a>
-			<a href="<!--SRVROOT-->/events/">Events</a>
-			<a href="<!--SRVROOT-->/committee/">Committee</a>
-			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<!--include "stub/nav-main.html"-->
 		</nav>
 
 		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
