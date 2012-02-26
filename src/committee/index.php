@@ -133,8 +133,8 @@
 			bureaucracy level of less than 34.
 		</p>
 		<ul>
-			<li><a href="/<!--SRVROOT-->/committee/constitution.pdf">ICSF's Constitution</a> (PDF)</li>
-			<li><a href="/<!--SRVROOT-->/committee/standing-orders.pdf">ICSF's Standing Orders</a> (PDF)</li>
+			<li><a href="<!--SRVROOT-->/committee/constitution.pdf">ICSF's Constitution</a> (PDF)</li>
+			<li><a href="<!--SRVROOT-->/committee/standing-orders.pdf">ICSF's Standing Orders</a> (PDF)</li>
 		</ul>
 
 		<!--include "stubs/footer.html"-->
