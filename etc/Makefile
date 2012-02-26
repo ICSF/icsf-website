@@ -1,4 +1,6 @@
 TARGETS=$(shell bin/gettargets)
+SYNC=rsync
+SYNCFLAGS=-rlt --perms --chmod=a=rX,u+w,Da+x --delete-after --exclude-from=etc/exclude --progress
 
 .DEFAULT: build
 .PHONY: all deploy build clean remote-clean
@@ -13,7 +15,7 @@ all:
 
 deploy:
 	@mkdir -p -v build/
-	cp build/. "${DOCROOT}" -r
+	$(SYNC) $(SYNCFLAGS) build/. "${DOCROOT}"
 
 remote-clean:
 	rm ${DOCROOT}/ -r
@@ -36,6 +38,13 @@ build/%.html : src/%.html Makefile stubs
 build/%.php : src/%.php Makefile stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	
+ifeq ($(MODPHP),0)
+	sed -i -e '1i #!/usr/bin/php' $@
+	chmod +x $@
+else
+	chmod -x $@
+endif
 
 build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)

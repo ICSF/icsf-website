@@ -67,11 +67,20 @@ printf '\nPlease specify the website path\n'
 printf 'This is the section from the first / of the web page on the internet\n'
 printf 'eg, if I access it through www.doc.ic.ac.uk/~bh308/icsf, this should be\n'
 printf '\t/~bh308/icsf\n'
+printf 'NB: do not add a trailing /\n'
 
-printf '[SRVROOT (default /)]: '
+printf '[SRVROOT (default empty string)]: '
 read SRVROOT
 
-printf 'DOCROOT=%s\nSRVROOT=%s\n\n' "$DOCROOT" "$SRVROOT" > $TARGET
+printf '\nPlease specify PHP mode\n'
+printf 'This should be 0 if php is used as a CGI script, or 1\n'
+printf 'if the web-server is using native PHP interpretation\nn'
+
+printf '[MOD_PHP]: '
+read MOD_PHP
+
+
+printf 'DOCROOT=%s\nSRVROOT=%s\nMOD_PHP=%s\n\n' "$DOCROOT" "$SRVROOT" "$MOD_PHP" > $TARGET
 cat $SKEL >> $TARGET
 
 printf '\n\nDone.\n'
