@@ -18,7 +18,7 @@
  *****************************************************/
 html
 {
-	background: #fff;
+	background: #000;
 	background-image: url(<!--SRVROOT-->/resources/background.jpg);
 	background-position: center center;
 	background-size: cover;
