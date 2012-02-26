@@ -14,7 +14,7 @@
 		</nav>
 
 		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
-		style="width: 320px; height: 240px;" />
+		style="width: 320px; height: 240px;" alt="ICSF Library Webam" />
 
 		<p>
 			ICSF is the centre for science fiction, fantasy and horror fans at
