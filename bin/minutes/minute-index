@@ -29,6 +29,7 @@
 			<a href="<!--SRVROOT-->/committee/minutes/">Meetings</a>
 			<a href="<!--SRVROOT-->/committee/#constitution">Constitution</a>
 		</nav>
+
 <?php
 	function tabs($num)
 	{
@@ -38,24 +39,25 @@
 	function index($file, $path)
 	{
 		$handle = fopen($file, 'r');
-		if (!$handle)
+		if (!$handle || fgets($handle) !== '<!DOCTYPE html>' . PHP_EOL)
 		{
-			fputs(STDERR, 'Can not open file ' . $file);
-			return tabs(4) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . '">' .
+			fputs(STDERR, 'Can not open file or find header: ' . $file . PHP_EOL);
+			return tabs(3) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . '">' .
 				$path[count($path) - 1] . '</a></li>' . PHP_EOL;
 		}
 
-		fgets($handle); // doctype
 		$committee = substr(fgets($handle), 4, -4);
 		$date = strtotime(substr(fgets($handle), 4, -4));
 		$comment = substr(fgets($handle), 4, -4);
 
-		return tabs(4) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . 
+		return tabs(3) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) .
 			'">' . $committee . ', ' . date('M d', $date) . '</a>' .
 			(strlen($comment) > 0 ? ' - ' . $comment : '' ) . '</li>' . PHP_EOL;
 	}
 
 array_shift($argv);
+rsort($argv);
+
 foreach ($argv as $file):
 	$path = explode(DIRECTORY_SEPARATOR, $file);
 	array_shift($path); // Remove 'build'
@@ -66,31 +68,34 @@ foreach ($argv as $file):
 		$d = $i - 2;
 		if ($d == count($folders))
 		{
-			if (count($folders != 0)) 
-				echo tabs(3) . '</ul>' . PHP_EOL;
+			if (count($folders) > 0)
+				echo tabs(2) . '</ul>' . PHP_EOL;
+
 			$folders[$d] = $path[$i];
-			echo tabs(3) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
+			echo tabs(2) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
 			$newlist=true;
 		}
 		else
 		{
 			if ($folders[$d] != $path[$i])
 			{
-				echo tabs(3) . '</ul>' . PHP_EOL;
+				echo tabs(2) . '</ul>' . PHP_EOL;
+				$folders[$d] = $path[$i];
 				array_splice($folders, $d+1);
-				echo tabs(3) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
+				echo tabs(2) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
 				$newlist=true;
 			}
 		}
 	}
 
 	if ($newlist)
-		echo tabs(3) . '<ul>' . PHP_EOL;
+		echo tabs(2) . '<ul>' . PHP_EOL;
 
 	echo index($file, $path); 
 
 endforeach;
 ?>
+		</ul>
 
 		<footer>
 			<p class="copyright">Imperial College Science Fiction Society.
