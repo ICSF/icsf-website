@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+		<!--include "stubs/headers.html"-->
 		<title>Picocon 30 - ICSF</title>
-		<link type="text/css" rel="stylesheet" href="<!--SRVROOT-->/resources/style.css" />
-		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	<body>
 		<h1 style="text-align: center;">
-			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
+			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			Picocon 30
-			<div class="clear" />
+			<span class="clear"></span>
 		</h1>
 
 		<nav>
@@ -44,23 +42,23 @@
 			The schedule concludes in the evening.
 
 			At a Picocon you will encounter:
-
-		    <ul>
-				<li>Guests of Honour doing talks and panels</li>
-				<li>The Destruction of Dodgy Merchandise, typically using liquid nitrogen and an enormous hammer. (You're welcome to bring along donations!)</li>
-				<li>Multiplayer LAN gaming</li>
-				<li>Stalls selling books, ICSF t-shirts, and other stuff</li>
-				<li>Quiz and silly games</li>
-				<li>Student Union bar</li>
-			</ul>
 		</p>
 
-		<a name="goh"><h2>Guests of Honour</h2></a>
+		<ul>
+		<li>Guests of Honour doing talks and panels</li>
+			<li>The Destruction of Dodgy Merchandise, typically using liquid nitrogen and an enormous hammer. (You're welcome to bring along donations!)</li>
+			<li>Multiplayer LAN gaming</li>
+			<li>Stalls selling books, ICSF t-shirts, and other stuff</li>
+			<li>Quiz and silly games</li>
+			<li>Student Union bar</li>
+		</ul>
+
+		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
 			<div class="no-break">
 				<h3 style="margin-top: 0;">Peter F Hamilton</h3>
 				<img style="width:80px; height: 120px;"
-					src="images/peter-f-hamilton.jpg" />
+					src="images/peter-f-hamilton.jpg" alt="Peter F Hamilton" />
 				<p>
 					Hamilton's works, often described as Space Opera, include
 					elements of hard SF, fantasy, and classic horror writing to
@@ -70,7 +68,7 @@
 			<div class="no-break">
 				<h3>Kate Griffin</h3>
 				<img style="width:80px; height: 120px;"
-					src="images/catherine-webb.jpg" />
+					src="images/catherine-webb.jpg" alt="Catherine Weeb" />
 				<p>
 					Adult fantasy author Kate Griffin is a pen name for the
 					twice Carneige-nominated fantasy author Catherine Webb, a
@@ -80,20 +78,20 @@
 			</div>
 		</div>
 
-		<a name="prices"><h2>Prices</h2></a>
+		<h2 id="prices">Prices</h2>
 
 		<p>
 			Entry for the day will cost (subject to change up to Feb 2013):
-			<ul>
-				<li><b>&#x00A3;5</b> for ICSF members;</li>
-				<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
-				<li><b>&#x00A3;10</b> full price;</li>
-				<li><b>FREE</b> for past Guests of Honour.</li>
-			</ul>
 		</p>
+		<ul>
+			<li><b>&#x00A3;5</b> for ICSF members;</li>
+			<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
+			<li><b>&#x00A3;10</b> full price;</li>
+			<li><b>FREE</b> for past Guests of Honour.</li>
+		</ul>
 		<p>
 			Discounts for large parties (e.g. other University SF societies)
-			are potentially available 
+			are potentially available
 			(email the <a href="mailto:picocon@icsf.co.uk">Picocon Sofa</a>).
 		</p>
 		<p>
@@ -101,7 +99,7 @@
 			all are welcome.
 		</p>
 
-		<a name="directions"><h2>Directions to Picocon</h2></a>
+		<h2 id="directions">Directions to Picocon</h2>
 		<p>
 			Here's a general <a href="http://g.co/maps/7ahv7">map</a> of the
 			area, pointing at the entrance to Beit Quad (which houses the
@@ -131,7 +129,7 @@
 			rear of the RAH).
 		</p>
 
-		<a name="contact"><h2>Contact Us</h2></a>
+		<h2 id="contact">Contact Us</h2>
 		<p>
 			For more information, please contact <b>Maciej Matuszewski</b>,
 			the Picocon Sofa (comfier than a chair), at
