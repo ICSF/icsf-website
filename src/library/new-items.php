@@ -10,6 +10,11 @@
 			New Items in the Library
 		<!--include "stubs/h1-end.html"-->
 
+		<nav>
+			<!--include "stubs/nav-main.html"-->
+			<hr/>
+			<!--include "stubs/nav-lib.html"-->
+		</nav>
 <?php
 
 	require('database/database.php');
@@ -20,7 +25,7 @@
 	$conditions->limit = 50;
 	$conditions->offset = (isset($_GET['page']) ? ((int)$_GET['page'] - 1) * 50 + 1 : 1);
 
-	$count = LibraryDatabase::search($conditions, $results);
+	$count = Database::search($conditions, $items);
 
 	//printPageLinks($count, $lim, $int);
 
@@ -31,7 +36,7 @@
 	{
 		if (date('Ym', $item->acquireDate) !== $month)
 		{
-			$header ($item->acquireDate < $cutoff ?
+			$header = ($item->acquireDate < $cutoff ?
 	            'Back in the mists of time... (pre-Apr 05)' :
 				date('F Y')
 			);

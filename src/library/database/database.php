@@ -90,6 +90,3 @@
 		public $order = 'Type, Author, Series, SeriesNum, Title';
 	}
 
-	Database::search(new SearchConditions(), $items);
-	print_r($items);
-
