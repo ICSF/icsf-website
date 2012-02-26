@@ -4,30 +4,19 @@
 <!--<?php echo trim($comment); ?>-->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
+		<!--include "stubs/headers.html"-->
 		<title>Minutes: <?php 
 			echo trim($headers['committee']) . ' - ' . 
 			date('j/m/Y'); ?> - ICSF</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/style.css" />
 		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/minutes.css" />
-		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>
-			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF" />
-			ICSF
-			<span style="font-size: 0.5em; line-height: normal;">
-				Minutes
-			</span>
-			<span class="clear"></span>
-		</h1>
+		<!--include "stubs/h1-start.html"-->
+			Minutes
+		<!--include "stubs/h1-end.html"-->
 
 		<nav>
-			<a href="<!--SRVROOT-->/">Home</a>
-			<a href="<!--SRVROOT-->/library/">Library</a>
-			<a href="<!--SRVROOT-->/events/">Events</a>
-			<a href="<!--SRVROOT-->/committee/">Committee</a>
-			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<!--include "stubs/nav-main.html"-->
 			<hr />
 			<a href="<!--SRVROOT-->/committee/minutes/">Meetings</a>
 			<a href="<!--SRVROOT-->/committee/#constitution">Constitution</a>
