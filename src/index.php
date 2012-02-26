@@ -58,13 +58,7 @@
 			instructions here.
 		</p>
 
-		<footer>
-			<p class="copyright">Imperial College Science Fiction Society.
-			Please report issues to <a class="sans"
-			href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a></p>
-			<p>Background licensed under <a href="http://creativecommons.org/licenses/by-nd-nc/1.0/">Creative Commons BY-ND-NC 1.0</a>,
-			<span class="copyright"><a href="http://www.howardedin.com/photos/veil-b.html">Howard Edin</a></span></p>
-		</footer>
+		<!--include "stub/footer.html"-->
 	</body>
 </html>
 
