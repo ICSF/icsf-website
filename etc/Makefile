@@ -38,6 +38,13 @@ build/%.html : src/%.html Makefile stubs
 build/%.php : src/%.php Makefile stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	
+ifeq ($(MODPHP),0)
+	sed -i -e '1i #!/usr/bin/php' $@
+	chmod +x $@
+else
+	chmod -x $@
+endif
 
 build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)
