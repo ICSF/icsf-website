@@ -43,7 +43,7 @@ build/%.css : src/%.css bin/MinifyCss.class stubs
 	java bin.MinifyCss $@
 
 src/%.html : src/%.min
-	./bin/minute-gen $< > $@
+	./bin/minutes/minute-gen $< > $@
 
 build/% : src/%
 	@mkdir -p -v $(@D)
@@ -52,5 +52,5 @@ build/% : src/%
 # ======= SPECIAL FILES =======
 
 src/committee/minutes/index.php : $(shell ./bin/gettargets-minutes)
-	./bin/minute-index $^ > $@
+	./bin/minutes/minute-index $^ > $@
 
