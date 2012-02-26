@@ -29,11 +29,11 @@ bin/MinifyCss.class : bin/MinifyCss.java bin/CssCompressor.java
 
 # ======= FILE TYPE HANDLERS =======
 
-build/%.html : src/%.html Makefile
+build/%.html : src/%.html Makefile stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
 
-build/%.html : src/%.tmp Makefile
+build/%.php : src/%.php Makefile stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
 
@@ -41,7 +41,7 @@ build/%.php : src/%.php Makefile
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
 
-build/%.css : src/%.css bin/MinifyCss.class
+build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
 	java bin.MinifyCss $@
