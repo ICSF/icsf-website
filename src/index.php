@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
-		<!--include "stub/headers.html"-->
+		<!--include "stubs/headers.html"-->
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
 	</head>
 	<body>
-		<!--include "stub/h1-start.html"-->
+		<!--include "stubs/h1-start.html"-->
 			Imperial College Science Fiction, Fantasy, and Gothic Horror Society
-		<!--include "stub/h1-end.html"-->
+		<!--include "stubs/h1-end.html"-->
 
 		<nav>
-			<!--include "stub/nav-main.html"-->
+			<!--include "stubs/nav-main.html"-->
 		</nav>
 
 		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
@@ -47,7 +47,7 @@
 			instructions here.
 		</p>
 
-		<!--include "stub/footer.html"-->
+		<!--include "stubs/footer.html"-->
 	</body>
 </html>
 
