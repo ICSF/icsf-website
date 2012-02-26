@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
+		<!--include "stubs/headers.html"-->
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/style.css" />
-		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>
-			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
-			ICSF
-			<div style="font-size: 0.3em; line-height: normal;">
-				Imperial College Science Fiction, Fantasy, and Gothic Horror Society
-			</div>
-			<div class="clear"></div>
-		</h1>
+		<!--include "stubs/h1-start.html"-->
+			Imperial College Science Fiction, Fantasy, and Gothic Horror Society
+		<!--include "stubs/h1-end.html"-->
 
 		<nav>
-			<a href="<!--SRVROOT-->/">Home</a>
-			<a href="<!--SRVROOT-->/library/">Library</a>
-			<a href="<!--SRVROOT-->/events/">Events</a>
-			<a href="<!--SRVROOT-->/committee/">Committee</a>
-			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<!--include "stubs/nav-main.html"-->
 		</nav>
 
 		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
-		style="width: 320px; height: 240px;" />
+		style="width: 320px; height: 240px;" alt="ICSF Library Webam" />
 
 		<p>
 			ICSF is the centre for science fiction, fantasy and horror fans at
@@ -58,13 +47,7 @@
 			instructions here.
 		</p>
 
-		<footer>
-			<p class="copyright">Imperial College Science Fiction Society.
-			Please report issues to <a class="sans"
-			href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a></p>
-			<p>Background licensed under <a href="http://creativecommons.org/licenses/by-nd-nc/1.0/">Creative Commons BY-ND-NC 1.0</a>,
-			<span class="copyright"><a href="http://www.howardedin.com/photos/veil-b.html">Howard Edin</a></span></p>
-		</footer>
+		<!--include "stubs/footer.html"-->
 	</body>
 </html>
 

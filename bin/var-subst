@@ -18,7 +18,7 @@ OUTPUT=$2
 shift 2
 
 if [ $# -eq 0 ]; then
-	cp $1 $2
+	cp $INPUT $OUTPUT
 	exit 0
 fi
 
@@ -31,5 +31,6 @@ do
 	shift
 done
 
-sed $FLAGS "$INPUT" > "$OUTPUT"
+sed -n -e '/<!--include "\(.\+\)"-->/ { =; s:<!--include "\(.\+\)"-->:r \1:p; } ' $INPUT | \
+sed -e 'N;s/\n//' | sed -f - $INPUT | sed -e '/<!--include ".\+"-->/d' | sed $FLAGS  > "$OUTPUT"
 

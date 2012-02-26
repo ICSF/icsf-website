@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
+		<!--include "stubs/headers.html"-->
 		<title>Committee - ICSF</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/style.css" />
-		<link href="http://fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1>
-			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" />
-			ICSF
-			<div style="font-size: 0.5em; line-height: normal;">Committee</div>
-			<div class="clear"></div>
-		</h1>
+		<!--include "stubs/h1-start.html"-->
+			Committee
+		<!--include "stubs/h1-end.html"-->
 
 		<nav>
-			<a href="<!--SRVROOT-->/">Home</a>
-			<a href="<!--SRVROOT-->/events/">Events</a>
-			<a href="<!--SRVROOT-->/library/">Library</a>
-			<a href="<!--SRVROOT-->/committee/">Committee</a>
-			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<!--include "stubs/nav-main.html"-->
 			<hr />
 			<a href="<!--SRVROOT-->/committee/minutes/">Meetings</a>
 			<a href="#constitution">Constitution</a>
@@ -129,7 +120,7 @@
 		</p></div>
 		</div>
 
-		<a name="constitution"><h2>Committee Duties</h2></a>
+		<h2 id="constitution">Committee Duties</h2>
 
 		<p>
 			The committee doesn't just get to do what they want (quite).
@@ -146,11 +137,7 @@
 			<li><a href="/<!--SRVROOT-->/committee/standing-orders.pdf">ICSF's Standing Orders</a> (PDF)</li>
 		</ul>
 
-		<footer>
-			<p class="copyright">Imperial College Science Fiction Society.
-			Please report issues to <a class="sans"
-			href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a></p>
-		</footer>
+		<!--include "stubs/footer.html"-->
 	</body>
 </html>
 

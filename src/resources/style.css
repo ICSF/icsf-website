@@ -78,7 +78,14 @@ h1
 	font-weight: normal;
 
 	padding: 0.25em 0;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #aaa;
+}
+
+#subtitle
+{
+	font-size: 0.50em;
+	line-height: normal;
+	display: block;
 }
 
 h2, h3
@@ -121,8 +128,6 @@ nav>a
 nav>a:hover
 {
 	background-color: rgba(0,0,128,0.2);
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
 }
 
 nav>hr
@@ -137,7 +142,7 @@ footer
 {
 	clear: both;
 	text-align: center;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #aaa;
 	padding-top: 1em;
 	margin-top: 2em;
 }
