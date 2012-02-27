@@ -13,7 +13,7 @@
 			<!--include "stubs/nav-main.html"-->
 		</nav>
 
-		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
+		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
 		style="width: 320px; height: 240px;" alt="ICSF Library Webam" />
 
 		<p>

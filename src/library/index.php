@@ -55,7 +55,7 @@
 			Feel free to pop in at any time!
 		</p>
 
-		<img class="hang-right" src="http://union.ic.ac.uk/scc/icsf/ftpupload/icsfcam.jpeg"
+		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
 		style="width: 320px; height: 240px;" alt="ICSF Library Webam" />
 		<h2>Library Webcam</h2>
 
