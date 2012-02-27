@@ -65,7 +65,12 @@ The Make variables, and their defualt values, are:
 
  - ```SYNC = rsync``` - Use rsync to perform deployment
  - ```SYNCPERMS = --perms --chmod=a=rX,u+w,Da+x``` - Permissions to set (see permissions below)
+ - ```SYNCEXCLUDE = etc/exclude``` - File containing list of files to not syncronise
+ - ```SYNCDEL=--delete-after``` - Remote file deletion policy
+ - ```SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress```
 
+```-r``` tells rsync to work recursively, ```-t``` makes it preserve file modifications times
+and ```-l``` makes it handle symbolic links sensibly.
 The target is ```$(DOCROOT)```, which is set up with the configure script.
 
 Permissions
