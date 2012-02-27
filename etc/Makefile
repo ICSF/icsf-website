@@ -14,10 +14,12 @@ all:
 	$(MAKE) deploy
 
 tidy:
+	@mkdir -p -v build/
 	./bin/gettargets | sort -u > targets
 	find build/ -type f | sort -u > current
 	comm -2 -3 current targets | xargs --no-run-if-empty rm -v
 	rm targets current
+	find build -depth -type d -empty -exec rmdir -v '{}' \;
 
 deploy: tidy
 	@mkdir -p -v build/
