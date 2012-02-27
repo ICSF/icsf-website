@@ -3,7 +3,7 @@ SYNC=rsync
 SYNCFLAGS=-rlt --perms --chmod=a=rX,u+w,Da+x --delete-after --exclude-from=etc/exclude --progress
 
 .DEFAULT: build
-.PHONY: all deploy build cleantidy
+.PHONY: all deploy build clean tidy
 
 # ======= PHONY TARGETS =======
 
@@ -19,7 +19,7 @@ tidy:
 	-comm -2 -3 current targets | xargs rm
 	rm targets current
 
-deploy:
+deploy: tidy
 	@mkdir -p -v build/
 	$(SYNC) $(SYNCFLAGS) build/. "${DOCROOT}"
 
