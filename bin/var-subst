@@ -27,7 +27,7 @@ FLAGS=''
 while [ $# -gt 0 ];
 do
 	FLAG=$(echo "$1" | cut -d'=' -f1- --output-delimiter="-->|")
-	FLAGS="$FLAGS -e s|<!--$FLAG|"
+	FLAGS="$FLAGS -e s|<!--$FLAG|g"
 	shift
 done
 
