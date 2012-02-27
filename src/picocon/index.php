@@ -57,9 +57,9 @@
 
 		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
-			<div class="no-break">
+			<div class="no-break clear">
 				<h3 style="margin-top: 0;">Peter F Hamilton</h3>
-				<img style="width:80px; height: 120px;"
+				<img style="width:80px; height: 120px;" class="hang-left"
 					src="images/peter-f-hamilton.jpg" alt="Peter F Hamilton" />
 				<p>
 					Hamilton's works, often described as Space Opera, include
@@ -67,9 +67,9 @@
 					weave the complex intertwining stories of his characters.
 				</p>
 			</div>
-			<div class="no-break">
+			<div class="no-break clear">
 				<h3>Kate Griffin</h3>
-				<img style="width:80px; height: 120px;"
+				<img style="width:80px; height: 120px;" class="hang-left"
 					src="images/catherine-webb.jpg" alt="Catherine Weeb" />
 				<p>
 					Adult fantasy author Kate Griffin is a pen name for the
