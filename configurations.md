@@ -36,3 +36,18 @@ Note that you can remotely deploy to DoC webspace with
 ```shell
 DOCROOT=<user>@shell1.doc.ic.ac.uk:/homes/<user>/public_html/icsf
 ```
+
+Union Webserver Dougal
+----------------------
+
+This meeds some manual editing of the rsync flags:
+
+```shell
+SYNCPERMS=--perms --chmod=a=r,ug+w,Da+xs --no-g
+```
+
+This makes sure that rsync doesn't try to set the groups,
+makes sure that the sticky bits are set on directories,
+and gives the group write access (so future web editors
+can continue uploading). The executable bit is entirely
+unset, as CGI is not used on Dougal.
