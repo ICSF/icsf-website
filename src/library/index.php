@@ -14,11 +14,19 @@
 			<hr />
 			<!--include "stubs/nav-lib.html"-->
 		</nav>
+<?php
+	include 'database/database.inc';
+	$counts = Database::getItemCounts();
 
+	$books  = (int)floor($counts['Book']/200) * 200;
+	$dvds   = (int)floor($counts['DVD']/200) * 200;
+	$gns    = (int)floor($counts['Graphic Novel']/500) * 500;
+?>
 		<p>
-			The library contains over <b>9000 books</b>, <b>1500 DVDs</b>,
-			and has a large collection of <b>graphic novels</b> and other
-			media items.
+			The library contains over <b><?php echo $books;?> books</b>,
+			<b><?php echo $dvds; ?> DVDs</b>, and has a <?php echo $gns;?>-strong
+			collection of <b>graphic novels</b>, as well as a selection of
+			other media items.
 			We try to maintain a range of science fiction, fantasy and horror,
 			covering both popular and obscure authors, films, and tv series.
 			To take stuff out you need to be an icsf member (costs &pound;8).
