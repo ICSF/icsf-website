@@ -3,7 +3,7 @@ SYNC=rsync
 SYNCFLAGS=-rlt --perms --chmod=a=rX,u+w,Da+x --delete-after --exclude-from=etc/exclude --progress
 
 .DEFAULT: build
-.PHONY: all deploy build clean
+.PHONY: all deploy build cleantidy
 
 # ======= PHONY TARGETS =======
 
@@ -12,6 +12,12 @@ build: $(TARGETS)
 all:
 	$(MAKE) build
 	$(MAKE) deploy
+
+tidy:
+	./bin/gettargets | sort -u > targets
+	find build/ -type f | sort -u > current
+	-comm -2 -3 current targets | xargs rm
+	rm targets current
 
 deploy:
 	@mkdir -p -v build/
