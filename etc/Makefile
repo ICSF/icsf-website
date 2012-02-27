@@ -3,7 +3,7 @@ SYNC=rsync
 SYNCFLAGS=-rlt --perms --chmod=a=rX,u+w,Da+x --delete-after --exclude-from=etc/exclude --progress
 
 .DEFAULT: build
-.PHONY: all deploy build clean remote-clean
+.PHONY: all deploy build clean
 
 # ======= PHONY TARGETS =======
 
@@ -16,10 +16,6 @@ all:
 deploy:
 	@mkdir -p -v build/
 	$(SYNC) $(SYNCFLAGS) build/. "${DOCROOT}"
-
-remote-clean:
-	rm ${DOCROOT}/ -r
-	mkdir ${DOCROOT}
 
 clean:
 	rm build -rf
