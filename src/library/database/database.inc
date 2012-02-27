@@ -60,16 +60,18 @@
 		public $title = '';
 		public $author = '';
 		public $series = '';
+		public $seriesNum = '';
 		public $type = 0;
 		public $acquireDate = '';
 		
 		function fromXML($xml)
 		{
 			$ret = new Item();
-			$ret->id   = (int)$xml->{@attributes}->key;
+			$ret->id   = (int)$xml->{@attributes}['key'];
 			$ret->title  = (string)$xml->Title;
 			$ret->author = (string)$xml->Author;
 			$ret->series = (string)$xml->Series;
+			$ret->seriesNum = (string)$xml->SeriesNum;
 			$ret->type = (int)$xml->TypeKey;
 			$ret->acquireDate = strtotime((string)$xml->AcquireDate);
 			return $ret;

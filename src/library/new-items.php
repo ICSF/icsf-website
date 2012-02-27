@@ -17,7 +17,7 @@
 		</nav>
 <?php
 
-	require('database/database.php');
+	require('database/database.inc');
 
 	$conditions = new SearchConditions();
 
@@ -25,6 +25,7 @@
 	$conditions->limit = 50;
 	$conditions->offset = (isset($_GET['page']) ? ((int)$_GET['page'] - 1) * 50 + 1 : 1);
 
+	$types = Database::getItemTypes();
 	$count = Database::search($conditions, $items);
 
 	//printPageLinks($count, $lim, $int);
@@ -42,22 +43,34 @@
 			);
 
 			if ($month != '')
-				echo '</ul>' . PHP_EOL;
+				echo tabs(2) . '</ul>' . PHP_EOL;
 
-			echo '<h2>' . $header . '</h2>' . PHP_EOL . '<ul>';
+			echo PHP_EOL . tabs(2) . '<h2>' . $header . '</h2>' . PHP_EOL . tabs(2) . '<ul>' . PHP_EOL;
 
 	        $month = date('Ym', $item->acquireDate);
 	    }
 
-		echo '<li>' . $item->author . ' - "<em>' . $item->title .
-			'</em></li>';
-		// TODO: Series info
-		// TODO: ItemType info
+		echo tabs(3) . '<li>' . $item->author . ' &nbsp;&mdash; &nbsp;<em>&ldquo;' . $item->title .
+			'&rdquo;</em>';
+
+		if (!empty($item->series))
+			echo ' &nbsp;&mdash; &nbsp;' . $item->series . ': ' . $item->seriesNum;
+
+		if ($item->type != 1)
+			echo ' &nbsp;(' . $types[$item->type] . ')';
+
+		echo '</li>' . PHP_EOL;
 	}
-	echo '</ul>';
+	echo tabs(2) . '</ul>'. PHP_EOL;
+
+	function tabs($count)
+	{
+		return str_repeat("\t", $count);
+	}
 
 	//printPageLinks($count, $lim, $int, $params);
 
 ?>
+		<!--include "stubs/footer.html"-->
 	</body>
 </html>
