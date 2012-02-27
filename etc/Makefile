@@ -42,6 +42,10 @@ build/%.html : src/%.html Makefile stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
 
+build/%htaccess : src/%htaccess Makefile
+	@mkdir -p -v $(@D)
+	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+
 build/%.php : src/%.php Makefile stubs
 	@mkdir -p -v $(@D)
 	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
