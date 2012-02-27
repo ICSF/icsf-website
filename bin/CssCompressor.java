@@ -442,9 +442,7 @@ public class CssCompressor
 		css = css.trim();
 
 		// Write the output...
-		out.write(css);
-		out.flush();
-		out.close();
+		out.write(css + '\n');
 	}
 }
 

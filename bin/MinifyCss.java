@@ -20,7 +20,12 @@ public class MinifyCss
 		FileReader f = new FileReader(args[0]);
 		CssCompressor c = new CssCompressor(f);
 		f.close();
-		c.compress(new FileWriter(args[0]), 1000);
+
+		FileWriter out = new FileWriter(args[0]);
+
+		c.compress(out, 1024);
+		out.flush();
+		out.close();
 	}
 
 	private MinifyCss()
