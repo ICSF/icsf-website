@@ -12,13 +12,15 @@
 		</h1>
 
 		<nav>
+			<a href="<!--SRVROOT-->">ICSF</a>
+			<a href="<!--SRVROOT-->/picocon">Picocon</a>
+			<hr />
 			<a href="#goh">Guests</a>
 			<a href="#prices">Prices</a>
 			<a href="#directions">Directions</a>
 			<a href="#contact">Contact Us</a>
 			<hr />
-			<a href="<!--SRVROOT-->">ICSF Website</a>
-			<a href="<!--SRVROOT-->/history/picocon">Picocon's History</a>
+			<a href="<!--SRVROOT-->/history/picocon">History</a>
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
