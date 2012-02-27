@@ -66,15 +66,20 @@
 		</p>
 
 		<h2>Membership and Loans</h2>
+
 		<p>
-			If you want to join, just come along to the library at lunchtime,
-			or one of our events.
-		</p>
-		<p>
-			<b>Membership costs &pound;8</b> per academic year, and entitles
+			<b>Membership costs &pound;8</b> per academic year and can be
+			<a href="https://www.imperialcollegeunion.org/science-fiction-235/category.html">purchased</a>
+			from the Imperial College Union website, and entitles
 			you to borrow books, videos, DVDs, graphic novels and audio books.
 			You may borrow up to three items at a time, one of which may be
 			a non-book.
+		<p>
+			If you want to see some of the things we do before joining, just
+			come along to the library at lunchtime, or drop into one of our
+			bar nights.
+		</p>
+		<p>
 			Books can be borrowed for up to 30 days, non-books for 2 college
 			days (due to higher demand).
 			Loans over the Christmas and Easter holidays, are allowed, with
