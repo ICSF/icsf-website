@@ -1,6 +1,9 @@
 TARGETS=$(shell bin/gettargets)
 SYNC=rsync
-SYNCFLAGS=-rlt --perms --chmod=a=rX,u+w,Da+x --delete-after --exclude-from=etc/exclude --progress
+SYNCDEL=--delete-after
+SYNCPERMS=--perms --chmod=a=rX,u+w,Da+x
+SYNCEXCLUDE=etc/exclude
+SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress
 
 .DEFAULT: build
 .PHONY: all deploy build clean tidy
@@ -23,7 +26,7 @@ tidy:
 
 deploy: tidy
 	@mkdir -p -v build/
-	$(SYNC) $(SYNCFLAGS) build/. "${DOCROOT}"
+	$(SYNC) $(SYNCFLAGS) build/. "$(DOCROOT)"
 
 clean:
 	rm build -rf
