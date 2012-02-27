@@ -1,4 +1,2 @@
-<Directory database>
-	Deny from all
-</Directory>
+Deny from all
 
