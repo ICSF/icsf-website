@@ -21,6 +21,26 @@
 			return $types;
 		}
 
+		function getItemCounts()
+		{
+			$xml = new SimpleXMLElement(file_get_contents(LIB_XML . 'get_item_counts_stub.php'));
+
+			$type_names = Database::getItemTypes();
+			$types = array();
+
+			foreach($xml->TypeCount as $count)
+			{
+				$key = (int)$count->key;
+				$types[$key] = (int)$count->count;
+				if (isset($type_names[$key]))
+				{
+					$types[$type_names[$key]] = (int)$count->count;
+				}
+			}
+
+			return $types;
+		}
+
 		/**
 		 * Perform a search of the database 
 		 *
