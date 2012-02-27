@@ -16,7 +16,7 @@ all:
 tidy:
 	./bin/gettargets | sort -u > targets
 	find build/ -type f | sort -u > current
-	-comm -2 -3 current targets | xargs rm
+	comm -2 -3 current targets | xargs --no-run-if-empty rm -v
 	rm targets current
 
 deploy: tidy
