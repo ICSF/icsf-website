@@ -116,6 +116,13 @@ nav
 	border-right-style: solid;
 }
 
+nav>h3
+{
+	text-align: right;
+	margin: 0.5em 0 0.2em 0;
+	padding: 1px 1em;
+}
+
 nav>a
 {
 	display: block;
