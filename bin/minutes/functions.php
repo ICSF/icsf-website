@@ -55,9 +55,8 @@
 		preg_match('/(=*)(.+)/', $line['content'], $contents);
 		$h_level = 3 + strlen($contents[1]);
 
-		echo PHP_EOL . PHP_EOL . tabs(2) . '<h' . $h_level . '>' . 
-			trim($contents[2]) . 
-			'</h' . $h_level . '>';
+		echo PHP_EOL . PHP_EOL . tabs(2) . '<h' . $h_level .
+			' class="count">' . trim($contents[2]) . '</h' . $h_level . '>';
 	}
 
 	function handle_bullet($line)
