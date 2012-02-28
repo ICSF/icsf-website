@@ -76,11 +76,11 @@ printf '\nPlease specify PHP mode\n'
 printf 'This should be 0 if php is used as a CGI script, or 1\n'
 printf 'if the web-server is using native PHP interpretation\nn'
 
-printf '[MOD_PHP]: '
+printf '[MODPHP]: '
 read MOD_PHP
 
 
-printf 'DOCROOT=%s\nSRVROOT=%s\nMOD_PHP=%s\n\n' "$DOCROOT" "$SRVROOT" "$MOD_PHP" > $TARGET
+printf 'DOCROOT=%s\nSRVROOT=%s\nMODPHP=%s\n\n' "$DOCROOT" "$SRVROOT" "$MOD_PHP" > $TARGET
 cat $SKEL >> $TARGET
 
 printf '\n\nDone.\n'
