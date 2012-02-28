@@ -76,7 +76,7 @@
 	require('head.html');
 	require('functions.php');
 
-	if (isset($headers['present'])) people('Presnt', $headers['present']);
+	if (isset($headers['present'])) people('Present', $headers['present']);
 	if (isset($headers['apologies'])) people('Apologies', $headers['apologies']);
 	if (isset($headers['absent'])) people('Absent', $headers['absent']);
 

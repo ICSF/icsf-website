@@ -7,7 +7,7 @@
 		<!--include "stubs/headers.html"-->
 		<title>Minutes: <?php 
 			echo trim($headers['committee']) . ' - ' . 
-			date('j/m/Y'); ?> - ICSF</title>
+			date('j/m/Y', $headers['opened']); ?> - ICSF</title>
 		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/minutes.css" />
 	</head>
 	<body>
