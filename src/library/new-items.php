@@ -17,18 +17,53 @@
 		</nav>
 <?php
 
+	function pagelinks($page, $perpage, $total, $basename)
+	{
+		$total = ceil($total / $perpage);
+
+		echo tabs(2) . '<div class="hang-right">Page: ' . PHP_EOL;
+
+		if ($page > 1)
+			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=1">1</a>' . PHP_EOL;
+
+		if ($page > 3)
+		{
+			echo tabs(3) . '&nbsp; ... &nbsp;' . PHP_EOL;
+			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=' . ($page-1) . '">' . ($page-1) . '</a>' . PHP_EOL;
+		}
+		else if ($page == 3)
+			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=2">2</a>' . PHP_EOL;
+
+		echo tabs(3) . '&nbsp;' . $page . PHP_EOL;
+
+		if ($total > $page)
+		{
+			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=' . ($page+1) . '">' . ($page+1) . '</a>' . PHP_EOL;
+		
+			if ($total != $page + 1)
+			{
+				echo tabs(3) . '&nbsp; ... &nbsp;' . PHP_EOL;
+				echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=' . ($total) . '">' . ($total) . '</a>' . PHP_EOL;
+			}
+		}
+
+		echo tabs(2) . '</div>' . PHP_EOL;
+	}
+
 	require('database/database.inc');
 
 	$conditions = new SearchConditions();
 
+	$page = (isset($_GET['page']) ? (int)$_GET['page'] : 1);
+
 	$conditions->order = 'YEAR(AcquireDate) DESC, MONTH(AcquireDate) DESC, ' . $conditions->order;
 	$conditions->limit = 50;
-	$conditions->offset = (isset($_GET['page']) ? ((int)$_GET['page'] - 1) * 50 + 1 : 1);
+	$conditions->offset = 50 * $page - 49;
 
 	$types = Database::getItemTypes();
 	$count = Database::search($conditions, $items);
 
-	//printPageLinks($count, $lim, $int);
+	pagelinks($page, 50, $count, '<!--SRVROOT-->/library/new-items.php');
 
 	$month = '';
 	$cutoff = mktime(0,0,0,1,1,2005);
@@ -39,7 +74,7 @@
 		{
 			$header = ($item->acquireDate < $cutoff ?
 	            'Back in the mists of time... (pre-Apr 05)' :
-				date('F Y')
+				date('F Y', $item->acquireDate)
 			);
 
 			if ($month != '')
@@ -68,7 +103,7 @@
 		return str_repeat("\t", $count);
 	}
 
-	//printPageLinks($count, $lim, $int, $params);
+	pagelinks($page, 50, $count, '<!--SRVROOT-->/library/new-items.php');
 
 ?>
 		<!--include "stubs/footer.html"-->
