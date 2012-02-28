@@ -73,7 +73,7 @@
 		{
 			if ($lvl < count($levels))
 			{	
-				while (count($levels) > $lvl)
+				while (count($levels) > $lvl + 1)
 					close_level();
 			}
 			else
