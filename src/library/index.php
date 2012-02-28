@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
+		<title>ICSF Library - ICSF</title>
 	</head>
 	<body>
 		<!--include "stubs/h1-start.html"-->
