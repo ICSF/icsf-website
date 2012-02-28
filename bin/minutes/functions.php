@@ -49,8 +49,15 @@
 	function handle_header($line)
 	{
 		global $levels;
-		while (count($levels) > 0)
-			close_level();
+		global $need_reopen;
+
+		if (!$need_reopen)
+			while (count($levels) > 0)
+				close_level();
+
+		$levels = array();
+
+		$need_reopen = false;
 
 		preg_match('/(=*)(.+)/', $line['content'], $contents);
 		$h_level = 3 + strlen($contents[1]);
@@ -104,8 +111,9 @@
 		global $levels;
 		global $need_reopen;
 
-		for ($i = 0; $i < count($levels); ++$i)
-			close_level(false,$i);
+		if (!$need_reopen)
+			for ($i = 0; $i < count($levels); ++$i)
+				close_level(false,$i);
 
 		echo PHP_EOL . tabs(2) . '<p class="exit">' . trim($line['content']) . '</p>';
 		$need_reopen = true;
@@ -116,8 +124,9 @@
 		global $levels;
 		global $need_reopen;
 
-		for ($i = 0; $i < count($levels); ++$i)
-			close_level(false,$i);
+		if (!$need_reopen)
+			for ($i = 0; $i < count($levels); ++$i)
+				close_level(false,$i);
 
 		echo PHP_EOL . tabs(2) . '<p class="entrance">' . trim($line['content']) . '</p>';
 		$need_reopen = true;
