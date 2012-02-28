@@ -18,24 +18,28 @@
 
 		<p>
 			ICSF is the centre for science fiction, fantasy and horror fans at
-			Imperial College. We run a library of over 7000 books and 1000 DVDs
+			Imperial College. We run a library of over 9000 books and 1800 DVDs
 			and videos from all corners of the genre. Whether your interest is
 			Pratchett's 'Discworld', 'The Sandman' graphic novels or 'Stargate'
 			this is an ideal way to indulge it! And a great place to pick up new
 			and exciting obsessions too!
 		</p>
 		<p>
-			The social side of the society is
-			equally active - the library is open every lunchtime on weekdays and
-			we have regular video showings (often weird or esoteric stuff you
-			should have seen but won't have). Barnights are on Thursdays, these
-			are often frequented by past members of the society. We also run
-			events like mass outings to the cinema and end of term dinners.
+			The social side of the society is equally active - the
+			<a href="<!--SRVROOT-->/library/">library</a> is open every
+			lunchtime on weekdays and we have regular video showings
+			(often weird or esoteric stuff you should have seen but won't
+			have).
+			Barnights are on Thursdays, these are often frequented by past
+			members of the society.
+			We also run events like mass outings to the cinema and end
+			of term dinners; you can see what is coming up on the
+			<a href="<!--SRVROOT-->/events/">events page</a>.
 		</p>
 		<p>
 			The
-			largest event of the year is Picocon, our one-day convention held in
-			February, which usually attracts around 200 attendees.
+			largest event of the year is <a href="<!--SRVROOT-->/picocon/">Picocon</a>,
+			our one-day convention held in February, which usually attracts around 200 attendees.
 		</p>
 		<p>
 			In all, being
@@ -44,7 +48,7 @@
 			Interested?  We can be found in our purpose built library in the
 			West Wing Basement of Beit Quad (the Students Union building),
 			opposite Stoic TV. For more detailed instructions, see the
-			instructions here.
+			instructions <a href="<!--SRVROOT-->/library/getting-to.php">here</a>.
 		</p>
 
 		<!--include "stubs/footer.html"-->

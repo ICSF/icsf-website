@@ -34,7 +34,7 @@
 			You can <a href="search.php">search the database</a> to see if
 			we have what you want.
 
-			If we don't, <a href="request_list.php">you can request it</a>
+			If we don't, <a href="request-list.php">you can request it</a>
 			and we'll see what we can do.
 
 			If you have any queries please contact email the

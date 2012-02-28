@@ -12,15 +12,15 @@
 		</h1>
 
 		<nav>
-			<a href="<!--SRVROOT-->">ICSF</a>
-			<a href="<!--SRVROOT-->/picocon">Picocon</a>
+			<a href="<!--SRVROOT-->/">ICSF</a>
+			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
 			<hr />
 			<a href="#goh">Guests</a>
 			<a href="#prices">Prices</a>
 			<a href="#directions">Directions</a>
 			<a href="#contact">Contact Us</a>
 			<hr />
-			<a href="<!--SRVROOT-->/history/picocon">History</a>
+			<a href="<!--SRVROOT-->/history/">History</a>
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
@@ -151,7 +151,7 @@
 		<footer>
 			<p>
 				The first Picocon was in 1984.
-				If you're curious, we have a record of <a href="<!--$SRVROOT-->/history/">Picocons of years gone by</a>.
+				If you're curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society</p>
 		</footer>
