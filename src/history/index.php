@@ -2,64 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
 		<!--include "stubs/headers.html"-->
+		<link rel="stylesheet" type="text/css" href="<!--SRVROOT-->/resources/history.css" />
 		<title>History - ICSF</title>
-		<style type="text/css">
-			table.timeline
-			{
-				border-collapse: collapse;
-			}
-
-			div.container
-			{
-				min-width: 20em;
-				min-height: 200px;
-				width: 40em;
-				height: 500px;
-				resize: both;
-
-				overflow-y: auto;
-				margin: 1em auto;
-
-				background: white;
-				background-clip: padding-box;
-				border-width: 18px 32px 17px 58px;
-				border-image: url('<!--SRVROOT-->/resources/book.png') 36 64 17 115 stretch;
-				-moz-border-image: url('<!--SRVROOT-->/resources/book.png') 36 64 17 115 stretch;
-				-o-border-image: url('<!--SRVROOT-->/resources/book.png') 36 64 17 115 stretch;
-			}
-
-			.timeline td
-			{
-				font-size: 0.8em;
-				height: 50px;
-				padding: 0 1em;
-				border-right: 3px solid rgba(0,64,255,0.5);
-			}
-
-			.timeline tr:nth-child(even) td
-			{
-				border-right: 3px solid rgba(0,255,64,0.5);
-			}
-
-			td.container
-			{
-				vertical-align: top;
-				position: relative;
-				line-height: 0;
-				overflow-y: visible;
-				min-width: 400px;
-				padding: 0 1em;
-				height: auto;
-				border: none;
-			}
-
-			td.container>div
-			{
-				position: relative;
-				vertical-align: middle;
-				width: auto;
-			}
-		</style>
 	</head>
 	<body>
 		<!--include "stubs/h1-start.html"-->
@@ -109,7 +53,7 @@
 			email at <a href="mailto:secretary@icsf.co.uk">secretary@icsf.co.uk</a>.
 		</p>
 
-		<div class="container"><table class="timeline">
+		<div id="book"><table class="timeline">
 			<tr>
 				<td>1976</td>
 				<td rowspan="36" class="container">
