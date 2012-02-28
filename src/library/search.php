@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>New Library Items - ICSF</title>
+		<title>Library Database Search - ICSF</title>
 	</head>
 	<body>
 

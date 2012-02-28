@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
+		<title>ICSF Library - ICSF</title>
 	</head>
 	<body>
 		<!--include "stubs/h1-start.html"-->
@@ -34,7 +34,7 @@
 			You can <a href="search.php">search the database</a> to see if
 			we have what you want.
 
-			If we don't, <a href="request_list.php">you can request it</a>
+			If we don't, <a href="request-list.php">you can request it</a>
 			and we'll see what we can do.
 
 			If you have any queries please contact email the
