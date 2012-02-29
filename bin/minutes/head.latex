@@ -1,0 +1,86 @@
+\documentclass[a4paper,10pt]{article}
+
+% Input encoding and page size
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=1.8cm,left=1.4cm,right=1.4cm,bottom=2cm]{geometry}
+
+% L10n and colo{u}r names
+\usepackage[usenames]{color}
+\usepackage[british]{babel} % TODO: Your Language Here
+
+\usepackage[right,modulo]{lineno}
+\newenvironment{minitem}{\begin{itemize}
+	\setlength{\itemsep}{1pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+% Internal links, and proper PDF headers
+\usepackage[hyperindex,breaklinks]{hyperref}
+
+% Custom Colors
+\definecolor{linkblue}{RGB}{0,0,64} % Custom colour for links in hyperref
+
+% Paragraph layout
+\setlength{\parskip}{0mm}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\renewcommand{\baselinestretch}{1}
+
+\usepackage{multicol}
+\usepackage[compact]{titlesec}
+
+% Page Layout
+% I'm not a fan of complex headers & footers...
+\pagestyle{plain}
+
+% Hyperlinks Setup
+\hypersetup{
+  unicode=true,           % non-Latin characters in bookmarks
+  colorlinks=true,        % false: boxed links; true: colored links
+  linkcolor=linkblue,     % color of internal links
+  citecolor=black,        % color of links to bibliography
+  filecolor=linkblue,     % color of file links
+  urlcolor=blue,          % color of external links
+}
+
+% PDF Tag setup
+\hypersetup{
+  pdftitle={},
+  pdfauthor={ICSF Secretary},
+  pdfsubject={},
+  pdfcreator={},
+  pdfproducer={Minutes-Gen(LaTeX)},
+  pdfkeywords={},
+}
+
+\newcommand{\entrance}[1]{
+
+	Entrance: #1
+
+}
+\newcommand{\exit}[1]{
+
+	Exit: #1
+
+}
+
+\begin{document}
+	\begin{center}
+		\vspace{4pt}
+		{\Large Minutes of a meeting of the}
+
+		\vspace{4pt}
+		{\huge <?php echo latex_string($headers['committee']); ?>}
+
+		\vspace{4pt}
+		{\Large <?php echo date('jS F Y', $headers['opened']); ?>}
+		\vspace{8pt}
+	\end{center}
+
+	\linenumbers
+
+	{\large Meeting Opened at <?php echo date('G:i', $headers['opened']); ?>}
+
+

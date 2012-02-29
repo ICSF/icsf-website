@@ -1,0 +1,112 @@
+#!/usr/bin/php -f
+<?php
+	
+	DEFINE('HEADER_PATTERN', '/^([a-z]+):(.+)$/');
+	DEFINE('BODY_PATTERN', '/^(?<ws>\s*)(?<inst>.)(?<content>.+)$/');
+
+	function err($msg, $sup=null)
+	{
+		global $lineno;
+		global $argv;
+
+		fputs(STDERR, $msg . ': ' . $argv[1] . ' line ' . $lineno);
+		if ($sup !== null)
+		{
+			fputs(STDERR, ' ' . $sup);
+		}
+		fputs(STDERR, PHP_EOL);
+	}
+
+	if ($argc != 2)
+	{
+		fputs(STDERR, 'Usage: ' . basename($argv[0]) . ' <source>' . PHP_EOL);
+		exit(1);
+	}
+
+	$fin = fopen($argv[1],'r');
+
+	if (! $fin)
+	{
+		fputs(STDERR, 'Unable to open file ' . $argv[1] . PHP_EOL);
+		exit(2);
+	}
+
+	$headers = array();
+	$lineno = 0;
+
+	while (true)
+	{
+		$line = fgets($fin); ++$lineno;
+		if (trim($line) === '') break;
+
+		// Header format is <headername>: data
+		// headername will only consist of a-z, lowercase
+		if (preg_match(HEADER_PATTERN, $line, $header))
+		{
+			$headers[$header[1]] = $header[2];
+		}
+		else
+		{
+			err('Bad Header', $line); 
+		}
+	}
+
+	if (!isset($headers['committee']))
+	{
+		err('No \'committee\' header set');
+		exit(3);
+	}
+
+	if (!isset($headers['opened']))
+	{
+		err('No \'committee\' header set');
+		exit(3);
+	}
+
+	if (!isset($headers['closed']))
+	{
+		err('No \'committee\' header set');
+		exit(3);
+	}
+	
+	$headers['opened'] = strtotime($headers['opened']);
+	$headers['closed'] = strtotime($headers['closed']);
+	$comment = isset($headers['comment']) ? $headers['comment'] : '';
+
+	require('functions.latex.php');
+	require('head.latex');
+
+	if (isset($headers['present'])) people('Present', $headers['present']);
+	if (isset($headers['apologies'])) people('Apologies', $headers['apologies']);
+	if (isset($headers['absent'])) people('Absent', $headers['absent']);
+
+	while (!feof($fin))
+	{
+		$line = fgets($fin); ++$lineno;
+
+		if (trim($line) !== '')
+		{
+			if (!preg_match(BODY_PATTERN, $line, $line_data))
+			{
+				err('Bad Line Syntax', $line_data);
+			}
+			else
+			{
+				switch($line_data['inst'])
+				{
+					case '=': handle_header($line_data); break;
+					case '-': handle_bullet($line_data); break;
+					case '+': handle_cont($line_data); break;
+					case '<': handle_exit($line_data); break;
+					case '>': handle_entrance($line_data); break;
+					default: err('Unknown command ' . $line_data['inst'], $line);
+				}
+			}
+		}
+	}
+
+	while (count($levels) > 0)
+		close_level();
+
+	require('foot.latex');
+

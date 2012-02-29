@@ -1,0 +1,5 @@
+
+	{\large Meeting Closed at <?php echo date('G:i', $headers['closed']); ?>}
+
+\end{document}
+
