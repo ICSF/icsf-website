@@ -82,6 +82,7 @@
 			{	
 				while (count($levels) > $lvl + 1)
 					close_level();
+				echo '</li>';
 			}
 			else
 			{
