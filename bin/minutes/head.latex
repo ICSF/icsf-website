@@ -28,6 +28,10 @@
 \setlength{\parsep}{0pt}
 \renewcommand{\baselinestretch}{1}
 
+\renewcommand{\labelitemii}{\labelitemi}
+\renewcommand{\labelitemiii}{\labelitemi}
+\renewcommand{\labelitemiv}{\labelitemi}
+
 \usepackage{multicol}
 \usepackage[compact]{titlesec}
 

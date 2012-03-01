@@ -136,6 +136,10 @@
 
 	function latex_string($text)
 	{
-		return str_replace(array('\\', '%', '&'), array('\\\\', '\%', '\&'), html_entity_decode(trim($text)));
+		$escaped_text = str_replace(array('\\', '%', '&', '~'), array('\\\\', '\%', '\&', '$\sim$'), html_entity_decode(trim($text)));
+		$escaped_text = preg_replace('/\'(.+)\'/', '`$1\'', $escaped_text);
+		$escaped_text = preg_replace('/\"(.+)\"/', '``$1\'\'', $escaped_text);
+		$escaped_text = preg_replace('/<em>(.+)<\/em>/', '\\textit{$1}', $escaped_text);
+		return $escaped_text;
 	}
 
