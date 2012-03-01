@@ -17,9 +17,9 @@ table.timeline
 	background: white;
 	background-clip: padding-box;
 	border-width: 18px 32px 17px 58px;
-	border-image: url('<!--SRVROOT-->/resources/book.png') 36 64 17 115 stretch;
-	-moz-border-image: url('<!--SRVROOT-->/resources/book.png') 36 64 17 115 stretch;
-	-o-border-image: url('<!--SRVROOT-->/resources/book.png') 36 64 17 115 stretch;
+	border-image: url('<!--SRVROOT-->/resources/book-red.png') 36 64 17 115 stretch;
+	-moz-border-image: url('<!--SRVROOT-->/resources/book-red.png') 36 64 17 115 stretch;
+	-o-border-image: url('<!--SRVROOT-->/resources/book-red.png') 36 64 17 115 stretch;
 
 	font-size: 10pt;
 }
