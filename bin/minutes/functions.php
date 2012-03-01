@@ -20,6 +20,13 @@
 		echo '</div>' . PHP_EOL;
 	}
 
+	function process($content)
+	{
+		$search  = array('/^ACT:(.+)$/', '/^MOT<(.+)>(.+)$/');
+		$replace = array('<span class="action">$1</span>', '<span class="motion $1">$2</span>');
+		return preg_replace($search, $replace, $content);
+	}
+
 	function close_level($forget=true, $unindent =0)
 	{
 		global $levels;
@@ -96,8 +103,9 @@
 			}
 		}
 
-		echo PHP_EOL . tabs(3 + $lvl) . '<li>' . trim($line['content']);
-		$levels[$lvl] = trim($line['content']);
+		$text = process(trim($line['content']));
+		echo PHP_EOL . tabs(3 + $lvl) . '<li>' . $text;
+		$levels[$lvl] = $text;
 	}
 
 	function handle_cont($line)
