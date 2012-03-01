@@ -54,3 +54,23 @@ td.container>div
 	width: auto;
 }
 
+.history-page-links
+{
+	margin: 0.5em 1em;
+	text-align: center;
+}
+
+.history-prev
+{
+	float: left;
+}
+
+.history-contents
+{
+}
+
+.history-next
+{
+	float: right;
+}
+
