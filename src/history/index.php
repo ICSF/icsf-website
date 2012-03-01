@@ -60,20 +60,22 @@
 <?php
 					add_event('Sep 1976', 'Society Founded');
 					add_event('Sep 1980', 'Chair\'s Pot List Begins');
+					add_event('Oct 1996', 'Wyrmtongue Founded', '<!--SRVROOT-->/publications/#wyrmtongue');
 					add_event('Oct 2004', 'ICSF Bookclub \'Book of the Month\' started');
 					add_event('June 2006', 'First Hay-on-Wye bookcrawl');
 
 					add_event('1981', 'Books get first "home" - the Green Committee Room');
 					add_event('Sept 1987', 'The First Library: Beit Basement');
 					add_event('July 1995', 'Library is first computerised');
-					add_event('Sept 1996', 'TV + VHS Player acquired');
+					add_event('June 1996', 'TV + VHS Player acquired');
 					add_event('June 1998', 'Library moved deeper into the basement');
 					add_event('Oct 1999', 'Library moved to a portacabin behind the Central Library');
 					add_event('July 2001', 'Library moved into Beit Media Centre');
 					add_event('June 2005', 'Library acquires first DVD');
 					add_event('July 2007', 'Old shelving replaced with uniform, wooden shelves');
+					add_event('Oct 2010', 'Library acquires first BluRay Disc');
 
-					add_event('Feb 1984', 'First Picocon: Pico-Con', '<!--SRVROOT-->/history/picocon.html');
+					add_event('Feb 1984', 'Picocon', '<!--SRVROOT-->/history/picocon.html');
 					add_event('Feb 1985', 'Picocon Pi', '<!--SRVROOT-->/history/pico_pi.html');;
 					add_event('Feb 1986', 'Picocon 4', '<!--SRVROOT-->/history/pico_4.html');;
 					add_event('Feb 1987', 'Picocon 5', '<!--SRVROOT-->/history/pico_5.html');;
