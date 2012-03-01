@@ -73,8 +73,8 @@
 	$headers['closed'] = strtotime($headers['closed']);
 	$comment = isset($headers['comment']) ? $headers['comment'] : '';
 
-	require('head.html');
-	require('functions.php');
+	require('functions.latex.php');
+	require('head.latex');
 
 	if (isset($headers['present'])) people('Present', $headers['present']);
 	if (isset($headers['apologies'])) people('Apologies', $headers['apologies']);
@@ -108,5 +108,5 @@
 	while (count($levels) > 0)
 		close_level();
 
-	require('foot.html');
+	require('foot.latex');
 

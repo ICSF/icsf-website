@@ -124,3 +124,22 @@ div.peoples
 {
 	display: block;
 }
+
+h3.count {
+	counter-increment: sec1;
+	counter-reset: sec2;
+}
+h3.count::before
+{
+	content: counter(sec1) " \2014 \a0";
+}
+
+h4.count {
+	counter-increment: sec2;
+}
+
+h4.count::before
+{
+	content: counter(sec1) "." counter(sec2) " \2014 \a0";
+}
+

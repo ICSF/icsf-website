@@ -69,6 +69,12 @@ p
 	text-align: justify;
 }
 
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Alice', serif;
+	font-weight: normal;
+}
+
 h1
 {
 	font-family: 'Lora', serif;
@@ -76,7 +82,6 @@ h1
 	text-align: center;
 
 	line-height: 1.2em;
-	font-weight: normal;
 
 	padding: 0.25em 0;
 	border-bottom: 1px solid #aaa;
@@ -91,7 +96,6 @@ h1
 
 h2, h3
 {
-	font-family: 'Alice', serif;
 	font-weight: normal;
 	margin: 0.8em 0 0.5em 0;
 }
