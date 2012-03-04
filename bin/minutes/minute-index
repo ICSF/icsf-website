@@ -39,7 +39,7 @@
 
 		return tabs(3) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) .
 			'">' . $committee . ', ' . date('M d', $date) . '</a>' .
-			(strlen($comment) > 0 ? ' - ' . $comment : '' ) . '</li>' . PHP_EOL;
+			(strlen($comment) > 0 ? ' &mdash; ' . $comment : '' ) . '</li>' . PHP_EOL;
 	}
 
 array_shift($argv);
