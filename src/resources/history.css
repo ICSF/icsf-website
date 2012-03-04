@@ -24,6 +24,16 @@ table.timeline
 	font-size: 10pt;
 }
 
+h2
+{
+	font-size: 1.8em;
+}
+
+h3
+{
+	font-size: 1.4em;
+}
+
 #blue-book
 {
 	border-image: url('<!--SRVROOT-->/resources/book-blue.png') 36 64 17 115 stretch;
