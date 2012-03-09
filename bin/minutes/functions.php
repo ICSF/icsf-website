@@ -22,7 +22,7 @@
 
 	function process($content)
 	{
-		$search  = array('/^ACT:(.+)$/', '/^MOT<(.+)>(.+)$/');
+		$search  = array('/^ACT:(.+)$/', '/^MOT<(.+)>:(.+)$/');
 		$replace = array('<span class="action">$1</span>', '<span class="motion $1">$2</span>');
 		return preg_replace($search, $replace, $content);
 	}
