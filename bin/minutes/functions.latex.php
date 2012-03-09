@@ -134,12 +134,19 @@
 		$need_reopen = true;
 	}
 
+	function process($content)
+	{
+		$search  = array('/^ACT:(.+)$/', '/^MOT<(.+)>: (.+)$/');
+		$replace = array('ACTION: $1', 'MOTION ($1): $2');
+		return preg_replace($search, $replace, $content);
+	}
+
 	function latex_string($text)
 	{
 		$escaped_text = str_replace(array('\\', '%', '&', '~'), array('\\\\', '\%', '\&', '$\sim$'), html_entity_decode(trim($text)));
 		$escaped_text = preg_replace('/\'(.+)\'/', '`$1\'', $escaped_text);
 		$escaped_text = preg_replace('/\"(.+)\"/', '``$1\'\'', $escaped_text);
 		$escaped_text = preg_replace('/<em>(.+)<\/em>/', '\\textit{$1}', $escaped_text);
-		return $escaped_text;
+		return process($escaped_text);
 	}
 
