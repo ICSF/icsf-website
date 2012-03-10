@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# nop - Copy without other operation
-# this wrapper is used because in case make tries to pass other arguments
-#
-
-cp "$1" "$2"
-
