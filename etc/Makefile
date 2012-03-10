@@ -5,6 +5,8 @@ SYNCPERMS=--perms --chmod=a=rX,u+w,Da+x
 SYNCEXCLUDE=etc/exclude
 SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress
 
+PATH:=./bin:./bin/minutes:$(PATH)
+
 .DEFAULT: build
 .PHONY: all deploy build clean tidy
 
@@ -18,7 +20,7 @@ all:
 
 tidy:
 	@mkdir -p -v build/
-	./bin/gettargets | sort -u > targets
+	gettargets | sort -u > targets
 	find build/ -type f | sort -u > current
 	comm -2 -3 current targets | xargs --no-run-if-empty rm -v
 	rm targets current
@@ -40,15 +42,15 @@ bin/MinifyCss.class : bin/MinifyCss.java bin/CssCompressor.java
 
 build/%.html : src/%.html Makefile stubs
 	@mkdir -p -v $(@D)
-	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	var-subst $< $@ SRVROOT=${SRVROOT}
 
 build/%htaccess : src/%htaccess Makefile
 	@mkdir -p -v $(@D)
-	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	var-subst $< $@ SRVROOT=${SRVROOT}
 
 build/%.php : src/%.php Makefile stubs
 	@mkdir -p -v $(@D)
-	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	var-subst $< $@ SRVROOT=${SRVROOT}
 	
 ifeq ($(MODPHP),0)
 	sed -i -e '1i #!/usr/bin/php' $@
@@ -59,19 +61,19 @@ endif
 
 build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)
-	./bin/var-subst $< $@ SRVROOT=${SRVROOT}
+	var-subst $< $@ SRVROOT=${SRVROOT}
 	java bin.MinifyCss $@
 
 src/%.html : src/%.min
-	./bin/minutes/minute-gen $< > $@
+	minute-gen $< > $@
 
 build/% : src/%
 	@mkdir -p -v $(@D)
-	./bin/nop $< $@
+	cp $< $@
 
 # ======= SPECIAL FILES =======
 
-src/committee/minutes/index.php : $(shell ./bin/gettargets-minutes)
-	@echo ./bin/minutes/minute-index > $@
-	@./bin/minutes/minute-index $^ > $@
+src/committee/minutes/index.php : $(shell gettargets-minutes)
+	@echo minute-index > $@
+	@minute-index $^ > $@
 
