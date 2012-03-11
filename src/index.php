@@ -13,8 +13,12 @@
 			<!--include "stubs/nav-main.html"-->
 		</nav>
 
-		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
-		style="width: 320px; height: 240px;" alt="ICSF Library Webam" />
+		<div class="hang-right" style="width: 320px;">
+			<img src="<!--SRVROOT-->/webcam.jpeg" alt="ICSF Library Webam"
+				style="width: 320px; height: 240px;" />
+			<a style="display: block; text-align: center;"
+				href="<!--SRVROOT-->/webcam.php">Webcam Page</a>
+		</div>
 
 		<p>
 			ICSF is the centre for science fiction, fantasy and horror fans at
