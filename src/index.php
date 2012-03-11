@@ -51,8 +51,8 @@
 			interested in SF or fantasy.
 			Interested?  We can be found in our purpose built library in the
 			West Wing Basement of Beit Quad (the Students Union building),
-			opposite Stoic TV. For more detailed instructions, see the
-			instructions <a href="<!--SRVROOT-->/library/getting-to.php">here</a>.
+			opposite Stoic TV. Click for <a
+			href="<!--SRVROOT-->/library/getting-to.php">directions to the library</a>.
 		</p>
 
 		<!--include "stubs/footer.html"-->
