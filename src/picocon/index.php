@@ -146,7 +146,7 @@
 				</p>
 				<p>
 					<span class="color: #c00; font-size: 1.2em;">N.B.</span>
-					Most London tub closures are scheduled at weekends.
+					Most London tube closures are scheduled at weekends.
 					We will provide information on planned closures here once
 					it is available from Transport for London.
 				</p>
