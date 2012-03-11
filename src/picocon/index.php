@@ -103,24 +103,24 @@
 
 		<h2 id="directions">Directions to Picocon</h2>
 		<p>
-			Here's a general <a href="http://g.co/maps/7ahv7">map</a> of the
-			area, pointing at the entrance to Beit Quad (which houses the
+			Here's a general <a href="http://g.co/maps/7ahv7">map of the area</a>,
+			pointing at the entrance to Beit Quad (which houses the
 			Union) off Prince Consort Road.
 		</p>
 		<p>
 			The easiest way to get to Picocon is by tube; both Gloucester
 			Road Station and South Kensington Station are within easy reach;
-			for your convenience, these maps shoe the routes we suggest from
+			for your convenience, these maps show the routes we suggest from
 			both <a href="http://g.co/maps/ne7kr">Gloucester Road Station</a>
 			and from <a href="http://g.co/maps/akrjw">South Kensington Station</a>.
 		</p>
 
 		<p>
 			The buses C1, 9, 10, 49, 52, 70, 74, 345, 360, 414 and 452 all stop nearby.
-			Please look <a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/royalalberthall-12445.pdf">here</a>
-			for the bus stops around the Royal Albert Hall (which is <i>literally</i>
-			next door to the Union) or <a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/southkensington-2236.pdf">here</a>
-			for the bus stops around South Kensington Station.
+			Transport for London has maps for buses from around the
+			<a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/royalalberthall-12445.pdf">Royal Albert Hall</a>
+			(which is <i>literally</i> next door to the Union) and for around
+			<a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/southkensington-2236.pdf">South Kensington</a>.
 		</p>
 		<p>
 			<b>Important Advice:</b> If you get lost around South
