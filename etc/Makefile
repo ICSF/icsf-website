@@ -73,7 +73,7 @@ build/% : src/%
 
 # ======= SPECIAL FILES =======
 
-src/committee/minutes/index.php : $(shell gettargets-minutes)
+src/committee/minutes/index.php : $(shell ./bin/gettargets-minutes)
 	@echo minute-index > $@
 	@minute-index $^ > $@
 
