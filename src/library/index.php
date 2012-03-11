@@ -34,14 +34,14 @@
 			You can <a href="search.php">search the database</a> to see if
 			we have what you want.
 
-			If we don't, <a href="request-list.php">you can request it</a>
+			If we don't, you can <a href="request-list.php">request it</a>
 			and we'll see what we can do.
 
 			If you have any queries please contact email the
 			<a href="mailto:librarian@icsf.co.uk">librarian</a>.
 
 			If you happen to be looking for bookshops, see
-			<a href="bookshops.php">our guide</a>.
+			<a href="bookshops.php">our bookshop guide</a>.
 		</p>
 
 		<h2>Opening Hours</h2>
@@ -72,16 +72,18 @@
 		<h2>Membership and Loans</h2>
 
 		<p>
-			<b>Membership costs &pound;8</b> per academic year and can be
-			<a href="https://www.imperialcollegeunion.org/science-fiction-235/category.html">purchased</a>
+			Membership costs only &pound;8 per academic year; you can
+			<a href="https://www.imperialcollegeunion.org/science-fiction-235/category.html">purchase membership</a>
 			from the Imperial College Union website, and entitles
 			you to borrow books, videos, DVDs, graphic novels and audio books.
 			You may borrow up to three items at a time, one of which may be
 			a non-book.
+		</p>
 		<p>
 			If you want to see some of the things we do before joining, just
-			come along to the library at lunchtime, or drop into one of our
-			bar nights.
+			<a href="<!--SRVROOT-->/library/getting-to.php">drop-in to the library</a>
+			at lunchtime, or join us for one of our bar nights or other
+			<a href="<!--SRVROOT-->/events/">events</a>.
 		</p>
 		<p>
 			Books can be borrowed for up to 30 days, non-books for 2 college
