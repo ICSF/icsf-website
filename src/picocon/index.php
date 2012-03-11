@@ -145,7 +145,7 @@
 					<a href="http://g.co/maps/akrjw">South Kensington Station</a>.
 				</p>
 				<p>
-					<span class="color: #c00; font-size: 1.2em;">N.B.</span>
+					N.B.
 					Most London tube closures are scheduled at weekends.
 					We will provide information on planned closures here once
 					it is available from Transport for London.
