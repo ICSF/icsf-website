@@ -60,9 +60,13 @@
 		<h2>Library Webcam</h2>
 
 		<p>
-			The webcam, shown left, can be used to find out if the library is
+			The webcam, shown right, can be used to find out if the library is
 			currently open, how busy it is and - if you can tell from a single
 			frame - what people are watching.
+		</p>
+		<p>
+			You can also view the webcam at full size on the
+			<a href="<!--SRVROOT-->/webcam.php">Webcam page</a>
 		</p>
 
 		<h2>Membership and Loans</h2>
