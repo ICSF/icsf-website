@@ -6,21 +6,20 @@
 	</head>
 	<body>
 		<h1 style="text-align: center;">
-			<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
+			<a href="<!--SRVROOT-->/">
+				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
+			</a>
 			Picocon 30
 			<span class="clear"></span>
 		</h1>
 
 		<nav>
-			<a href="<!--SRVROOT-->/">ICSF</a>
-			<a href="<!--SRVROOT-->/picocon/">Picocon</a>
+			<!--include "stubs/nav-main.html"-->
 			<hr />
 			<a href="#goh">Guests</a>
 			<a href="#prices">Prices</a>
 			<a href="#directions">Directions</a>
 			<a href="#contact">Contact Us</a>
-			<hr />
-			<a href="<!--SRVROOT-->/history/">History</a>
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
@@ -42,7 +41,8 @@
 			Registration opens at 10am, with the first scheduled events kicking
 			off at around 10:30.
 			The schedule concludes in the evening.
-
+		</p>
+		<p>
 			At a Picocon you will encounter:
 		</p>
 
