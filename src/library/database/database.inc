@@ -1,7 +1,7 @@
 <?php
 	define('LIBRARY_PROTOCOL', 'http://');
 	define('LIBRARY_DB_SRV', 'icsflibsrv.su.ic.ac.uk');
-	define('LIBRARY_DB_PATH', '/library/');
+	define('LIBRARY_DB_PATH', '/');
 	define('LIB_XML', LIBRARY_PROTOCOL . LIBRARY_DB_SRV . LIBRARY_DB_PATH . '_xml/');
 
 	class Database
