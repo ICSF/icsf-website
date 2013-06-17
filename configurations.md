@@ -40,10 +40,11 @@ DOCROOT=<user>@shell1.doc.ic.ac.uk:/homes/<user>/public_html/icsf
 Union Webserver Dougal
 ----------------------
 
-This meeds some manual editing of the rsync flags:
+This meeds some manual editing of the rsync flags. All the following
+to the Makefile created by ./configure beneath the input for etc/Makefile
 
 ```shell
-SYNCPERMS=--perms --chmod=a=r,ug+w,Da+xs --no-g
+SYNCPERMS=--no-perms --chmod=g+rw,a-x,Da+x
 ```
 
 This makes sure that rsync doesn't try to set the groups,
