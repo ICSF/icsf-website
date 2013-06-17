@@ -1,6 +1,6 @@
 AddDefaultCharset UTF-8
 
-DirectoryIndex index.php index.html
+#DirectoryIndex index.php index.html
 
 AddType 'text/html; charset=UTF-8' .html .php
 AddType 'image/png' .png
@@ -15,13 +15,13 @@ AddType 'text/javascript' .js
 	</Files>
 </IfModule>
 
-<IfModule mod_expires.c>
-	ExpiresActive on
-	ExpiresByType text/html "access plus 1 day"
-	ExpiresByType text/css "access plus 1 month"
-	ExpiresByType text/js "access plus 1 month"
-	ExpiresByType image/png "access plus 1 month"
-</IfModule>
+#<IfModule mod_expires.c>
+#	ExpiresActive on
+#	ExpiresByType text/html "access plus 1 day"
+#	ExpiresByType text/css "access plus 1 month"
+#	ExpiresByType text/js "access plus 1 month"
+#	ExpiresByType image/png "access plus 1 month"
+#</IfModule>
 
 <IfModule mod_deflate.c>
 	AddOutputFilterByType DEFLATE text/html
