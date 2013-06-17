@@ -18,9 +18,9 @@
 	include 'database/database.inc';
 	$counts = Database::getItemCounts();
 
-	$books  = (int)floor($counts['Book']/200) * 200;
-	$dvds   = (int)floor($counts['DVD']/200) * 200;
-	$gns    = (int)floor($counts['Graphic Novel']/500) * 500;
+	$books  = (int)floor($counts[1]->count/200) * 200;
+	$dvds   = (int)floor($counts[5]->count/200) * 200;
+	$gns    = (int)floor($counts[2]->count/500) * 500;
 ?>
 		<p>
 			The library contains over <b><?php echo $books;?> books</b>,
@@ -61,8 +61,8 @@
 
 		<p>
 			The webcam, shown right, can be used to find out if the library is
-			currently open, how busy it is and - if you can tell from a single
-			frame - what people are watching.
+			currently open, how busy it is and &mdash; if you can tell from a
+			single frame &mdash; what people are watching.
 		</p>
 		<p>
 			You can also view the webcam at full size on the
