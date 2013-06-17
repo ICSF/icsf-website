@@ -20,9 +20,7 @@ html
 {
 	background: #000;
 	background-image: url(<!--SRVROOT-->/resources/background.jpg);
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-attachment: fixed;
 	height: 100%;
 
@@ -47,7 +45,7 @@ body
 
 	min-width: 33.6em;
 	max-width: 80em;
-	margin: 0 auto 1em auto;
+	margin: 0;
 
 	padding: 0 1em 0.5em 9em;
 }
@@ -62,6 +60,7 @@ body.no-nav
 	body
 	{
 		border-width: 0 3em;
+		margin: 0 auto 1em auto;
 	}
 }
 
