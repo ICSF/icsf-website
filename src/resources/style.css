@@ -24,7 +24,7 @@ html
 	background-attachment: fixed;
 	height: 100%;
 
-	font-family: 'Lora', serif;
+	font-family: 'Open Sans', Helvetica, sans-serif;
 	font-size: 11pt;
 	overflow-y: scroll;
 }
@@ -189,25 +189,9 @@ footer
 	margin: 0.2em 1em 0.5em 0.2em;
 }
 
-.left
-{
-	float: left;
-}
-
-.right
-{
-	float: right;
-}
-
-.clear
-{
-	clear: both;
-}
-
-.sans
-{
-	font-family: sans-serif;
-}
+.left  { float: left;  }
+.right { float: right; }
+.clear { clear: both;  }
 
 .no-break
 {
