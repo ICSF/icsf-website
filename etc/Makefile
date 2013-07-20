@@ -3,7 +3,7 @@ SYNC=rsync
 SYNCDEL=--delete-after
 SYNCPERMS=--perms --chmod=a=rX,u+w,Da+x
 SYNCEXCLUDE=etc/exclude
-SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress
+SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
 
 PATH:=./bin:./bin/minutes:$(PATH)
 

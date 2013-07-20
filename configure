@@ -4,7 +4,7 @@ TARGET=Makefile
 SKEL=./etc/Makefile
 
 if [ -f $TARGET ]; then
-	printf '[WARNING] $TARGET already exists. Running configure will override your current settings\n'
+	printf '[WARNING] %s already exists. Running configure will override your current settings\n' "$TARGET"
 
 	while true
 	do
@@ -36,7 +36,7 @@ if [ ! -r "$SKEL" ]; then
 fi
 
 printf 'Please enter the location that the website is to be deployed to\n'
-printf 'Currently, only local file-systems are supported\n'
+printf 'Any path acceptable to rsync will work here.\n'
 printf '\tExample: /srv/www/\n'
 
 while true
