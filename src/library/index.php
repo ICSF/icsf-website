@@ -16,7 +16,7 @@
 		</nav>
 <?php
 	include 'database/database.inc';
-	$counts = Database::getItemCounts();
+	$counts = Database::getItemTypes();
 
 	$books  = (int)floor($counts[1]->count/200) * 200;
 	$dvds   = (int)floor($counts[5]->count/200) * 200;
