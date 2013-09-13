@@ -58,33 +58,40 @@
 		$conditions->author = $_GET['author'];
 		$conditions->series = $_GET['series'];
 
-		$conditions->limit = 50;
-		$conditions->offset = (isset($_GET['page']) ? ((int)$_GET['page'] - 1) * 50 + 1 : 1);
+		$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+		$offset = 50 * ($page - 1);
 
+		$conditions->limit  = 50;
+		$conditions->offset = $offset;
+
+		$item  = null;
 		$types = Database::getItemTypes();
 		$count = Database::search($conditions, $items);
+		$max   = min($count, $offset + 50);
 
-		//printPageLinks($count, $lim, $int);
 
 		echo tabs(2) . '<h2>Search Results</h2>' . PHP_EOL;
-		echo tabs(2) . '<h3>Showing 1 - 50 of ' . $count . '</h3>' . PHP_EOL;
+		echo tabs(2) . '<h3>Showing ' . ($offset+1) . '&ndash;' . $max . ' of ' . $count . '</h3>' . PHP_EOL;
+
+		pageLinks('<a href="?' . $_SERVER['QUERY_STRING'] . '&page=%1$d">%1$d</a>', $page, ceil($count / 50));
 
 		echo tabs(2) . '<ul>' . PHP_EOL;
 		foreach ($items as $item)
 		{
-			echo tabs(3) . '<li>' . $item->author .
-			' &nbsp;&mdash; &nbsp;<em>&ldquo;' . $item->title . '&rdquo;</em>';
+			echo tabs(3) . '<li>' . $item->Author .
+			' &nbsp;&mdash; &nbsp;<em>&ldquo;' . $item->Title . '&rdquo;</em>';
 
-			if (!empty($item->series))
-				echo ' &nbsp;&mdash; &nbsp;' . $item->series . ': ' . $item->seriesNum;
+			if (!empty($item->Series))
+				echo ' &nbsp;&mdash; &nbsp;' . $item->Series . ': ' . $item->SeriesNum;
 
-			if ($item->type != 1)
-				echo ' &nbsp;(' . $types[$item->type] . ')';
+			if ((int)$item->TypeKey !== 1)
+				echo ' &nbsp;(<em>' . $types[$item->TypeKey]->name . '</em>)';
 
 			echo '</li>' . PHP_EOL;
 		}
 
 		echo tabs(2) . '</ul>'. PHP_EOL;
+		pageLinks('<a href="?' . $_SERVER['QUERY_STRING'] . '&page=%1$d">%1$d</a>', $page, ceil($count / 50));
 	}
 
 	function tabs($count)
@@ -92,8 +99,25 @@
 		return str_repeat("\t", $count);
 	}
 
-	//printPageLinks($count, $lim, $int, $params);
+	function pageLinks($format, $curr, $max)
+	{
+		$max   = (int)$max;
+		if ($max <= 1) return;
+		$curr  = (int)$curr;
+		$links = array(1, 2, 3, $max, $max - 1, $max - 2, $curr, $curr - 1, $curr + 1);
+		$links = array_unique($links);
+		$links = array_filter($links, function ($i) use($max) { return (0 < $i) && ($i <= $max); });
 
+		sort($links, SORT_NUMERIC);
+		$last = 0;
+
+		foreach ($links as $link)
+		{
+			echo (($link - $last) !== 1) ? ' ... ' : ' ';
+			printf($format, $link);
+			$last = $link;
+		}
+	}
 ?>
 		<!--include "stubs/footer.html"-->
 	</body>

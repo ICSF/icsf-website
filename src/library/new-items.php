@@ -17,64 +17,47 @@
 		</nav>
 <?php
 
-	function pagelinks($page, $perpage, $total, $basename)
+	function pageLinks($format, $curr, $max)
 	{
-		$total = ceil($total / $perpage);
+		$max   = (int)$max;
+		if ($max <= 1) return;
+		$curr  = (int)$curr;
+		$links = array(1, 2, 3, $max, $max - 1, $max - 2, $curr, $curr - 1, $curr + 1);
+		$links = array_unique($links);
+		$links = array_filter($links, function ($i) use($max) { return (0 < $i) && ($i <= $max); });
 
-		echo tabs(2) . '<div class="hang-right">Page: ' . PHP_EOL;
+		sort($links, SORT_NUMERIC);
+		$last = 0;
 
-		if ($page > 1)
-			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=1">1</a>' . PHP_EOL;
-
-		if ($page > 3)
+		foreach ($links as $link)
 		{
-			echo tabs(3) . '&nbsp; ... &nbsp;' . PHP_EOL;
-			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=' . ($page-1) . '">' . ($page-1) . '</a>' . PHP_EOL;
+			echo (($link - $last) !== 1) ? ' ... ' : ' ';
+			printf($format, $link);
+			$last = $link;
 		}
-		else if ($page == 3)
-			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=2">2</a>' . PHP_EOL;
-
-		echo tabs(3) . '&nbsp;' . $page . PHP_EOL;
-
-		if ($total > $page)
-		{
-			echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=' . ($page+1) . '">' . ($page+1) . '</a>' . PHP_EOL;
-		
-			if ($total != $page + 1)
-			{
-				echo tabs(3) . '&nbsp; ... &nbsp;' . PHP_EOL;
-				echo tabs(3) . '&nbsp;<a href="' . $basename . '?page=' . ($total) . '">' . ($total) . '</a>' . PHP_EOL;
-			}
-		}
-
-		echo tabs(2) . '</div>' . PHP_EOL;
 	}
 
 	require('database/database.inc');
 
-	$conditions = new SearchConditions();
-
 	$page = (isset($_GET['page']) ? (int)$_GET['page'] : 1);
 
-	$conditions->order = 'YEAR(AcquireDate) DESC, MONTH(AcquireDate) DESC, ' . $conditions->order;
-	$conditions->limit = 50;
-	$conditions->offset = 50 * $page - 49;
-
 	$types = Database::getItemTypes();
-	$count = Database::search($conditions, $items);
+	$items = Database::latest($page);
 
-	pagelinks($page, 50, $count, '<!--SRVROOT-->/library/new-items.php');
+	// TODO: get total pages from sum of item types
+	pagelinks('<a href="<!--SRVROOT-->/library/new-items.php?page=%1$d">%1$d</a>', $page, 300);
 
 	$month = '';
 	$cutoff = mktime(0,0,0,1,1,2005);
 
 	foreach ($items as $item)
 	{
-		if (date('Ym', $item->acquireDate) !== $month)
+		$item->AcquireDate = strtotime($item->AcquireDate);
+		if (date('Ym', $item->AcquireDate) !== $month)
 		{
-			$header = ($item->acquireDate < $cutoff ?
+			$header = ($item->AcquireDate < $cutoff ?
 	            'Back in the mists of time... (pre-Apr 05)' :
-				date('F Y', $item->acquireDate)
+				date('F Y', $item->AcquireDate)
 			);
 
 			if ($month != '')
@@ -82,17 +65,17 @@
 
 			echo PHP_EOL . tabs(2) . '<h2>' . $header . '</h2>' . PHP_EOL . tabs(2) . '<ul>' . PHP_EOL;
 
-	        $month = date('Ym', $item->acquireDate);
+	        $month = date('Ym', $item->AcquireDate);
 	    }
 
-		echo tabs(3) . '<li>' . $item->author . ' &nbsp;&mdash; &nbsp;<em>&ldquo;' . $item->title .
+		echo tabs(3) . '<li>' . $item->Author . ' &nbsp;&mdash; &nbsp;<em>&ldquo;' . $item->Title .
 			'&rdquo;</em>';
 
-		if (!empty($item->series))
-			echo ' &nbsp;&mdash; &nbsp;' . $item->series . ': ' . $item->seriesNum;
+		if (!empty($item->Series))
+			echo ' &nbsp;&mdash; &nbsp;' . $item->Series . ': ' . $item->SeriesNum;
 
-		if ($item->type != 1)
-			echo ' &nbsp;(' . $types[$item->type] . ')';
+		if ((int)$item->TypeKey !== 1)
+			echo ' &nbsp;(<em>' . $types[$item->TypeKey]->name . '</em>)';
 
 		echo '</li>' . PHP_EOL;
 	}
@@ -103,7 +86,7 @@
 		return str_repeat("\t", $count);
 	}
 
-	pagelinks($page, 50, $count, '<!--SRVROOT-->/library/new-items.php');
+	pagelinks('<a href="<!--SRVROOT-->/library/new-items.php?page=%1$d">%1$d</a>', $page, 300);
 
 ?>
 		<!--include "stubs/footer.html"-->
