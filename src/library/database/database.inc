@@ -8,7 +8,7 @@
 
 		public static function getItemTypes()
 		{
-			$result = self::$conn->query('SELECT TypeKey AS id, types.Type AS name, COUNT(*) AS count FROM items NATURAL JOIN types GROUP BY TypeKey');
+			$result = self::$conn->query('SELECT TypeKey AS id, types.Type AS name, COUNT(*) AS count FROM items NATURAL JOIN types WHERE Retired = 0 GROUP BY TypeKey');
 			$types = array();
 			while ($type = $result->fetch_object())
 			{
@@ -35,7 +35,7 @@
 			FROM items JOIN authors USING (AuthorKey) WHERE (%s)
 			ORDER BY TypeKey, Author, Series, SeriesNum, Title LIMIT %d, %d';
 
-			$filters = array();
+			$filters = array('Retired = 0');
 
 			if (!empty($conditions->title))
 				$filters []= static::makeFilter('items.Title', $conditions->title);
@@ -65,7 +65,7 @@
 
 		function latest($page = 1)
 		{
-			$data = self::$conn->query('SELECT items.ItemKey as id, items.Title, items.Series, items.SeriesNum, authors.Author, items.TypeKey, items.AcquireDate FROM items JOIN authors USING (AuthorKey) WHERE 1 ORDER BY AcquireDate DESC LIMIT ' . ((int)$page - 1)*50 . ', 50');
+			$data = self::$conn->query('SELECT items.ItemKey as id, items.Title, items.Series, items.SeriesNum, authors.Author, items.TypeKey, items.AcquireDate FROM items JOIN authors USING (AuthorKey) WHERE Retired = 0 ORDER BY AcquireDate DESC LIMIT ' . ((int)$page - 1)*50 . ', 50');
 			$results = array();
 			while ($item = $data->fetch_object())
 				$results[] = $item;

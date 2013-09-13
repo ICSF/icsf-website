@@ -44,8 +44,12 @@
 	$types = Database::getItemTypes();
 	$items = Database::latest($page);
 
+	$total = 0;
+	foreach ($types as $type)
+		$total += $type->count;
+
 	// TODO: get total pages from sum of item types
-	pagelinks('<a href="<!--SRVROOT-->/library/new-items.php?page=%1$d">%1$d</a>', $page, 300);
+	pagelinks('<a href="<!--SRVROOT-->/library/new-items.php?page=%1$d">%1$d</a>', $page, ceil($total / 50));
 
 	$month = '';
 	$cutoff = mktime(0,0,0,1,1,2005);
@@ -86,7 +90,7 @@
 		return str_repeat("\t", $count);
 	}
 
-	pagelinks('<a href="<!--SRVROOT-->/library/new-items.php?page=%1$d">%1$d</a>', $page, 300);
+	pagelinks('<a href="<!--SRVROOT-->/library/new-items.php?page=%1$d">%1$d</a>', $page, ceil($total / 50));
 
 ?>
 		<!--include "stubs/footer.html"-->
