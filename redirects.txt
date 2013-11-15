@@ -1,0 +1,59 @@
+/frameset.php?warp=events /events/
+/frameset.php?warp=picocon /picocon/
+/frameset.php?warp=searchlibrary /library/search.php
+
+/social/index.html /social/
+/library/index.html /library/
+
+/php/news.php /social/news [R=410]
+/php/reviews.php /social/reviews
+/php/index_committee.php /committee/
+/php/events_calendar.php /events/
+/php/recent_updates.php /social/news/
+
+/intros/website.html -
+/intros/contact_details.html /committee/
+
+/gallery/ -
+
+/social/events/picocon/ /picocon/
+
+/php/index_members.php -
+/php/index_alumni.php -
+/php/index_randoms.php -
+
+/social/irc/darkerirc/darker.html /social/irc.html
+
+/library/misc/location.html /library/finding.html [check this]
+/php/library_search.php /library/search.php
+/php/request_list.php /library/request.php
+/library/library_newstuff/index.php /library/recent.php
+
+
+To create:
+==========
+
+/search.html
+/sitemap.xml
+/sitemap.html
+/social/
+/social/irc
+/social/news/
+
+To find source lists:
+=====================
+
+/intros/
+/frameset.php 
+ 
+To write mappings for:
+======================
+
+ - Minutes
+ - Wyrms
+ - Fanzines
+ - History pages
+ - News
+ 
+put this all in a upgrade.php
+
