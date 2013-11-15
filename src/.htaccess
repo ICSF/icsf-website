@@ -36,3 +36,5 @@ AddType 'text/javascript' .js
 	RewriteRule ^webcam\.jpeg$ http://icsflibsrv.su.ic.ac.uk/webcam.php [P,L]
 </IfModule>
 
+ErrorDocument 404 upgrade.php
+
