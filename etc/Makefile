@@ -5,6 +5,9 @@ SYNCPERMS=--perms --chmod=a=rX,u+w,Da+x
 SYNCEXCLUDE=etc/exclude
 SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
 
+JAVAC=javac
+SED=sed
+
 PATH:=./bin:./bin/minutes:$(PATH)
 
 .DEFAULT: build
@@ -36,7 +39,7 @@ clean:
 # ======= TOOL BUILDING =======
 
 bin/MinifyCss.class : bin/MinifyCss.java bin/CssCompressor.java
-	javac $<
+	$(JAVAC) $<
 
 # ======= FILE TYPE HANDLERS =======
 
@@ -53,7 +56,7 @@ build/%.php : src/%.php Makefile stubs
 	var-subst $< $@ SRVROOT=${SRVROOT}
 
 ifeq ($(MODPHP),0)
-	sed -i -e '1i #!/usr/bin/php' $@
+	$(SED) -i -e '1i #!/usr/bin/php' $@
 	chmod +x $@
 else
 	chmod -x $@
@@ -62,7 +65,7 @@ endif
 build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}
-	java bin.MinifyCss $@
+	$(JAVA) bin.MinifyCss $@
 
 src/%.html : src/%.min
 	minute-gen $< > $@

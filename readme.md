@@ -41,20 +41,29 @@ Work that is done includes:
  - Substituting variables (such as the path to the site)
  - Generating specific index pages
 
+Dependencies
+~~~~~~~~~~~~
+
+ - Java JDK + JRE >= 1.5
+ - sed
+ - PHP >= 5.3.0
+ - GNU (or compatible) Make
+
 The configure script generates a makefile based on the template in ```etc/```
 and the information you gave it.
 Below are the main make commands
 
- - ```make build``` - Update the build directory (is default for jsut ```make```)
+ - ```make build``` - Update the build directory (is default for just ```make```)
  - ```make tidy``` - Remove files in build that would no longer be created by ```make build```
  - ```make clean``` - Remove all content in the ```build``` directory
  - ```make deploy``` - Push the content of ```build``` to the server
  - ```make all``` - Alias for ```make build && make deploy```
 
-Two variables are used by make in this step:
+The following (modifiable) variables are used by make in this step:
 
  - ```SRVROOT``` - The path to the website on the webserver
  - ```MODPHP``` - Whether to expect mod_php (or equivalent) - set to 0 to use PHP as a CGI script
+ - ```JAVAC```, ```JAVA```, ```SED```, ```MAKE``` - Path to java compiler, java runtime, sed, and make executables
 
 Deployment
 ----------
