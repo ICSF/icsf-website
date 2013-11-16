@@ -42,7 +42,7 @@ Work that is done includes:
  - Generating specific index pages
 
 Dependencies
-~~~~~~~~~~~~
+############
 
  - Java JDK + JRE >= 1.5
  - sed
