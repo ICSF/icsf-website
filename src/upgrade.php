@@ -1,5 +1,6 @@
 <?php
 
+/* Direct URL rewrites: change left url to right url */
 $mapping = array(
 	'/frameset.php?warp=events' => '/events/',
 	'/frameset.php?warp=picocon' => '/picocon/',
@@ -20,14 +21,18 @@ $mapping = array(
 	'/library/library_newstuff/index.php' => '/library/recent.php',
 );
 
+/*
+ * Regex rewrites: If the key is matched, perform a search and replace as
+ * described in the value
+ */
 $regexmap = array(
 	':^/library/minutes/committee/minutes[0-9]{4}:' => array(':^/library/minutes/committee/minutes([0-1][0-9])([0-9][0-9]):', '/committee/minutes/20$1-$2'),
 	':^/library/minutes/committee:' => array(':^/library/minutes/committee/:', '/committee/minutes/'),
 );
 
-$url = $_SERVER['REQUEST_URI'];
-$url = trim($url);
-$url = preg_replace('@^<!--SRVROOT-->(/old)?@', '', $url);
+$url = $_SERVER['REQUEST_URI']; // Get requested url
+$url = trim($url); // Clean up
+$url = preg_replace('@^<!--SRVROOT-->(/old)?@', '', $url); // Strip out the non-relative part of the url
 
 if (array_key_exists($url, $mapping))
 {
@@ -62,7 +67,7 @@ header('Cache-control: no-cache', false, 404);
 		<p>
 			You can see if this page exists on the
 			<a href="<!--SRVROOT-->/old<?php echo $url ?>">archived version of
-			the new site.</a>
+			the old site.</a>
 		</p>
 		<p>
 			If you think this page should exist, please contact the
