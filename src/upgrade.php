@@ -1,30 +1,5 @@
 <?php
 
-function run()
-{
-	global $mapping, $regexmap;
-
-	$url = $_GET['original'];
-	$url = trim($url);
-	$url = parse_url($url, PHP_URL_PATH);
-
-	if (array_key_exists($url, $mapping))
-	{
-		header('Location: <!--$SRVROOT-->' . $mapping[$url], false, 301);
-		exit;
-	}
-
-	foreach ($regexmap as $rule => $rewrite)
-	{
-		if (preg_match($rule, $url))
-		{
-			$url = preg_replace($rewrite, $url);
-			header('Location: <!--$SRVROOT-->' . $mapping[$url], false, 301);
-			exit;
-		}
-	}
-}
-
 $mapping = array(
 	'/frameset.php?warp=events' => '/events/',
 	'/frameset.php?warp=picocon' => '/picocon/',
@@ -46,12 +21,31 @@ $mapping = array(
 );
 
 $regexmap = array(
-	':^/library/minutes/committee:' => ':^/library/minutes/committee/:/committee/minutes/:',
+	':^/library/minutes/committee/minutes[0-9]{4}:' => array(':^/library/minutes/committee/minutes([0-1][0-9])([0-9][0-9]):', '/committee/minutes/20$1-$2'),
+	':^/library/minutes/committee:' => array(':^/library/minutes/committee/:', '/committee/minutes/'),
 );
 
-run();
+$url = $_SERVER['REQUEST_URI'];
+$url = trim($url);
+$url = preg_replace('@^<!--SRVROOT-->(/old)?@', '', $url);
 
-header('Cache-control: no-cache', false, 410);
+if (array_key_exists($url, $mapping))
+{
+	header('Location: <!--SRVROOT-->' . $mapping[$url], false, 301);
+	exit;
+}
+
+foreach ($regexmap as $rule => $rewrite)
+{
+	if (preg_match($rule, $url))
+	{
+		$url = preg_replace($rewrite[0], $rewrite[1], $url);
+		header('Location: <!--SRVROOT-->' . $url, false, 301);
+		exit;
+	}
+}
+
+header('Cache-control: no-cache', false, 404);
 ?>
 <!DOCTYPE html>
 <html>
@@ -67,7 +61,7 @@ header('Cache-control: no-cache', false, 410);
 		</p>
 		<p>
 			You can see if this page exists on the
-			<a href="/old/<?php echo $_GET['original']; ?>">archived version of
+			<a href="<!--SRVROOT-->/old<?php echo $url ?>">archived version of
 			the new site.</a>
 		</p>
 		<p>
