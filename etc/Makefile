@@ -6,6 +6,7 @@ SYNCEXCLUDE=etc/exclude
 SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
 
 JAVAC=javac
+JAVA=java
 SED=sed
 
 PATH:=./bin:./bin/minutes:$(PATH)
@@ -65,7 +66,7 @@ endif
 build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}
-	$(JAVA) bin/MinifyCss $@
+	$(JAVA) bin.MinifyCss $@
 
 src/%.html : src/%.min
 	minute-gen $< > $@
