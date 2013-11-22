@@ -65,7 +65,7 @@ endif
 build/%.css : src/%.css bin/MinifyCss.class stubs
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}
-	$(JAVA) bin.MinifyCss $@
+	$(JAVA) bin/MinifyCss $@
 
 src/%.html : src/%.min
 	minute-gen $< > $@
