@@ -19,7 +19,7 @@
 			The ICSF Fanzines are (usually) annual magazines produced by
 			members of the society (fanzine=magazine produced by fans).
 			They have contained anything from fiction, artwork, and poems,
-			to reviews and essays of sf/old/library/fantasy-related topics.
+			to reviews and essays of sf/fantasy-related topics.
 		</p>
 		<p>
 			As far as we can tell, the first fanzines of the Science Fiction
