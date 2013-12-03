@@ -56,7 +56,7 @@
 		<div id="book"><table class="timeline">
 			<tr>
 				<td>1976</td>
-				<td rowspan="36" class="container">
+				<td rowspan="38" class="container">
 <?php
 	add_event('Sep 1976', 'Society Founded');
 	add_event('Sep 1980', 'Chair\'s Pot List Begins');
@@ -74,6 +74,7 @@
 	add_event('June 2005', 'Library acquires first DVD');
 	add_event('July 2007', 'Old shelving replaced with uniform, wooden shelves');
 	add_event('Oct 2010',  'Library acquires first Blu-ray Disc');
+	add_event('Oct 2011',  'Picocon Sofa pot purchased');
 
 	add_event('Feb 1984', 'Picocon',    '<!--SRVROOT-->/history/picocon/picocon01.html');
 	add_event('Feb 1985', 'Picocon Pi', '<!--SRVROOT-->/history/picocon/picocon03.html');
@@ -103,6 +104,7 @@
 	add_event('Feb 2010', 'Picocon 27', '<!--SRVROOT-->/history/picocon/picocon27.html');
 	add_event('Feb 2011', 'Picocon 28', '<!--SRVROOT-->/history/picocon/picocon28.html');
 	add_event('Feb 2012', 'Picocon 29', '<!--SRVROOT-->/history/picocon/picocon29.html');
+	add_event('Feb 2013', 'Picocon 30', '<!--SRVROOT-->/history/picocon/picocon30.html');
 ?>
 				</td>
 			</td>
@@ -143,6 +145,7 @@
 			<tr><td>2010</td></tr>
 			<tr><td>2011</td></tr>
 			<tr><td>2012</td></tr>
+			<tr><td>2013</td></tr>
 		</table></div>
 
 		<!--include "stubs/footer.html"-->
