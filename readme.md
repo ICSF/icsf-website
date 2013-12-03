@@ -1,5 +1,7 @@
-Source Code for a Proposed new Website for ICSF
-===============================================
+Source Code for the new ICSF Website
+====================================
+
+ICSF can be found [here](http://icsf.org.uk).
 
 Configuring
 -----------
@@ -66,13 +68,13 @@ The following (modifiable) variables are used by make in this step:
 Deployment
 ----------
 
-Deployment is done (by defulat) using ```rsync```, so deployments
+Deployment is done (by default) using ```rsync```, so deployments
 can be made by any method that it supports.
-The Make variables, and their defualt values, are:
+The Make variables, and their default values, are:
 
  - ```SYNC = rsync``` - Use rsync to perform deployment
  - ```SYNCPERMS = --perms --chmod=a=rX,u+w,Da+x``` - Permissions to set (see permissions below)
- - ```SYNCEXCLUDE = etc/exclude``` - File containing list of files to not syncronise
+ - ```SYNCEXCLUDE = etc/exclude``` - File containing list of files to not synchronise
  - ```SYNCDEL=--delete-after``` - Remote file deletion policy
  - ```SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress```
 
@@ -90,7 +92,7 @@ really just a series of chmod commands.
 
 ```a=rX``` - Allow everyone to read files and, if they are executable in ```build```,
 then allow everyone to execute them. Otherwise, they are not executable, nor are they
-wrtiable by anyone. This is set because most webserver access files by running as a
+writable by anyone. This is set because most webserver access files by running as a
 user that is neither the owner nor a member of the group to which the files belong.
 
 ```u+w``` - Allow us (the user) write access to the file. This allows us to update it
@@ -98,7 +100,7 @@ later on. If you're deploying to a group webspace, you may prefer ```ug+w```, wh
 allows members of the group to write too. On other systems, this will cause things to
 break (for example, suexec won't run CGI scripts that are group writable).
 
-```Da+x``` - Directories are exeutable by everyone. For a directory, being executable
+```Da+x``` - Directories are executable by everyone. For a directory, being executable
 means that up can open it; the read flag on a directory means that you can get a list
 of contents (and is only useful if you already have +x)
 
