@@ -69,12 +69,12 @@
 		<td>1989/90</td>
 		<td><a href="<!--SRVROOT-->/old/library/fanzines/we/we_cover.html">The Waking Edge</a></td>
 		<td>Amanda Baker</td>
-	</tr>	
+	</tr>
 	<tr>
 		<td>1990/91</td>
 		<td><a href="<!--SRVROOT-->/old/library/fanzines/the_edge/the_edge_cover.html">The Edge</a></td>
 		<td>Paul Davison</td>
-	</tr>	
+	</tr>
 	<tr>
 		<td>October 1991</td>
 		<td><a href="<!--SRVROOT-->/old/library/fanzines/et1/et1_cover.html">Edge of Tomorrow</a></td>
