@@ -106,7 +106,6 @@
 					physics and planetary science, including building the
 					magnetic field instrument for the Cassini Saturn orbiter.
 				</p>
-				<p><a href="http://www.antipope.org/charlie/">David's Webstie</a></p>
 			</div>
 		</div>
 
