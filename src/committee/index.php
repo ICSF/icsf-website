@@ -28,7 +28,7 @@
 
 		<div class="columns">
 
-		<div class="no-break"><h3 style="margin-top: 0;">Chair Entity: ?
+		<div class="no-break"><h3 style="margin-top: 0;">Chair Entity: Tom Rivlin
 		(<span class="sans"><a href="mailto:chair@icsf.org.uk">chair@icsf.org.uk</a></span>)</h3>
 		<p>
 			The buck stops here. Responsible for overseeing everything that's
@@ -38,7 +38,7 @@
 			Treasurer and the Librarian are doing and delegate lots.
 		</p></div>
 
-		<div class="no-break"><h3>Chair of Vice: ?
+		<div class="no-break"><h3>Chair of Vice: Sam McKenney
 		(<span class="sans"><a href="mailto:vicechair@icsf.org.uk">vicechair@icsf.org.uk</a></span>)</h3>
 		<p>
 			Keeping the populace from rebelling against the committee by the
@@ -47,7 +47,7 @@
 			trip to Hay-on-Wye, and cinema outings as things come out.
 		</p></div>
 
-		<div class="no-break"><h3>Secretary: ?
+		<div class="no-break"><h3>Secretary: Matthew Parker
 		(<span class="sans"><a href="mailto:secretary@icsf.org.uk">secretary@icsf.org.uk</a></span>)</h3>
 		<p>
 			Responsible for taking, writing up, and occasionally editing
@@ -57,7 +57,7 @@
 			keep the rest of the committee on task.
 		</p></div>
 
-		<div class="no-break"><h3>Treasurer: ?
+		<div class="no-break"><h3>Treasurer: Zoe Vallis
 		(<span class="sans"><a href="mailto:treasurer@icsf.org.uk">treasurer@icsf.org.uk</a></span>)</h3>
 		<p>
 			Deals with the cash, turns up to meetings and hopefully makes
@@ -65,7 +65,7 @@
 			An indispensable post, which sounds a lot easier than it is.
 		</p></div>
 
-		<div class="no-break"><h3>Librarian: ?
+		<div class="no-break"><h3>Librarian: Maciej Matuszewski
 		(<span class="sans"><a href="mailto:librarian@icsf.org.uk">librarian@icsf.org.uk</a></span>)</h3>
 		<p>
 			The librarian is responsible for the library and its bounteous contents.
@@ -73,7 +73,7 @@
 			chasing bad people with overdue items!
 		</p></div>
 
-		<div class="no-break"><h3>Picocon Sofa: ?
+		<div class="no-break"><h3>Picocon Sofa: Amanda Sjödahl
 		(<span class="sans"><a href="mailto:picocon@icsf.org.uk">picocon@icsf.org.uk</a></span>)</h3>
 		<p>
 			Picocon is our annual one-day convention, which tends to be
@@ -84,7 +84,7 @@
 			external contacts.
 		</p></div>
 
-		<div class="no-break"><h3>Picocon Beanbag: ?</h3>
+		<div class="no-break"><h3>Picocon Beanbag: Steven Ingram</h3>
 		<p>
 			The vice-chair of the Picocon committee, the Picocon Beanbag is
 			responsible for the arrangement for Picocon that are internal to
@@ -94,7 +94,7 @@
 			elevated to Picocon Sofa for next year.
 		</p></div>
 
-		<div class="no-break"><h3>Editor: ?
+		<div class="no-break"><h3>Editor: Alexander Norlund-Matthiessen
 		(<span class="sans"><a href="mailto:editor@icsf.org.uk">editor@icsf.org.uk</a></span>)</h3>
 		<p>
 			Produces the society's bi-monthly newsletter Wyrmtongue and
@@ -102,7 +102,7 @@
 			fresher to hive Wyrmtongue off to.
 		</p></div>
 
-		<div class="no-break"><h3>Publicity Officer: ?
+		<div class="no-break"><h3>Publicity Officer: Sanchit Sharma
 		(<span class="sans"><a href="mailto:publicity@icsf.org.uk">publicity@icsf.org.uk</a></span>)</h3>
 		<p>
 			Designs, prints and puts up the posters.
@@ -111,7 +111,7 @@
 			Gets grumbled at if no-one turns up to events.
 		</p></div>
 
-		<div class="no-break"><h3>Tech Priest: ?
+		<div class="no-break"><h3>Tech Priest: Internet Relay Cats
 		(<span class="sans"><a href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a></span>)</h3>
 		<p>
 			The tech-priest is responsible for the upkeep of all hardware and
