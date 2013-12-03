@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>Picocon 30 - ICSF</title>
+		<title>Picocon 31 - ICSF</title>
 		<style type="text/css">
 			@font-face
 			{
@@ -25,7 +25,7 @@
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			Picocon 30
+			Picocon 31
 			<span class="clear"></span>
 		</h1>
 
@@ -39,7 +39,7 @@
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
-			Picocon 30 will be held on Saturday 16th February 2013,
+			Picocon 31 will be held on Saturday 22th February 2014,
 			in Imperial College Union.
 		</p>
 
@@ -74,32 +74,43 @@
 		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
 			<div class="no-break clear">
-				<h3 style="margin-top: 0;">Peter F Hamilton</h3>
-				<img style="width:80px; height: 120px;" class="hang-left"
-					src="images/peter-f-hamilton.jpg" alt="Peter F Hamilton" />
+				<h3 style="margin-top: 0;">Sarah Pinborough</h3>
 				<p>
-					Hamilton's works, often described as Space Opera, include
-					elements of hard SF, fantasy, and classic horror writing to
-					weave the complex intertwining stories of his characters.
+					Sarah Pinborough is an English-born horror writer whose
+					books have found success in the United States.
+					Her works have previously been compared to that of
+					Bentley Little, Richard Laymon and Dean Koontz.
 				</p>
+				<p><a href="http://sarahpinborough.com">Sarah's Website</a></p>
 			</div>
 			<div class="no-break clear">
-				<h3>Kate Griffin</h3>
-				<img style="width:80px; height: 120px;" class="hang-left"
-					src="images/catherine-webb.jpg" alt="Catherine Weeb" />
+				<h3>Charles Stross</h3>
 				<p>
-					Adult fantasy author Kate Griffin is a pen name for the
-					twice Carneige-nominated fantasy author Catherine Webb, a
-					life-long Londoner whose first book was published when she
-					was 16.
+					"Charlie" Stross is a British writer of science fiction,
+					Lovecraftian horror, and fantasy.
+					He was born in Leeds and specialises in hard science
+					fiction and space opera.
 				</p>
+				<p><a href="http://www.antipope.org/charlie/">Charles' Webstie</a></p>
+			</div>
+			<div class="no-break clear">
+				<h3>Professor David Southwood</h3>
+				<p>
+					British space scientist and current President of the
+					Royal Astronomical Society, Preofessor David Southwood
+					is as Senior <abbr title="Research Investigator">RI</abbr>
+					at Imperial with interests have been in solar–terrestrial
+					physics and planetary science, including building the
+					magnetic field instrument for the Cassini Saturn orbiter.
+				</p>
+				<p><a href="http://www.antipope.org/charlie/">David's Webstie</a></p>
 			</div>
 		</div>
 
 		<h2 id="prices">Prices</h2>
 
 		<p>
-			Entry for the day will cost (subject to change up to Feb 2013):
+			Entry for the day will cost (subject to change up to Feb 2014):
 		</p>
 		<ul>
 			<li><b>&#x00A3;5</b> for ICSF members;</li>
@@ -170,7 +181,7 @@
 				</p>
 			</div>
 			<div class="no-break clear">
-				<h3>By &lsquo;Boris&rsquo; Bike</h3>
+				<h3>By &lsquo;Boris&rsquo;/&lsquo;Barcklays&rsquo; Bike</h3>
 				<p>
 					There are three hire cycle docking stations on Prince
 					Consort Road, which also houses the Union.
