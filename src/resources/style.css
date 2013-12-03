@@ -199,6 +199,7 @@ footer
 	-moz-column-break-inside: avoid;
 	-o-column-break-inside: avoid;
 	-webkit-column-break-inside: avoid;
+	display: inline-block;
 }
 
 .columns
