@@ -13,7 +13,7 @@ $mapping = array(
 	'/php/events_calendar.php' => '/events/',
 	'/php/recent_updates.php' => '/social/news/',
 	'/intros/contact_details.html' => '/committee/',
-	'/social/events/picocon/' => '/picocon/',
+	'/social/events/picocon' => '/picocon/',
 	'/social/irc/darkerirc/darker.html' => '/social/irc.html',
 	'/library/misc/location.html' => '/library/finding.html',
 	'/php/library_search.php' => '/library/search.php',
@@ -31,7 +31,7 @@ $regexmap = array(
 );
 
 $url = $_SERVER['REQUEST_URI']; // Get requested url
-$url = trim($url); // Clean up
+$url = rtrim(trim($url), '/'); // Clean up
 $url = preg_replace('@^<!--SRVROOT-->(/old)?@', '', $url); // Strip out the non-relative part of the url
 
 if (array_key_exists($url, $mapping))
