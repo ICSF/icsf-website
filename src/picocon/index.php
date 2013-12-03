@@ -65,7 +65,6 @@
 		<ul>
 		<li>Guests of Honour doing talks and panels</li>
 			<li>The Destruction of Dodgy Merchandise, typically using liquid nitrogen and an enormous hammer. (You're welcome to bring along donations!)</li>
-			<li>Multiplayer LAN gaming</li>
 			<li>Stalls selling books, ICSF t-shirts, and other stuff</li>
 			<li>Quiz and silly games</li>
 			<li>Student Union bar</li>
@@ -88,7 +87,7 @@
 				<h3>Charles Stross</h3>
 				<img class="hang-left" width=150 height=150 alt="Charles Stross" src="images/stross.jpg" />
 				<p>
-					"Charlie" Stross is a British writer of science fiction,
+					Charlie Stross is a British writer of science fiction,
 					Lovecraftian horror, and fantasy.
 					He was born in Leeds and specialises in hard science
 					fiction and space opera.
@@ -203,7 +202,7 @@
 
 		<h2 id="contact">Contact Us</h2>
 		<p>
-			For more information, please contact <b>Maciej Matuszewski</b>,
+			For more information, please contact <b>Amanda Sjödahl</b>,
 			the Picocon Sofa (comfier than a chair), at
 			<a class="sans" href="mailto:picocon@icsf.org.uk">picocon@icsf.org.uk</a>.
 		</p>
