@@ -73,7 +73,7 @@
 		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
 			<div class="no-break clear">
-				<h3 style="margin-top: 0;">Sarah Pinborough</h3>
+				<h3>Sarah Pinborough</h3>
 				<img class="hang-left" width=150 height=150 alt="Sarah Pinborough" src="images/pinborough.jpg" />
 				<p>
 					Sarah Pinborough is an English-born horror writer whose
@@ -137,7 +137,7 @@
 		</p>
 		<div class="columns" style="margin: 1em 0;">
 			<div class="no-break clear">
-				<h3 style="margin-top: 0;">By London Underground</h3>
+				<h3>By London Underground</h3>
 				<p>
 					The tube is probably easiest way to get to Picocon; both
 					Gloucester Road Station and South Kensington Station are
