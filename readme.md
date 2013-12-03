@@ -1,8 +1,6 @@
 Source Code for a Proposed new Website for ICSF
 ===============================================
 
-NB. This project is not (currently) endorsed by ICSF
-
 Configuring
 -----------
 
