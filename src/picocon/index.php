@@ -75,6 +75,7 @@
 		<div class="columns">
 			<div class="no-break clear">
 				<h3 style="margin-top: 0;">Sarah Pinborough</h3>
+				<img class="hang-left" width=150 height=150 alt="Sarah Pinborough" src="images/pinborough.jpg" />
 				<p>
 					Sarah Pinborough is an English-born horror writer whose
 					books have found success in the United States.
@@ -85,6 +86,7 @@
 			</div>
 			<div class="no-break clear">
 				<h3>Charles Stross</h3>
+				<img class="hang-left" width=150 height=150 alt="Charles Stross" src="images/stross.jpg" />
 				<p>
 					"Charlie" Stross is a British writer of science fiction,
 					Lovecraftian horror, and fantasy.
@@ -95,6 +97,7 @@
 			</div>
 			<div class="no-break clear">
 				<h3>Professor David Southwood</h3>
+				<img class="hang-left" width=150 height=150 alt="David Southwood" src="images/southwood.jpg" />
 				<p>
 					British space scientist and current President of the
 					Royal Astronomical Society, Preofessor David Southwood
