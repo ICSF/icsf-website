@@ -26,7 +26,7 @@
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
 			Picocon 31
-			<span class="clear"></span>
+			<span id="subtitle">22nd Feburary 2014</span>
 		</h1>
 
 		<nav>
