@@ -19,7 +19,7 @@
 		<p>
 			The Library is in the Media Centre in the West Basement of Beit
 			Quad, which is the main student union building on the South
-			Kensington campus. There are the ocasional sign to us around the
+			Kensington campus. There are the occasional sign to us around the
 			Quad (called 'Science Fiction and Fantasy Library'). The fastest
 			way to get to us, however, is.
 		</p>

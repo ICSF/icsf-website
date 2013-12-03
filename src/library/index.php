@@ -28,8 +28,8 @@
 			collection of <b>graphic novels</b>, as well as a selection of
 			other media items.
 			We try to maintain a range of science fiction, fantasy and horror,
-			covering both popular and obscure authors, films, and tv series.
-			To take stuff out you need to be an icsf member (costs &pound;8).
+			covering both popular and obscure authors, films, and TV series.
+			To take stuff out you need to be an ICSF member (costs &pound;8).
 
 			You can <a href="search.php">search the database</a> to see if
 			we have what you want.

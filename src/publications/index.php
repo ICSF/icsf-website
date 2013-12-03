@@ -16,7 +16,7 @@
 		<h2>Fanzines</h2>
 		<p>Latest Fanzine: &lsquot;<a href="fanzines/danger_dreams/danger-dreams-at-work.pdf">Danger: Dreams at Work</a>&rsquot; (Dec 2009)</p>
 		<p>
-			The icsf Fanzines are (usually) annual magazines produced by
+			The ICSF Fanzines are (usually) annual magazines produced by
 			members of the society (fanzine=magazine produced by fans).
 			They have contained anything from fiction, artwork, and poems,
 			to reviews and essays of sf/fantasy-related topics.
