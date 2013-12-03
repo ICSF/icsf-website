@@ -70,6 +70,9 @@ header('Cache-control: no-cache', false, 404);
 			the old site.</a>
 		</p>
 		<p>
+			Our new website is <a href="<!--SRVROOT-->">here</a>.
+		</p>
+		<p>
 			If you think this page should exist, please contact the
 			<a href="mailto:techpriest@icsf.org.uk">sysadmin</a>.
 		</p>
