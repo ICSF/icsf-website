@@ -145,9 +145,9 @@
 				</p>
 				<p>
 					Both stations are served by the
-					<span class="tube-line" style="background-color: rgba(255,209,0,0.5);">Circle</span>,
-					<span class="tube-line" style="background-color: rgba(0, 114, 41, 0.5);">District</span>, and
-					<span class="tube-line" style="background-color: rgba(0, 25, 168, 0.5);">Piccadilly</span>
+					<span class="tube-line" style="background-color: rgba(255,209,0,0.8);">Circle</span>,
+					<span class="tube-line" style="background-color: rgba(0, 114, 41, 0.8);">District</span>, and
+					<span class="tube-line" style="background-color: rgba(0, 25, 168, 0.8);">Piccadilly</span>
 					lines.
 				</p>
 				<p>
