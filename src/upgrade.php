@@ -50,6 +50,14 @@ foreach ($regexmap as $rule => $rewrite)
 	}
 }
 
+$other = ltrim(str_replace('.php', '.html', $url), '/');
+if (file_exists($other))
+	header('Location: <!--SRVROOT-->/' . $other, false, 301);
+
+$other = ltrim(str_replace('.html', '.php', $url), '/');
+if (file_exists($other))
+	header('Location: <!--SRVROOT-->/' . $other, false, 301);
+
 header('Cache-control: no-cache', false, 404);
 ?>
 <!DOCTYPE html>
