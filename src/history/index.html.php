@@ -15,20 +15,23 @@
 		</nav>
 
 <?php
+	$year  = (int)date('Y');
+	$years = $year - 1975;
+
 	function add_event($date, $title, $link=null)
 	{
 		$years  = (int)date('Y', strtotime($date)) - 1976;
 		$months = (int)date('m', strtotime($date));
 		$offset = (int)($years * 50 + $months * 4) + 2;
 
-		if ($link == null)
+		if ($link === null)
 		{
-			echo '<div style="top: ' . $offset . 'px;">' . $title . '</div>' . PHP_EOL;
+			echo "\t\t\t\t\t" , '<div style="top: ' , $offset , 'px;">' , $title , '</div>' , PHP_EOL;
 		}
 		else
 		{
-			echo '<div style="top: ' . $offset . 'px;"><a href="' . $link .
-			'">' . $title . '</a></div>' . PHP_EOL;
+			echo "\t\t\t\t\t" , '<div style="top: ' , $offset , 'px;"><a href="' , $link ,
+			'">' , $title , '</a></div>' , PHP_EOL;
 		}
 	}
 
@@ -56,7 +59,7 @@
 		<div id="book"><table class="timeline">
 			<tr>
 				<td>1976</td>
-				<td rowspan="38" class="container">
+				<td rowspan="<?php echo $years ?>" class="container">
 <?php
 	add_event('Sep 1976', 'Society Founded');
 	add_event('Sep 1980', 'Chair\'s Pot List Begins');
@@ -108,44 +111,9 @@
 ?>
 				</td>
 			</td>
-
-			<tr><td>1977</td></tr>
-			<tr><td>1978</td></tr>
-			<tr><td>1979</td></tr>
-			<tr><td>1980</td></tr>
-			<tr><td>1981</td></tr>
-			<tr><td>1982</td></tr>
-			<tr><td>1983</td></tr>
-			<tr><td>1984</td></tr>
-			<tr><td>1985</td></tr>
-			<tr><td>1986</td></tr>
-			<tr><td>1987</td></tr>
-			<tr><td>1988</td></tr>
-			<tr><td>1989</td></tr>
-			<tr><td>1990</td></tr>
-			<tr><td>1991</td></tr>
-			<tr><td>1992</td></tr>
-			<tr><td>1993</td></tr>
-			<tr><td>1994</td></tr>
-			<tr><td>1995</td></tr>
-			<tr><td>1996</td></tr>
-			<tr><td>1997</td></tr>
-			<tr><td>1998</td></tr>
-			<tr><td>1999</td></tr>
-			<tr><td>2000</td></tr>
-			<tr><td>2001</td></tr>
-			<tr><td>2002</td></tr>
-			<tr><td>2003</td></tr>
-			<tr><td>2004</td></tr>
-			<tr><td>2005</td></tr>
-			<tr><td>2006</td></tr>
-			<tr><td>2007</td></tr>
-			<tr><td>2008</td></tr>
-			<tr><td>2009</td></tr>
-			<tr><td>2010</td></tr>
-			<tr><td>2011</td></tr>
-			<tr><td>2012</td></tr>
-			<tr><td>2013</td></tr>
+<?php foreach(range(1977, $year) as $y): ?>
+			<tr><td><?php echo $y ?></td></tr>
+<?php endforeach; ?>
 		</table></div>
 
 		<!--include "stubs/footer.html"-->
