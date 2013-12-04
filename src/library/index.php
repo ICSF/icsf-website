@@ -41,7 +41,7 @@
 			<a href="mailto:librarian@icsf.co.uk">librarian</a>.
 
 			If you happen to be looking for bookshops, see
-			<a href="bookshops.php">our bookshop guide</a>.
+			<a href="bookshops.html">our bookshop guide</a>.
 		</p>
 
 		<h2>Opening Hours</h2>
@@ -81,7 +81,7 @@
 		</p>
 		<p>
 			If you want to see some of the things we do before joining, just
-			<a href="<!--SRVROOT-->/library/getting-to.php">drop-in to the library</a>
+			<a href="<!--SRVROOT-->/library/getting-to.html">drop-in to the library</a>
 			at lunchtime, or join us for one of our bar nights or other
 			<a href="<!--SRVROOT-->/events/">events</a>.
 		</p>
