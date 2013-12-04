@@ -48,6 +48,9 @@ build/%.html : src/%.html Makefile stubs
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}
 
+build/%.html : build/%.html.php Makefile stubs
+	php $< > $@
+
 build/%htaccess : src/%htaccess Makefile
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}

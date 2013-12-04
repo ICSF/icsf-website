@@ -4,7 +4,7 @@
 #
 
 
-find src -type f ! -name '.*.swp' ! -name '*.min' | sed -e 's:^src:build:'
+find src -type f ! -name '.*.swp' ! -name '*.min' | sed -e 's:^src:build:' -e 's:.html.php$:.html:'
 
 # Files relating to minutes
 ${0%/*}/gettargets-minutes
