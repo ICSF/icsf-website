@@ -172,7 +172,7 @@ HtmlValidator::$tags['ul'] = new HtmlTag('ul', array('li'));
 HtmlValidator::$tags['ol'] = new HtmlTag('ol', array('li'));
 HtmlValidator::$tags['li'] = new HtmlTag('li', array_merge($block, $bflow, $flow, $exts));
 
-HtmlValidator::$tags['table'] = new HtmlTag('table', array('thead', 'tbody'));
+HtmlValidator::$tags['table'] = new HtmlTag('table', array('thead', 'tbody', 'tr'));
 HtmlValidator::$tags['thead'] = new HtmlTag('thead', array('tr'));
 HtmlValidator::$tags['tbody'] = new HtmlTag('tbody', array('tr'));
 HtmlValidator::$tags['tr'] = new HtmlTag('tr', array('td'));
