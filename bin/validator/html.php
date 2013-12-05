@@ -9,7 +9,7 @@ class HtmlValidator extends Validator
 
 	protected function run($content)
 	{
-		$regex = '/\<(?<close>\/?)(?<tag>[a-z:!]+)(?<attrs>[^>]+)?(?<selfclose>\/?)\>/smU';
+		$regex = '/\<(?<close>\/?)(?<tag>[a-z:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose>\/?)\>/smU';
 		$offset = 0;
 		$match = array();
 
@@ -64,9 +64,9 @@ class HtmlValidator extends Validator
 
 		$current = self::$tags[$current];
 
-		if ($current->isChildPermitted($match['tag']))
+		if (!$current->isChildPermitted($match['tag']))
 		{
-			$this->error($match['line'], false, sprintf('Tag %s may not be a child of %s', $match['tag'], $current->getName()));
+			$this->error($match['line'], false, sprintf('Tag "%s" may not be a child of "%s"', $match['tag'], $current->getName()));
 		}
 
 		if (!$match['selfclose'])
@@ -81,13 +81,13 @@ class HtmlValidator extends Validator
 
 		if ($current === false)
 		{
-			$this->error($match['line'], false, sprintf('Tag %s closed when no tags are open', $match['tag']));
+			$this->error($match['line'], false, sprintf('Tag "%s" closed when no tags are open', $match['tag']));
 			return;
 		}
 
 		if ($match['tag'] !== $current)
 		{
-			$this->error($match['line'], false, sprintf('Tag %s attempting to close %s', $match['tag'], $current));
+			$this->error($match['line'], false, sprintf('Tag "%s" attempting to close "%s"', $match['tag'], $current));
 
 			// If the closing tag is a container for the last opened,
 			// the close propigates up the stack
@@ -106,9 +106,16 @@ class HtmlValidator extends Validator
 	public function parseAttributes(array $match)
 	{
 		$regex = '/([a-z\-]+)=(["\'])([^\2]+)\2/smU';
-		preg_match_all($regex, $match['attrs'], $attrs);
+		$res = array();
+		if (!preg_match_all($regex, $match['attrs'], $attrs, PREG_SET_ORDER))
+			return $res;
 
-		var_dump($match);
+		foreach ($attrs as $attr)
+		{
+			$res[$attr[1]] = $attr[3];
+		}
+
+		return $res;
 	}
 
 }
@@ -116,7 +123,7 @@ class HtmlValidator extends Validator
 $head  = array('title', 'link', 'meta', 'script', 'style');
 $secs  = array('header', 'nav', 'footer', 'div');
 $block = array('nav', 'div', 'ul', 'ol', 'p', 'table');
-$bflow = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'img');
+$bflow = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6');
 $flow  = array('span', 'a', 'em', 'strong', 'img');
 $exts  = array('script', 'style');
 
@@ -191,3 +198,5 @@ class HtmlTag
 		return array_flip(array_diff_key($this->attrs, $attrs));
 	}
 }
+
+var_dump(HtmlValidator::$tags['nav']);

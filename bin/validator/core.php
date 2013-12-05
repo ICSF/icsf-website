@@ -91,7 +91,7 @@ class Result implements Iterator, Countable
 
 	public function current()
 	{
-		return currnet($this->entries);
+		return current($this->entries);
 	}
 
 	public function key()
@@ -106,12 +106,12 @@ class Result implements Iterator, Countable
 
 	public function rewind()
 	{
-		return rewind($this->entries);
+		return reset($this->entries);
 	}
 
 	public function valid()
 	{
-		return valid($this->entries);
+		return false !== current($this->entries);
 	}
 
 	public function countErrors()

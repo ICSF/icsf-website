@@ -32,3 +32,6 @@ foreach ($argv as $arg)
 	$inner = $validator->validate();
 	$result->merge($inner);
 }
+
+foreach ($result as $err)
+	echo ($err->warning ? '[WARN]' : '[ERR!]'), ' ', $err->file, ':', $err->line, ' - ', $err->message, PHP_EOL;
