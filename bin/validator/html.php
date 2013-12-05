@@ -27,7 +27,7 @@ class HtmlValidator extends Validator
 
 			if (!array_key_exists($match['tag'], self::$tags))
 			{
-				$this->error($match['line'], false, "Dropping unrecognised tag " + $match['tag']);
+				$this->error($match['line'], false, 'Dropping unrecognised tag "' . $match['tag'] . '"');
 				continue;
 			}
 
@@ -44,7 +44,7 @@ class HtmlValidator extends Validator
 
 			foreach ($missing as $missed)
 			{
-				$this->error($match['line'], false, sprintf('Tag %s missing attribute %s', $match['tag'], $missed));
+				$this->error($match['line'], true, sprintf('Tag "%s" missing attribute "%s"', $match['tag'], $missed));
 			}
 		}
 	}
@@ -106,7 +106,7 @@ class HtmlValidator extends Validator
 	public function parseAttributes(array $match)
 	{
 		$regex = '/([a-z\-]+)=(["\'])([^\2]+)\2/smU';
-		preg_match_all($regex, $content, $match);
+		preg_match_all($regex, $match['attrs'], $attrs);
 
 		var_dump($match);
 	}
