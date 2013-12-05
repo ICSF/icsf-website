@@ -34,7 +34,7 @@ $exts  = array('script', 'style');
 
 HtmlValidator::$tags['html'] = new HtmlTag('html', array('head', 'body'));
 HtmlValidator::$tags['head'] = new HtmlTag('head', $head);
-HtmlValidator::$tags['body'] = new HtmlTag('body', $sec + $blocks + $bflow + $flow + $exts);
+HtmlValidator::$tags['body'] = new HtmlTag('body', $secs + $block + $bflow + $flow + $exts);
 
 foreach ($head as $elem)
 {
@@ -43,12 +43,12 @@ foreach ($head as $elem)
 
 foreach ($secs as $elem)
 {
-	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $blocks + $bflow + $flow + $exts);
+	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $block + $bflow + $flow + $exts);
 }
 
 foreach ($block as $elem)
 {
-	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $blocks + $bflow + $flow + $exts);
+	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $block + $bflow + $flow + $exts);
 }
 
 foreach ($bflow as $elem)
@@ -62,15 +62,15 @@ HtmlValidator::$tags['img'] = new HtmlTag('img', array(), array('alt', 'src', 'w
 
 HtmlValidator::$tags['ul'] = new HtmlTag('ul', array('li'));
 HtmlValidator::$tags['ol'] = new HtmlTag('ol', array('li'));
-HtmlValidator::$tags['li'] = new HtmlTag('li', $blocks + $bflow + $flow + $exts);
+HtmlValidator::$tags['li'] = new HtmlTag('li', $block + $bflow + $flow + $exts);
 
 HtmlValidator::$tags['table'] = new HtmlTag('table', array('thead', 'tbody'));
 HtmlValidator::$tags['thead'] = new HtmlTag('thead', array('tr'));
 HtmlValidator::$tags['tbody'] = new HtmlTag('tbody', array('tr'));
 HtmlValidator::$tags['tr'] = new HtmlTag('tr', array('td'));
-HtmlValidator::$tags['td'] = new HtmlTag('tr', $blocks + $bflow + $flow + $exts);
+HtmlValidator::$tags['td'] = new HtmlTag('tr', $block + $bflow + $flow + $exts);
 
-unset($head, $sec, $blocks, $bflow, $flow, $exts);
+unset($head, $sec, $block, $bflow, $flow, $exts);
 
 class HtmlTag
 {
