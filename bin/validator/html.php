@@ -130,7 +130,7 @@ $head  = array('title', 'link', 'meta', 'script', 'style');
 $secs  = array('header', 'nav', 'footer', 'div');
 $block = array('nav', 'div', 'ul', 'ol', 'p', 'table');
 $bflow = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6');
-$flow  = array('span', 'a', 'em', 'strong', 'img');
+$flow  = array('span', 'a', 'em', 'strong', 'b', 'i', 'hr', 'br', 'img');
 $exts  = array('script', 'style');
 
 HtmlValidator::$tags['html'] = new HtmlTag('html', array('head', 'body'));
@@ -160,6 +160,13 @@ foreach ($bflow as $elem)
 HtmlValidator::$tags['span'] = new HtmlTag('span', array_merge($flow, $exts));
 HtmlValidator::$tags['a'] = new HtmlTag('a', array_merge($flow, $exts), array('href'));
 HtmlValidator::$tags['img'] = new HtmlTag('img', array(), array('alt', 'src', 'width', 'height'));
+
+HtmlValidator::$tags['hr'] = new HtmlTag('hr');
+HtmlValidator::$tags['br'] = new HtmlTag('br');
+HtmlValidator::$tags['b'] = new HtmlTag('b', $flow);
+HtmlValidator::$tags['i'] = new HtmlTag('i', $flow);
+HtmlValidator::$tags['em'] = new HtmlTag('em', $flow);
+HtmlValidator::$tags['strong'] = new HtmlTag('strong', $flow);
 
 HtmlValidator::$tags['ul'] = new HtmlTag('ul', array('li'));
 HtmlValidator::$tags['ol'] = new HtmlTag('ol', array('li'));
