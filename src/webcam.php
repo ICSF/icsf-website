@@ -12,7 +12,7 @@
 		</p>
 
 		<img style="display: block; width: 95%; max-width: 640px; max-height: 480px; margin: 0 auto;"
-		src="<!--SRVROOT-->/webcam.jpeg" alt="Library Webcam" />
+		src="<!--SRVROOT-->/webcam.jpeg" alt="Library Webcam" width="640" height="480" />
 
 		<p style="margin: 1em 0; text-align: center;">
 			This page will automatically reload every 10 seconds<br />
