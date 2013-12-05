@@ -9,7 +9,7 @@ class HtmlValidator extends Validator
 
 	protected function run($content)
 	{
-		$regex = '/\<(?<close>\/?)(?<tag>[a-z:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose>\/?)\>/smU';
+		$regex = '/\<(?<close>\/?)(?<tag>[a-zA-Z0-9:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose>\/?)\>/smU';
 		$offset = 0; $match = array();
 
 		while (preg_match($regex, $content, $match, PREG_OFFSET_CAPTURE, $offset))
@@ -17,12 +17,17 @@ class HtmlValidator extends Validator
 			$offset  = $match[0][1] + mb_strlen($match[0][0]);
 
 			$match = array(
-				'line' => substr_count($content, "\n", 0, $offset),
+				'line' => 1 + substr_count($content, "\n", 0, $offset),
 				'tag' => $match['tag'][0],
 				'attrs' => $match['attrs'][0],
 				'close' => !empty($match['close'][0]),
 				'selfclose' => !empty($match['selfclose'][0])
 			);
+
+			if ($match['line'] === 1 && $match['tag'] === '!DOCTYPE')
+			{
+				continue;
+			}
 
 			if (!array_key_exists($match['tag'], self::$tags))
 			{
@@ -90,7 +95,7 @@ class HtmlValidator extends Validator
 
 			// If the closing tag is a container for the last opened,
 			// the close propigates up the stack
-			if (array_key_exists($current, self::$tags[$match['tag']]->children))
+			if (self::$tags[$match['tag']]->isChildPermitted($current))
 			{
 				array_pop($this->tagStack);
 				$this->close($match);
@@ -200,4 +205,3 @@ class HtmlTag
 	}
 }
 
-var_dump(HtmlValidator::$tags['nav']);
