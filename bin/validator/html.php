@@ -10,8 +10,7 @@ class HtmlValidator extends Validator
 	protected function run($content)
 	{
 		$regex = '/\<(?<close>\/?)(?<tag>[a-z:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose>\/?)\>/smU';
-		$offset = 0;
-		$match = array();
+		$offset = 0; $match = array();
 
 		while (preg_match($regex, $content, $match, PREG_OFFSET_CAPTURE, $offset))
 		{
@@ -106,9 +105,11 @@ class HtmlValidator extends Validator
 	public function parseAttributes(array $match)
 	{
 		$regex = '/([a-z\-]+)=(["\'])([^\2]+)\2/smU';
-		$res = array();
+		$attrs = $res = array();
 		if (!preg_match_all($regex, $match['attrs'], $attrs, PREG_SET_ORDER))
+		{
 			return $res;
+		}
 
 		foreach ($attrs as $attr)
 		{
@@ -129,7 +130,7 @@ $exts  = array('script', 'style');
 
 HtmlValidator::$tags['html'] = new HtmlTag('html', array('head', 'body'));
 HtmlValidator::$tags['head'] = new HtmlTag('head', $head);
-HtmlValidator::$tags['body'] = new HtmlTag('body', $secs + $block + $bflow + $flow + $exts);
+HtmlValidator::$tags['body'] = new HtmlTag('body', array_merge($secs, $block, $bflow, $flow, $exts));
 
 foreach ($head as $elem)
 {
@@ -138,32 +139,32 @@ foreach ($head as $elem)
 
 foreach ($secs as $elem)
 {
-	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $block + $bflow + $flow + $exts);
+	HtmlValidator::$tags[$elem] = new HtmlTag($elem, array_merge($block, $bflow, $flow, $exts));
 }
 
 foreach ($block as $elem)
 {
-	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $block + $bflow + $flow + $exts);
+	HtmlValidator::$tags[$elem] = new HtmlTag($elem, array_merge($block, $bflow, $flow, $exts));
 }
 
 foreach ($bflow as $elem)
 {
-	HtmlValidator::$tags[$elem] = new HtmlTag($elem, $bflow + $flow + $exts);
+	HtmlValidator::$tags[$elem] = new HtmlTag($elem, array_merge($bflow, $flow, $exts));
 }
 
-HtmlValidator::$tags['span'] = new HtmlTag('span', $flow + $exts);
-HtmlValidator::$tags['a'] = new HtmlTag('a', $flow + $exts, array('href'));
+HtmlValidator::$tags['span'] = new HtmlTag('span', array_merge($flow, $exts));
+HtmlValidator::$tags['a'] = new HtmlTag('a', array_merge($flow, $exts), array('href'));
 HtmlValidator::$tags['img'] = new HtmlTag('img', array(), array('alt', 'src', 'width', 'height'));
 
 HtmlValidator::$tags['ul'] = new HtmlTag('ul', array('li'));
 HtmlValidator::$tags['ol'] = new HtmlTag('ol', array('li'));
-HtmlValidator::$tags['li'] = new HtmlTag('li', $block + $bflow + $flow + $exts);
+HtmlValidator::$tags['li'] = new HtmlTag('li', array_merge($block, $bflow, $flow, $exts));
 
 HtmlValidator::$tags['table'] = new HtmlTag('table', array('thead', 'tbody'));
 HtmlValidator::$tags['thead'] = new HtmlTag('thead', array('tr'));
 HtmlValidator::$tags['tbody'] = new HtmlTag('tbody', array('tr'));
 HtmlValidator::$tags['tr'] = new HtmlTag('tr', array('td'));
-HtmlValidator::$tags['td'] = new HtmlTag('tr', $block + $bflow + $flow + $exts);
+HtmlValidator::$tags['td'] = new HtmlTag('tr', array_merge($block, $bflow, $flow, $exts));
 
 unset($head, $sec, $block, $bflow, $flow, $exts);
 

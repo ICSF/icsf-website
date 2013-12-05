@@ -34,4 +34,9 @@ foreach ($argv as $arg)
 }
 
 foreach ($result as $err)
-	echo ($err->warning ? '[WARN]' : '[ERR!]'), ' ', $err->file, ':', $err->line, ' - ', $err->message, PHP_EOL;
+{
+	echo
+		($err->warning ? '[WARN]' : '[ERR!]'), ' ',
+		$err->file, ':', $err->line, ' - ',
+		$err->message, PHP_EOL;
+}

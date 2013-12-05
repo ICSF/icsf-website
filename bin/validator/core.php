@@ -86,7 +86,7 @@ class Result implements Iterator, Countable
 	{
 		$this->entries  += $other->entries;
 		$this->warnings += $other->warnings;
-		$this->errors   += $other->errors;
+		$this->errors    = array_merge($this->errors, $other->errors);
 	}
 
 	public function current()
