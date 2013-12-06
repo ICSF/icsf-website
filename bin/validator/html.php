@@ -18,13 +18,13 @@ class HtmlValidator extends Validator
 
 			$match = array(
 				'line' => 1 + substr_count($content, "\n", 0, $offset),
-				'tag' => $match['tag'][0],
+				'tag' => strtolower($match['tag'][0]),
 				'attrs' => $match['attrs'][0],
 				'close' => !empty($match['close'][0]),
 				'selfclose' => !empty($match['selfclose'][0])
 			);
 
-			if ($match['line'] === 1 && $match['tag'] === '!DOCTYPE')
+			if ($match['line'] === 1 && $match['tag'] === '!doctype')
 			{
 				continue;
 			}
