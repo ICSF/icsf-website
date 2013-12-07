@@ -134,7 +134,7 @@ $head  = array('title', 'link', 'meta', 'script', 'style');
 $secs  = array('header', 'nav', 'footer', 'div');
 $block = array('nav', 'div', 'ul', 'ol', 'p', 'table');
 $bflow = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6');
-$flow  = array('span', 'a', 'em', 'strong', 'b', 'i', 'hr', 'br', 'img');
+$flow  = array('span', 'a', 'em', 'strong', 'b', 'i', 'u', 'hr', 'br', 'img', 'sub', 'sup', 'iframe');
 $exts  = array('script', 'style');
 
 HtmlValidator::$tags['html'] = new HtmlTag('html', array('head', 'body'));
@@ -169,8 +169,11 @@ HtmlValidator::$tags['hr'] = new HtmlTag('hr');
 HtmlValidator::$tags['br'] = new HtmlTag('br');
 HtmlValidator::$tags['b'] = new HtmlTag('b', $flow);
 HtmlValidator::$tags['i'] = new HtmlTag('i', $flow);
+HtmlValidator::$tags['u'] = new HtmlTag('u', $flow);
 HtmlValidator::$tags['em'] = new HtmlTag('em', $flow);
 HtmlValidator::$tags['strong'] = new HtmlTag('strong', $flow);
+HtmlValidator::$tags['sup'] = new HtmlTag('sup', $flow);
+HtmlValidator::$tags['sub'] = new HtmlTag('sub', $flow);
 
 HtmlValidator::$tags['ul'] = new HtmlTag('ul', array('li'));
 HtmlValidator::$tags['ol'] = new HtmlTag('ol', array('li'));
@@ -181,6 +184,8 @@ HtmlValidator::$tags['thead'] = new HtmlTag('thead', array('tr'));
 HtmlValidator::$tags['tbody'] = new HtmlTag('tbody', array('tr'));
 HtmlValidator::$tags['tr'] = new HtmlTag('tr', array('td'));
 HtmlValidator::$tags['td'] = new HtmlTag('tr', array_merge($block, $bflow, $flow, $exts));
+
+HtmlValidator::$tags['iframe'] = new HtmlTag('iframe', array(), array('src'));
 
 unset($head, $sec, $block, $bflow, $flow, $exts);
 
