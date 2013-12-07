@@ -8,6 +8,8 @@ find src -type f ! -name '.*.swp' ! -name '*.min' | sed -e 's:^src:build:' -e 's
 
 # Files relating to minutes
 ${0%/*}/gettargets-minutes
+${0%/*}/gettargets-gallery
 
 printf 'build/committee/minutes/index.php\n'
+printf 'build/social/gallery/index.html\n'
 

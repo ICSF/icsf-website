@@ -74,6 +74,18 @@ build/%.css : src/%.css bin/MinifyCss.class stubs
 src/%.html : src/%.min
 	minute-gen $< > $@
 
+build/%.thumb.png : src/%.png
+	@mkdir -p -v $(@D)
+	convert -thumbnail "100x100>" -background none -gravity center -extend 100x100 -unsharp 0x.5 $< $@
+
+build/%.thumb.png : src/%.jpg
+	@mkdir -p -v $(@D)
+	convert -thumbnail "100x100>" -background none -gravity center -extent 100x100 -unsharp 0x.5 $< $@
+
+build/social/gallery/index.html.php : src/social/gallery/index.html.php Makefile stubs $(shell ./bin/gettargets-gallery)
+	@mkdir -p -v $(@D)
+	var-subst $< $@ SRVROOT=${SRVROOT}
+
 build/% : src/%
 	@mkdir -p -v $(@D)
 	cp $< $@
@@ -83,4 +95,7 @@ build/% : src/%
 src/committee/minutes/index.php : $(shell ./bin/gettargets-minutes)
 	@echo minute-index > $@
 	@minute-index $^ > $@
+
+src/social/gallery/%/index.html.php : src/social/gallery/%/ stubs
+	cp stubs/gallery.html.php $@
 

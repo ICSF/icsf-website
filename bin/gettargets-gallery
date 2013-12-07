@@ -1,0 +1,6 @@
+#!/bin/sh
+
+find src/social/gallery -name \*.jpg -or -name \*.png | sed -e 's:png$:thumb.png:' -e 's:jpg$:thumb.png:' -e 's:^src:build:'
+find src/social/gallery -name \*.jpg -or -name \*.png | sed -e 's:^src:build:'
+find src/social/gallery -mindepth 1 -type d | sed -e 's:$:/index.html.php:' -e 's:^src:build:'
+
