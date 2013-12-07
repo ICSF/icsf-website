@@ -110,7 +110,7 @@
 	add_event('Feb 2013', 'Picocon 30', '<!--SRVROOT-->/history/picocon/picocon30.html');
 ?>
 				</td>
-			</td>
+			</tr>
 <?php foreach(range(1977, $year) as $y): ?>
 			<tr><td><?php echo $y ?></td></tr>
 <?php endforeach; ?>
