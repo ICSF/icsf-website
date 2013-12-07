@@ -121,7 +121,7 @@ class Result implements Iterator, Countable
 
 	public function countWarnings()
 	{
-		return $this->errors;
+		return $this->warnings;
 	}
 
 	public function count()
