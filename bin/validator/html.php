@@ -161,19 +161,16 @@ foreach ($bflow as $elem)
 	HtmlValidator::$tags[$elem] = new HtmlTag($elem, array_merge($bflow, $flow, $exts));
 }
 
-HtmlValidator::$tags['span'] = new HtmlTag('span', array_merge($flow, $exts));
+foreach ($flow as $elem)
+{
+	HtmlValidator::$tags[$elem] = new HtmlTag($elem, array_merge($flow));
+}
+
 HtmlValidator::$tags['a'] = new HtmlTag('a', array_merge($flow, $exts), array('href'));
 HtmlValidator::$tags['img'] = new HtmlTag('img', array(), array('alt', 'src', 'width', 'height'));
 
 HtmlValidator::$tags['hr'] = new HtmlTag('hr');
 HtmlValidator::$tags['br'] = new HtmlTag('br');
-HtmlValidator::$tags['b'] = new HtmlTag('b', $flow);
-HtmlValidator::$tags['i'] = new HtmlTag('i', $flow);
-HtmlValidator::$tags['u'] = new HtmlTag('u', $flow);
-HtmlValidator::$tags['em'] = new HtmlTag('em', $flow);
-HtmlValidator::$tags['strong'] = new HtmlTag('strong', $flow);
-HtmlValidator::$tags['sup'] = new HtmlTag('sup', $flow);
-HtmlValidator::$tags['sub'] = new HtmlTag('sub', $flow);
 
 HtmlValidator::$tags['ul'] = new HtmlTag('ul', array('li'));
 HtmlValidator::$tags['ol'] = new HtmlTag('ol', array('li'));
