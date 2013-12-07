@@ -42,3 +42,8 @@ foreach ($result as $err)
 }
 	echo $result->countErrors(), ' Errors, ',
 		$result->countWarnings(),' Warnings.', PHP_EOL;
+
+if (count($result) === 0)
+	exit(0);
+else
+	exit(1);
