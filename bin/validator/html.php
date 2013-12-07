@@ -24,7 +24,7 @@ class HtmlValidator extends Validator
 				'selfclose' => !empty($match['selfclose'][0])
 			);
 
-			if ($match['line'] === 1 && $match['tag'] === '!doctype')
+			if ($offset === 0 && $match['tag'] === '!doctype')
 			{
 				continue;
 			}
