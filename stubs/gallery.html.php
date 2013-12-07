@@ -39,10 +39,11 @@ function name($name)
 	if (substr($file, -9, -4) === 'thumb') continue;
 
 	$thumb = substr($file, 0, -4) . '.thumb.png';
+	$name = name(substr($file, 0, -4));
 ?>
 			<a href="<?php echo htmlentities($file); ?>" class="thumb">
-				<img src="<?php echo htmlentities($thumb); ?>" width="100" height="100" />
-				<?php echo name(substr($file, 0, -4)); ?>
+				<img src="<?php echo htmlentities($thumb); ?>" alt="<?php echo $name; ?>"  width="100" height="100" />
+				<?php echo $name; ?>
 			</a>
 <?php endforeach; ?>
 		</div>

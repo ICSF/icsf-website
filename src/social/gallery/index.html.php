@@ -40,7 +40,7 @@ function name($name)
 	if (empty($thumbs)) continue;
 ?>
 			<a href="<?php echo $dir;?>/" class="thumb">
-				<img src="<?php echo htmlentities(current($thumbs)); ?>" width="100" height="100" />
+				<img src="<?php echo htmlentities(current($thumbs)); ?>" alt="<?php echo $album; ?>" width="100" height="100" />
 				<?php echo $album, ' (', count($thumbs), ' items)'; ?>
 			</a>
 <?php endforeach; ?>
