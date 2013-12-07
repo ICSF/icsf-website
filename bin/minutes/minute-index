@@ -26,9 +26,14 @@
 	function index($file, $path)
 	{
 		$handle = fopen($file, 'r');
-		if (!$handle || fgets($handle) !== '<!DOCTYPE html>' . PHP_EOL)
+		if (!$handle)
 		{
-			fputs(STDERR, 'Can not open file or find header: ' . $file . PHP_EOL);
+			fputs(STDERR, 'Can not open file: ' . $file . PHP_EOL);
+			return '';
+		}
+
+		if (fgets($handle) !== '<!DOCTYPE html>' . PHP_EOL)
+		{
 			return tabs(3) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . '">' .
 				$path[count($path) - 1] . '</a></li>' . PHP_EOL;
 		}
