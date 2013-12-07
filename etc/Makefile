@@ -3,7 +3,7 @@ SYNC=rsync
 SYNCDEL=--delete-after
 SYNCPERMS=--perms --chmod=a=rX,u+w,Da+x
 SYNCEXCLUDE=etc/exclude
-SYNCFLAGS=-rlt $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
+SYNCFLAGS=-rltc $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
 
 JAVAC=javac
 JAVA=java
@@ -51,7 +51,7 @@ build/%.html : src/%.html Makefile stubs
 build/%.html : build/%.html.php Makefile stubs
 	php $< > $@
 
-build/%htaccess : src/%htaccess Makefile
+build/%htaccess : src/%htaccess Makefile stubs
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}
 

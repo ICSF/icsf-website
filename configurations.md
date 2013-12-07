@@ -27,7 +27,7 @@ your personal web space to test this website. You will need to replace
 
 ```shell
 DOCROOT=/homes/<user>/public_html/icsf
-SRVROOT=/~<user>/icsf
+SRVROOT=~<user>/icsf
 MODPHP=0
 ```
 
@@ -40,7 +40,7 @@ DOCROOT=<user>@shell1.doc.ic.ac.uk:/homes/<user>/public_html/icsf
 Union Webserver Dougal
 ----------------------
 
-This meeds some manual editing of the rsync flags. All the following
+This meeds some manual editing of the rsync flags. Add the following
 to the Makefile created by ./configure beneath the input for etc/Makefile
 
 ```shell
