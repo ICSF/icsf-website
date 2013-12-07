@@ -180,8 +180,8 @@ HtmlValidator::$tags['table'] = new HtmlTag('table', array('thead', 'tbody', 'tr
 HtmlValidator::$tags['thead'] = new HtmlTag('thead', array('tr'));
 HtmlValidator::$tags['tbody'] = new HtmlTag('tbody', array('tr'));
 HtmlValidator::$tags['tr'] = new HtmlTag('tr', array('td', 'th'));
-HtmlValidator::$tags['td'] = new HtmlTag('tr', array_merge($block, $bflow, $flow, $exts));
-HtmlValidator::$tags['th'] = new HtmlTag('tr', array_merge($block, $bflow, $flow, $exts));
+HtmlValidator::$tags['td'] = new HtmlTag('td', array_merge($block, $bflow, $flow, $exts));
+HtmlValidator::$tags['th'] = new HtmlTag('th', array_merge($block, $bflow, $flow, $exts));
 
 HtmlValidator::$tags['iframe'] = new HtmlTag('iframe', array(), array('src'));
 

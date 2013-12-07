@@ -4,7 +4,7 @@ class PhpValidator extends Validator
 {
 	protected static function getContent($file)
 	{
-		return `php  --syntax-check "$file"`;
+		return `php -l "$file"`;
 	}
 
 	protected function run($content)
