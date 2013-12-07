@@ -9,15 +9,16 @@ class HtmlValidator extends Validator
 
 	protected function run($content)
 	{
-		$regex = '/\<(?<close>\/?)(?<tag>[a-zA-Z0-9:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose>\/?)\>/smU';
+		$regex = '/\<(?<close>\/)?(?<tag>[a-zA-Z0-9:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose> ?\/)?\>/smU';
 		$offset = 0; $match = array();
 
 		while (preg_match($regex, $content, $match, PREG_OFFSET_CAPTURE, $offset))
 		{
-			$offset  = $match[0][1] + mb_strlen($match[0][0]);
+			$end = $match[0][1] + strlen($match[0][0]);
 
+			$match = array_merge(array('attrs'=>array('')), $match);
 			$match = array(
-				'line' => 1 + substr_count($content, "\n", 0, $offset),
+				'line' => 1 + substr_count($content, "\n", 0, $match[0][1] + 1),
 				'tag' => strtolower($match['tag'][0]),
 				'attrs' => $match['attrs'][0],
 				'close' => !empty($match['close'][0]),
@@ -26,8 +27,11 @@ class HtmlValidator extends Validator
 
 			if ($offset === 0 && $match['tag'] === '!doctype')
 			{
+				$offset = $end;
 				continue;
 			}
+
+			$offset = $end;
 
 			if (!array_key_exists($match['tag'], self::$tags))
 			{
