@@ -9,7 +9,7 @@ JAVAC=javac
 JAVA=java
 SED=sed
 
-PATH:=./bin:./bin/minutes:$(PATH)
+PATH:=./bin:./bin/minutes:./bin/validator:$(PATH)
 
 .DEFAULT: build
 .PHONY: all deploy build clean tidy
@@ -35,7 +35,7 @@ deploy: tidy
 	$(SYNC) $(SYNCFLAGS) build/. "$(DOCROOT)"
 
 clean:
-	rm build -rf
+	rm build src/committee/minutes/index.html -rf
 
 # ======= TOOL BUILDING =======
 
@@ -92,7 +92,7 @@ build/% : src/%
 
 # ======= SPECIAL FILES =======
 
-src/committee/minutes/index.php : $(shell ./bin/gettargets-minutes)
+src/committee/minutes/index.html : $(shell ./bin/gettargets-minutes)
 	@echo minute-index > $@
 	@minute-index $^ > $@
 
