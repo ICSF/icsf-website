@@ -40,3 +40,5 @@ foreach ($result as $err)
 		$err->file, ':', $err->line, ' - ',
 		$err->message, PHP_EOL;
 }
+	echo $result->countErrors(), ' Errors, ',
+		$result->countWarnings(),' Warnings.', PHP_EOL;
