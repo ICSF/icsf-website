@@ -2,6 +2,7 @@
 
 /* Direct URL rewrites: change left url to right url */
 $mapping = array(
+	'/library/history/picocon22/xwing/folding.html' => '/history/picocon/picocon22/xwing/',
 	'/frameset.php?warp=events' => '/events/',
 	'/frameset.php?warp=picocon' => '/picocon/',
 	'/frameset.php?warp=searchlibrary' => '/library/search.php',
@@ -28,6 +29,8 @@ $mapping = array(
 $regexmap = array(
 	':^/library/minutes/committee/minutes[0-9]{4}:' => array(':^/library/minutes/committee/minutes([0-1][0-9])([0-9][0-9]):', '/committee/minutes/20$1-$2'),
 	':^/library/minutes/committee:' => array(':^/library/minutes/committee/:', '/committee/minutes/'),
+	':^/library/history/picocon[0-9]+/:' => array(':^/library/history/:', '/history/picocon/'),
+	':^/library/history/pico_:' => array(':^/library/history/pico_:', '/history/picocon/picocon'),
 );
 
 $url = $_SERVER['REQUEST_URI']; // Get requested url
