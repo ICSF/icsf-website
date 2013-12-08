@@ -261,7 +261,7 @@ $head  = array('title', 'link', 'meta', 'script', 'style');
 $secs  = array('header', 'nav', 'footer', 'div');
 $block = array('nav', 'div', 'ul', 'ol', 'p', 'table');
 $bflow = array('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote');
-$flow  = array('span', 'a', 'em', 'strong', 'b', 'i', 'u', 'hr', 'br', 'img', 'sub', 'sup', 'iframe');
+$flow  = array('span', 'a', 'em', 'strong', 'b', 'i', 'u', 'hr', 'br', 'img', 'sub', 'sup', 'iframe', 'del');
 $exts  = array('script', 'style');
 
 HtmlValidator::$tags['html'] = new HtmlTag('html', array('head', 'body'));
