@@ -216,6 +216,11 @@ class HtmlValidator extends Validator
 			}
 
 			$uri = preg_replace(self::$uriRebase[0], self::$uriRebase[1], $uri);
+			$uri = preg_replace('/[?#].+$/', '', $uri);
+		}
+		elseif (substr($uri, 0, 1) === '?' || substr($uri, 0, 1) === '#')
+		{
+			return array($uri, true);
 		}
 
 		if (strpos($uri, '://'))
