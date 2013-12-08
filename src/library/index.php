@@ -56,7 +56,7 @@
 		</p>
 
 		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
-		style="width: 320px; height: 240px;" alt="ICSF Library Webam" />
+		width="320" height="240" alt="ICSF Library Webam" />
 		<h2>Library Webcam</h2>
 
 		<p>
