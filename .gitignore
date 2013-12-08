@@ -1,4 +1,5 @@
 Makefile*
 build/
 bin/*.class
+bin/validator/cache
 

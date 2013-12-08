@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mkdir -p build
+touch build/webcam.jpeg
+
+find build -name \*.html | xargs bin/validator/validator.php
+
+rm -f build/webcam.jpeg

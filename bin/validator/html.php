@@ -4,11 +4,38 @@ class HtmlValidator extends Validator
 {
 	/** @var array */
 	public static $tags = array();
+	/** @var string */
+	protected static $uriRebase = null;
+	/** @var array */
+	protected static $fileCache = array();
 	/** @var array */
 	protected $tagStack = array();
+	/** @var int */
+	protected $title = 0;
+
+	public static function cache()
+	{
+		$cache = self::$fileCache;
+		$cache = serialize($cache);
+		file_put_contents(__DIR__ . '/cache', $cache);
+	}
 
 	protected function run($content)
 	{
+		if (empty(self::$uriRebase))
+		{
+			$srvroot = getenv('SRVROOT') ?: '/';
+			$docroot = getenv('DOCROOT') ?: realpath(__DIR__ . '/../../build') . '/';
+
+			self::$uriRebase = array(sprintf(':^%s:', $srvroot), $docroot);
+
+			$cache = @file_get_contents(__DIR__ . '/cache');
+			if (!empty($cache))
+				self::$fileCache = unserialize($cache);
+
+			register_shutdown_function(array('HtmlValidator', 'cache'));
+		}
+
 		$regex = '/\<(?<close>\/)?(?<tag>[a-zA-Z0-9:!]+)(?<attrs>[ \t\r\n][^>]+)?(?<selfclose> ?\/)?\>/smU';
 		$offset = 0; $match = array();
 
@@ -47,14 +74,24 @@ class HtmlValidator extends Validator
 
 			$this->open($match);
 
+			if ($match['tag'] === 'title')
+				++$this->title;
+
 			$match['attrs'] = $this->parseAttributes($match);
 			$missing = self::$tags[$match['tag']]->getMissingAbbributes($match['attrs']);
+
+			$this->checkAttributes($match['attrs'], $match['tag'], $match['line']);
 
 			foreach ($missing as $missed)
 			{
 				$this->error($match['line'], true, sprintf('Tag "%s" missing attribute "%s"', $match['tag'], $missed));
 			}
 		}
+
+		if ($this->title === 0)
+			$this->error(0, true, 'HTML Documents require a <title> tag');
+		if ($this->title > 1)
+			$this->error(0, true, 'Multiple <title> tags found');
 	}
 
 	protected function open(array $match)
@@ -111,7 +148,7 @@ class HtmlValidator extends Validator
 		}
 	}
 
-	public function parseAttributes(array $match)
+	protected function parseAttributes(array $match)
 	{
 		$regex = '/([a-z\-]+)=(["\'])([^\2]+)\2/smU';
 		$attrs = $res = array();
@@ -128,6 +165,87 @@ class HtmlValidator extends Validator
 		return $res;
 	}
 
+	protected function checkAttributes(array $attrs, $tag, $line)
+	{
+		if ($attrs === null)
+			return;
+
+		if (array_key_exists('href', $attrs))
+		{
+			list($uri, $exists) = $this->checkUri($attrs['href']);
+			if (!$exists)
+			{
+				$this->error($line, true, sprintf('Link to "%s" not found, was resolved to "%s"', $attrs['href'], $uri));
+			}
+		}
+		if (array_key_exists('src', $attrs))
+		{
+			list($uri, $exists) = $this->checkUri($attrs['src']);
+			if (!$exists)
+			{
+				$this->error($line, true, sprintf('Link to "%s" not found, was resolved to "%s"', $attrs['src'], $uri));
+			}
+		}
+
+		if ($tag === 'meta' && array_key_exists('name', $attrs))
+		{
+			if (!in_array($attrs['name'], array('description', 'keywords')))
+			{
+				$this->error($line, true, sprintf('Meta field "%s" not recognised', $attrs['name']));
+			}
+		}
+		if ($tag === 'meta' && array_key_exists('http-equiv', $attrs))
+		{
+			if (!in_array($attrs['http-equiv'], array('Content-Type')))
+			{
+				$this->error($line, true, sprintf('Meta field "%s" not recognised', $attrs['name']));
+			}
+		}
+	}
+
+	protected function checkUri($uri)
+	{
+		if (substr($uri, 0, 7) === 'mailto:')
+			return array($uri, true);
+
+		if (substr($uri, 0, 1) === '/')
+		{
+			if (strpos($uri, '/old/'))
+			{
+				return array($uri, true);
+			}
+
+			$uri = preg_replace(self::$uriRebase[0], self::$uriRebase[1], $uri);
+		}
+
+		if (strpos($uri, '://'))
+		{
+			if (array_key_exists($uri, self::$fileCache))
+			{
+				return array($uri, self::$fileCache[$uri]);
+			}
+
+			$fh = @fopen($uri, 'rb');
+
+			if (false === $fh)
+			{
+				self::$fileCache[$uri] = false;
+				return array($uri, false);
+			}
+
+			fclose($fh);
+
+			self::$fileCache[$uri] = true;
+			return array($uri, true);
+		}
+
+		if (substr($uri, -1, 0) === '/')
+		{
+			return array($uri, file_exists($uri) || file_exists($uri . 'index.html') || file_exists($uri . 'index.php'));
+		}
+
+		return array($uri, file_exists($uri));
+	}
 }
 
 $head  = array('title', 'link', 'meta', 'script', 'style');

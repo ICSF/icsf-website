@@ -34,6 +34,9 @@ deploy: tidy
 	@mkdir -p -v build/
 	$(SYNC) $(SYNCFLAGS) build/. "$(DOCROOT)"
 
+test:
+	SRVROOT=${SRVROOT} bin/validate
+
 clean:
 	rm build src/committee/minutes/index.html -rf
 
