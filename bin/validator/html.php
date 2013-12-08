@@ -189,7 +189,7 @@ class HtmlValidator extends Validator
 
 		if ($tag === 'meta' && array_key_exists('name', $attrs))
 		{
-			if (!in_array($attrs['name'], array('description', 'keywords')))
+			if (!in_array(strtolower($attrs['name']), array('description', 'keywords', 'reply-to', 'authors')))
 			{
 				$this->error($line, true, sprintf('Meta field "%s" not recognised', $attrs['name']));
 			}
@@ -222,8 +222,7 @@ class HtmlValidator extends Validator
 		{
 			return array($uri, true);
 		}
-
-		if (strpos($uri, '://'))
+		elseif (strpos($uri, '://'))
 		{
 			if (array_key_exists($uri, self::$fileCache))
 			{
@@ -242,6 +241,11 @@ class HtmlValidator extends Validator
 
 			self::$fileCache[$uri] = true;
 			return array($uri, true);
+		}
+		else
+		{
+			$dir = dirname($this->file);
+			$uri = $dir . '/' . $uri;
 		}
 
 		if (substr($uri, -1, 0) === '/')

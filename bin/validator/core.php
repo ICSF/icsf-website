@@ -2,7 +2,7 @@
 
 abstract class Validator
 {
-	private $file;
+	protected $file;
 	/** @var Result */
 	private $result;
 
