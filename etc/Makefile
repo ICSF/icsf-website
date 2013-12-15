@@ -99,6 +99,6 @@ src/committee/minutes/index.html : $(shell ./bin/gettargets-minutes)
 	@echo minute-index > $@
 	@minute-index $^ > $@
 
-src/social/gallery/%/index.html.php : src/social/gallery/%/ stubs
+src/social/gallery/%/index.html.php : $(wildcard src/social/gallery/%/*.png) $(wildcard src/social/gallery/%/*.jpg) stubs
 	cp stubs/gallery.html.php $@
 
