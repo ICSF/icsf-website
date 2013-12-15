@@ -68,9 +68,10 @@
 		err('No \'committee\' header set');
 		exit(3);
 	}
-	
+
 	$headers['opened'] = strtotime($headers['opened']);
 	$headers['closed'] = strtotime($headers['closed']);
+	$headers['type']   = isset($headers['type']) ? $headers['type'] : '';
 	$comment = isset($headers['comment']) ? $headers['comment'] : '';
 
 	require('head.html');

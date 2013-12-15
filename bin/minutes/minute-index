@@ -25,14 +25,14 @@
 
 	function index($file, $path)
 	{
-		$handle = fopen($file, 'r');
+		$handle = fopen($file, 'rb');
 		if (!$handle)
 		{
 			fputs(STDERR, 'Can not open file: ' . $file . PHP_EOL);
 			return '';
 		}
 
-		if (fgets($handle) !== '<!DOCTYPE html>' . PHP_EOL)
+		if (fgets($handle, 32) !== '<!DOCTYPE html>' . PHP_EOL)
 		{
 			return tabs(3) . '<li><a href="<!--SRVROOT-->/' . implode('/', $path) . '">' .
 				$path[count($path) - 1] . '</a></li>' . PHP_EOL;
@@ -47,42 +47,62 @@
 			(strlen($comment) > 0 ? ' &mdash; ' . $comment : '' ) . '</li>' . PHP_EOL;
 	}
 
-array_shift($argv);
-rsort($argv);
+array_shift($argv); // Remove reference to this script
+rsort($argv); // Sort the file lsit in reverse alphabetical order
 
 foreach ($argv as $file):
+
+	// Convert the filename into an array of name parts
 	$path = explode(DIRECTORY_SEPARATOR, $file);
 	array_shift($path); // Remove 'build'
-	$newlist=false;
+
+	$newlist=false; // Flag for whether to open a nwe HTML list
+
+	// Skip files whose names do not begin with 'minutes'
+	if (substr(end($path), 0, 7) !== 'minutes')
+		continue;
 
 	for ($i = 2; $i < count($path) - 1; ++$i)
 	{
-		$d = $i - 2;
+		$d = $i - 2; // Out current depth
+
+		// If we are opening a new folder layer
 		if ($d == count($folders))
 		{
+			// Close the current HTML list
 			if (count($folders) > 0)
 				echo tabs(2) . '</ul>' . PHP_EOL;
 
+			// Append the new folder name to the filders list
 			$folders[$d] = $path[$i];
+
+			// Print out the folder header
 			echo tabs(2) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
-			$newlist=true;
+
+			$newlist=true; // We need a new html list
 		}
 		else
 		{
+			// If the current fodler is different
 			if ($folders[$d] != $path[$i])
 			{
-				echo tabs(2) . '</ul>' . PHP_EOL;
-				$folders[$d] = $path[$i];
+				echo tabs(2) . '</ul>' . PHP_EOL; // Close previous HTML list
+
+				// Close any folders deeper than  the current level
 				array_splice($folders, $d+1);
+				$folders[$d] = $path[$i]; // Update the folders list
+
+				// Printe out the folder header
 				echo tabs(2) . '<h' . $i . '>' . $path[$i] . '</h' . $i . '>' . PHP_EOL;
-				$newlist=true;
+				$newlist=true; // We need a new HTML list
 			}
 		}
 	}
 
-	if ($newlist)
+	if ($newlist) // Create new HTML list if needed
 		echo tabs(2) . '<ul>' . PHP_EOL;
 
+	// Put this line in for this file
 	echo index($file, $path); 
 
 endforeach;
