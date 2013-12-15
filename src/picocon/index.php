@@ -26,7 +26,7 @@
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
 			Picocon 31
-			<span id="subtitle">22nd Feburary 2014</span>
+			<span id="subtitle">22nd February 2014</span>
 		</h1>
 
 		<nav>
@@ -92,14 +92,14 @@
 					He was born in Leeds and specialises in hard science
 					fiction and space opera.
 				</p>
-				<p><a href="http://www.antipope.org/charlie/">Charles' Webstie</a></p>
+				<p><a href="http://www.antipope.org/charlie/">Charles' Website</a></p>
 			</div>
 			<div class="no-break clear">
 				<h3>Professor David Southwood</h3>
 				<img class="hang-left" width=150 height=150 alt="David Southwood" src="images/southwood.jpg" />
 				<p>
 					British space scientist and current President of the
-					Royal Astronomical Society, Preofessor David Southwood
+					Royal Astronomical Society, Professor David Southwood
 					is as Senior <abbr title="Research Investigator">RI</abbr>
 					at Imperial with interests have been in solar–terrestrial
 					physics and planetary science, including building the
@@ -182,7 +182,7 @@
 				</p>
 			</div>
 			<div class="no-break clear">
-				<h3>By &lsquo;Boris&rsquo;/&lsquo;Barcklays&rsquo; Bike</h3>
+				<h3>By &lsquo;Boris&rsquo;/&lsquo;Barclays&rsquo; Bike</h3>
 				<p>
 					There are three hire cycle docking stations on Prince
 					Consort Road, which also houses the Union.
@@ -209,7 +209,7 @@
 		<p>Our mail address is the following:</p>
 		<blockquote>
 			ICSF<br />
-			Student Activites Centre <br />
+			Student Activities Centre<br />
 			Imperial College Students' Union<br />
 			Beit Quad<br />
 			Prince Consort Road<br />
