@@ -28,6 +28,9 @@
 		<meta property="og:title" content="Picocon 31: 'Survival'" />
 		<meta property="og:description" content="Picocon 31 will be on the 22nd Feburary 2014, with Sarah Pinborough, Charles Stross, and Professor David Southwood. Picocon is a small London convention hosted at each year Imperial College." />
 		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
+
+		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026" /></script>
+		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js" /></script>
 	</head>
 	<body>
 		<h1 style="text-align: center;">
@@ -78,6 +81,11 @@
 			<li>Quiz and silly games</li>
 			<li>Student Union bar</li>
 		</ul>
+
+		<div style="height: 30px;">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" data-text="" data-via="picocon" data-hashtags="picocon31">Tweet</a>
+			<div class="fb-like" data-href="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" data-send="true" data-width="380" data-show-faces="false"></div>
+		</div>
 
 		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
