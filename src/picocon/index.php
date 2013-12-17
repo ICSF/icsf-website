@@ -1,3 +1,7 @@
+<?php
+	$protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
+	$host = @$_SERVER['HTTP_HOST'] ?: '';
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -19,6 +23,11 @@
 				display: inline-block;
 			}
 		</style>
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
+		<meta property="og:title" content="Picocon 31: 'Survival'" />
+		<meta property="og:description" content="Picocon 31 will be on the 22nd Feburary 2014, with Sarah Pinborough, Charles Stross, and Professor David Southwood. Picocon is a small London convention hosted at each year Imperial College." />
+		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
 	</head>
 	<body>
 		<h1 style="text-align: center;">
