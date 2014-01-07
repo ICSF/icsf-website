@@ -45,6 +45,7 @@
 			<!--include "stubs/nav-main.html"-->
 			<hr />
 			<a href="#goh">Guests</a>
+			<a href="#timetable">Timetable</a>
 			<a href="#prices">Prices</a>
 			<a href="#directions">Directions</a>
 			<a href="#contact">Contact Us</a>
