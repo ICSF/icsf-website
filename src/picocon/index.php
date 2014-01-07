@@ -22,6 +22,9 @@
 				font-size: 10pt;
 				display: inline-block;
 			}
+			table { margin: 10px 0; border-collapse: collapse; }
+			td { padding: 4px 8px; vertical-align: top; border: 1px solid #aaa; }
+			td .note { font-size: smaller; font-style: italic; }
 		</style>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
@@ -127,7 +130,6 @@
 		</div>
 
 		<h2 id="timetable">Timetable</h2>
-		<div class="columns">
 		<table>
 			<tbody>
 				<tr>
@@ -173,7 +175,6 @@
 				</tr>
 			</tbody>
 		</table>
-		</div>
 
 		<p><strong>The timetable is liable to change up to the start of the convention.</strong></p>
 
