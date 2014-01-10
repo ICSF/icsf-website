@@ -1,7 +1,3 @@
-<?php
-	$protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-	$host = @$_SERVER['HTTP_HOST'] ?: '';
-?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -87,8 +83,8 @@
 		</ul>
 
 		<div style="height: 30px;">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" data-text="" data-via="picocon" data-hashtags="picocon31">Tweet</a>
-			<div class="fb-like" data-href="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" data-send="true" data-width="380" data-show-faces="false"></div>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.union.ic.ac.uk/scc/icsf/picocon/" data-text="" data-via="picocon" data-hashtags="picocon31">Tweet</a>
+			<div class="fb-like" data-href="https://www.union.ic.ac.uk/scc/icsf/picocon/" data-send="true" data-width="380" data-show-faces="false"></div>
 		</div>
 
 		<h2 id="goh">Guests of Honour</h2>
