@@ -222,6 +222,7 @@
 		<div class="columns" style="margin: 1em 0;">
 			<div class="no-break clear">
 				<h3>By London Underground</h3>
+				<img src="<!--SRVROOT-->/resources/tfl/underground.svg" width="80" height="65" alt="London Underground" class="hang-left" />
 				<p>
 					The tube is probably easiest way to get to Picocon; both
 					Gloucester Road Station and South Kensington Station are
@@ -249,13 +250,14 @@
 			</div>
 			<div class="no-break clear">
 				<h3>By Public Bus</h3>
+				<img src="<!--SRVROOT-->/resources/tfl/buses.svg" width="80" height="65" alt="TfL Buses" class="hang-left" />
 				<p>
 					Both the
 					<a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/royalalberthall-12445.pdf">Royal Albert Hall</a>
 					and the
 					<a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/southkensington-2236.pdf">South Kensington</a>
 					bus stop groups are near by - the Royal Albert Hall itself
-					is <em>literally</em> next door to the Union.
+					is next door to the Union.
 					From South Kensington stops, follow the route map from
 					<a href="http://g.co/maps/akrjw">South Kensington Station</a>.
 				</p>
@@ -267,6 +269,7 @@
 			</div>
 			<div class="no-break clear">
 				<h3>By &lsquo;Boris&rsquo;/&lsquo;Barclays&rsquo; Bike</h3>
+				<img src="<!--SRVROOT-->/resources/tfl/cycle-hire.svg" width="80" height="66" alt="Barclay's Bike Hire" class="hang-left" />
 				<p>
 					There are three hire cycle docking stations on Prince
 					Consort Road, which also houses the Union.
@@ -276,7 +279,7 @@
 			</div>
 		</div>
 		<p>
-			<b>Important Advice:</b> If you get lost around South
+			<b>Note:</b> If you get lost around South
 			Kensington trying to find Beit Quad, ask for directions to the
 			Royal Albert Hall, and once there, Beit Quad is the building
 			on the left of the RAH as you face it's main entrance
