@@ -176,11 +176,11 @@ err:
 				</p>
 
 				<label for="contact">
-					<input  type="checkbox" id="contact" name="contact" checked="checked" />
+					<input type="checkbox" id="contact" name="contact" checked="checked" />
 					Picocon 31
 				</label>
 				<label for="contact_all">
-					<input  type="checkbox" id="contact_all" name="contact_all" />
+					<input type="checkbox" id="contact_all" name="contact_all" />
 					And future Picocons
 				</label>
 			</fieldset>
