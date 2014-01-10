@@ -1,3 +1,7 @@
+<?php
+	$protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
+	$host = @$_SERVER['HTTP_HOST'] ?: '';
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
