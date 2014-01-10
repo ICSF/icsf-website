@@ -66,9 +66,15 @@ err:
 		<!--include "stubs/headers.html"-->
 		<title>Picocon 31 - Pre-registration</title>
 		<style type="text/css">
-			fieldset>legend { font-size: 16pt; padding: 0 10px; margin: 0 auto; }
-			fieldset { box-sizing: border-box; padding: 5px 15px; border-radius: 10px; }
-
+			fieldset {
+				display: inline-block;
+				box-sizing: border-box;
+				width: 100%;
+				border-radius: 10px;
+				margin: 0 0 10px;
+				padding: 5px 15px;
+			}
+			legend { font-size: 16pt; padding: 0 10px; margin: 0 auto; }
 			input, label, p, option {
 				font-family: 'Open Sans', Helvetica, sans-serif;
 				font-size: 14px;
@@ -80,12 +86,13 @@ err:
 				background: rgb(255, 240, 224);
 				padding: 5px;
 				border-radius: 8px;
-				position: absolute; right: 0;
+				float: right;
 				box-sizing: border-box;
 			}
 			input[required]:before { content: "*"; color: red; }
 			input[type=email]:valid, input[type=text]:valid { background: white; }
 			input[type=submit] { margin: 15px auto; width: auto; padding: 10px; display: block; }
+			p { margin-top: 0.2em; }
 		</style>
 	</head>
 	<body>
@@ -95,7 +102,7 @@ err:
 			</h1>
 			<!--<h2>REGISTRATION IS CLOSED</h2>-->
 
-			<input  type="submit" value="Submit Pre-Registration" style="float: right;" />
+			<input  type="submit" value="Submit Pre-Registration" style="float: right; margin: 0" />
 			<p>
 				Pre-register for <a href="index.php">Picocon 31</a>.
 			</p>
