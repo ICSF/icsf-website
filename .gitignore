@@ -2,4 +2,5 @@ Makefile*
 build/
 bin/*.class
 bin/validator/cache
+config.php
 
