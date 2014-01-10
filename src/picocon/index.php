@@ -36,6 +36,16 @@
 		<meta property="og:description" content="Picocon 31 will be on the 22nd Feburary 2014, with Sarah Pinborough, Charles Stross, and Professor David Southwood. Picocon is a small London convention hosted at each year Imperial College." />
 		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
 
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:site" content="@picocon" />
+		<meta property="twitter:creator" content="@picocon" />
+		<meta property="twitter:title" content="Picocon 31: 'Survival' - 22nd Feburary" />
+		<meta property="twitter:description" content="Picocon is the annual one-day Science Fiction &amp; Fantasy convention
+			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
+			It usually takes place on a Saturday in February, in Imperial
+			College's Student Union. This year's guests are Sarah Pinborough, Charles Stross, and Professor David Southward." />
+		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
+
 		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026" /></script>
 		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js" /></script>
 	</head>
