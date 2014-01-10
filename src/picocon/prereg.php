@@ -96,17 +96,22 @@ err:
 		</style>
 	</head>
 	<body>
-		<form method="post" action="#">
-			<h1>
-				Picocon 31 &mdash; Pre&ndash;registration
-			</h1>
+		<h1>
+			<a href="<!--SRVROOT-->/">
+				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
+			</a>
+			Picocon 31 &mdash; Pre&ndash;registration
+			<span id="subtitle">Register Now!</span>
+		</h1>
 
-			<nav>
-				<!--include "stubs/nav-main.html"-->
-				<hr />
-				<a href="<!--SRVROOT-->/picocon/">Picocon 31</a>
-				<a href="<!--SRVROOT-->/picocon/#tickets">Buy Tickets</a>
-			</nav>
+		<nav>
+			<!--include "stubs/nav-main.html"-->
+			<hr />
+			<a href="<!--SRVROOT-->/picocon/">Picocon 31</a>
+			<a href="<!--SRVROOT-->/picocon/#tickets">Buy Tickets</a>
+		</nav>
+
+		<form method="post" action="#">
 
 			<!--<h2>REGISTRATION IS CLOSED</h2>-->
 
