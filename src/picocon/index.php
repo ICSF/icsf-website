@@ -1,4 +1,8 @@
 <?php
+	error_reporting(E_ALL ^ E_STRICT ^ E_NOTICE ^ E_WARNING);
+	set_error_handler(function ($e) { var_dump($e); }, E_ALL);
+	set_exception_handler(function ($e) { var_dump($e); });
+
 	$protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
 	$host = @$_SERVER['HTTP_HOST'] ?: '';
 ?>
