@@ -4,7 +4,7 @@
 
 	if (count($_POST) > 0) {
 
-		if (empty($_POST['name']) && empty($_POST['email'])) {
+		if (empty($_POST['name']) || empty($_POST['email'])) {
 			$error = 'Name and email are required fields';
 			goto err;
 		}
