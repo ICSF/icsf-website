@@ -64,7 +64,7 @@ err:
 <html>
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>Picocon 31 - Pre-registration</title>
+		<title>Picocon 31 - Pre-Registration</title>
 		<style type="text/css">
 			fieldset {
 				display: inline-block;
@@ -100,6 +100,14 @@ err:
 			<h1>
 				Picocon 31 &mdash; Pre&ndash;registration
 			</h1>
+
+			<nav>
+				<!--include "stubs/nav-main.html"-->
+				<hr />
+				<a href="<!--SRVROOT-->/picocon/">Picocon 31</a>
+				<a href="<!--SRVROOT-->/picocon/#tickets">Buy Tickets</a>
+			</nav>
+
 			<!--<h2>REGISTRATION IS CLOSED</h2>-->
 
 			<input  type="submit" value="Submit Pre-Registration" style="float: right; margin: 0" />
