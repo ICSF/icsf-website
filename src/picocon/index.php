@@ -32,7 +32,7 @@
 		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js" /></script>
 	</head>
 	<body>
-		<h1 style="text-align: center;">
+		<h1>
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
