@@ -208,7 +208,7 @@ class HtmlValidator extends Validator
 		if (substr($uri, 0, 7) === 'mailto:')
 			return array($uri, true);
 
-		if (substr($uri, 0, 1) === '/')
+		if (substr($uri, 0, 1) === '/' && substr($uri, 1, 1) !== '/')
 		{
 			if (strpos($uri, '/old/'))
 			{
@@ -222,8 +222,13 @@ class HtmlValidator extends Validator
 		{
 			return array($uri, true);
 		}
-		elseif (strpos($uri, '://'))
+		elseif (strpos($uri, '//') !== false)
 		{
+			if (strpos($uri, '//') === 0)
+			{
+				$uri = 'http:' . $uri;
+			}
+
 			if (array_key_exists($uri, self::$fileCache))
 			{
 				return array($uri, self::$fileCache[$uri]);
