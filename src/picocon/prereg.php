@@ -1,8 +1,8 @@
 <?php
-	include("config.php");
 	$error = null;
 
 	if (count($_POST) > 0) {
+		require("config.php");
 
 		if (empty($_POST['name']) || empty($_POST['email'])) {
 			$error = 'Name and email are required fields';
