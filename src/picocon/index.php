@@ -29,6 +29,15 @@
 			table { margin: 10px 0; border-collapse: collapse; }
 			td { padding: 4px 8px; vertical-align: top; border: 1px solid #aaa; }
 			td .note { font-size: smaller; font-style: italic; }
+			#buy {
+				margin: 5px auto;
+				padding: 8px;
+				background: rgba(128,240,64,0.5);
+				border-radius: 8px;
+				text-align: center;
+				width: 220px;
+			}
+			#buy a:first-child { font-size: 1.5em; padding-bottom: 5px; }
 		</style>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
@@ -61,6 +70,7 @@
 		<nav>
 			<!--include "stubs/nav-main.html"-->
 			<hr />
+			<a href="#buy">Buy Tickets</a>
 			<a href="#goh">Guests</a>
 			<a href="#timetable">Timetable</a>
 			<a href="#prices">Prices</a>
@@ -72,6 +82,12 @@
 			Picocon 31 will be held on Saturday 22th February 2014,
 			in Imperial College Union.
 		</p>
+
+		<div id="buy">
+			<a  href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4684/picocon-tickets">Buy Tickets Online</a>
+			<br/>
+			(<a href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4683/picocon-tickets---icsf-members">Tickets for ICSF Members</a>)
+		</div>
 
 		<h2>What is Picocon?</h2>
 		<p>
