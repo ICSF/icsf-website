@@ -38,12 +38,14 @@
 				display: inline-block;
 				font-size: 12pt;
 				padding: 8px;
-				background: rgba(128,240,64,0.5);
+				background: rgba(128,255,40,0.3);
 				border-radius: 8px;
 				text-align: center;
 				width: 220px;
 				height: 60px;
 				vertical-align: middle;
+				line-height: 28px;
+				margin-bottom: 10px;
 			}
 			#buy a:first-child { font-size: 1.5em }
 			#buy br { margin: 3px 0; }
