@@ -69,6 +69,7 @@ err:
 			fieldset {
 				display: inline-block;
 				box-sizing: border-box;
+				-moz-box-sizing: border-box;
 				width: 100%;
 				border-radius: 10px;
 				margin: 0 0 10px;
@@ -88,6 +89,7 @@ err:
 				border-radius: 8px;
 				float: right;
 				box-sizing: border-box;
+				-moz-box-sizing: border-box;
 			}
 			input[required]:before { content: "*"; color: red; }
 			input[type=email]:valid, input[type=text]:valid { background: white; }
