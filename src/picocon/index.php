@@ -159,75 +159,80 @@
 			</div>
 		</div>
 
-		<h2 id="timetable">Timetable</h2>
-		<table>
-			<tbody>
-				<tr>
-					<td><time datetime="2014-02-22T10:00Z">10:00</time></td>
-					<td>Doors Open</td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T10:30Z">10:30</time></td>
-					<td>Charles Stross</td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T11:30Z">11:30</time></td>
-					<td>Sarah Pinborough</td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T12:30Z">12:30</time></td>
-					<td>
-						Destruction Of Dodgy Merchandise<br />Lunch
-					</td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T14:00Z">14:00</time></td>
-					<td>Prof. David Southwood</td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T15:00Z">15:00</time></td>
-					<td>Guest of Honour Panel <p class="note">with Charles Stross, Sarah Pinborough, and Professor David Southwood</p></td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T16:00Z">16:00</time></td>
-					<td>Turkey Readings <p class="note">and other abominations</p></td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T16:30Z">16:30</time></td>
-					<td>Silly Games <p class="note">Just a Minute, Mornington Crescent, and other favourites</p></td>
-				</tr>
-					<td><time datetime="2014-02-22T17:30Z">17:30</time></td>
-					<td>Harmless Fun</td>
-				</tr>
-				<tr>
-					<td><time datetime="2014-02-22T18:00Z">18:00</time></td>
-					<td>Pub Quiz</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="columns">
+			<div class="no-break">
+				<h2 id="timetable">Timetable</h2>
+				<table>
+					<tbody>
+						<tr>
+							<td><time datetime="2014-02-22T10:00Z">10:00</time></td>
+							<td>Doors Open</td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T10:30Z">10:30</time></td>
+							<td>Charles Stross</td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T11:30Z">11:30</time></td>
+							<td>Sarah Pinborough</td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T12:30Z">12:30</time></td>
+							<td>
+								Destruction Of Dodgy Merchandise<br />Lunch
+							</td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T14:00Z">14:00</time></td>
+							<td>Prof. David Southwood</td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T15:00Z">15:00</time></td>
+							<td>Guest of Honour Panel <p class="note">with Charles Stross, Sarah Pinborough, and Professor David Southwood</p></td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T16:00Z">16:00</time></td>
+							<td>Turkey Readings <p class="note">and other abominations</p></td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T16:30Z">16:30</time></td>
+							<td>Silly Games <p class="note">Just a Minute, Mornington Crescent, and other favourites</p></td>
+						</tr>
+							<td><time datetime="2014-02-22T17:30Z">17:30</time></td>
+							<td>Harmless Fun</td>
+						</tr>
+						<tr>
+							<td><time datetime="2014-02-22T18:00Z">18:00</time></td>
+							<td>Pub Quiz</td>
+						</tr>
+					</tbody>
+				</table>
 
-		<p><strong>The timetable is liable to change up to the start of the convention.</strong></p>
+				<p><strong>The timetable is liable to change up to the start of the convention.</strong></p>
+			</div>
+			<div class="no-break">
+				<h2 id="prices">Prices</h2>
 
-		<h2 id="prices">Prices</h2>
-
-		<p>
-			Entry for the day will cost (subject to change up to Feb 2014):
-		</p>
-		<ul>
-			<li><b>&#x00A3;5</b> for ICSF members;</li>
-			<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
-			<li><b>&#x00A3;10</b> full price;</li>
-			<li><b>FREE</b> for past Guests of Honour.</li>
-		</ul>
-		<p>
-			Discounts for large parties (e.g. other University SF societies)
-			are potentially available
-			(email the <a href="mailto:picocon@icsf.co.uk">Picocon Sofa</a>).
-		</p>
-		<p>
-			Please note that neither ICSF nor Union membership is required to attend Picocon;
-			all are welcome.
-		</p>
+				<p>
+					Entry for the day will cost (subject to change up to Feb 2014):
+				</p>
+				<ul>
+					<li><b>&#x00A3;5</b> for ICSF members;</li>
+					<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
+					<li><b>&#x00A3;10</b> full price;</li>
+					<li><b>FREE</b> for past Guests of Honour.</li>
+				</ul>
+				<p>
+					Discounts for large parties (e.g. other University SF societies)
+					are potentially available
+					(email the <a href="mailto:picocon@icsf.co.uk">Picocon Sofa</a>).
+				</p>
+				<p>
+					Please note that neither ICSF nor Union membership is required to attend Picocon;
+					all are welcome.
+				</p>
+			</div>
+		</div>
 
 		<h2 id="directions">Directions to Picocon</h2>
 		<p>
