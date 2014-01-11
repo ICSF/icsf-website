@@ -30,14 +30,23 @@
 			td { padding: 4px 8px; vertical-align: top; border: 1px solid #aaa; }
 			td .note { font-size: smaller; font-style: italic; }
 			#buy {
-				margin: 5px auto;
+				font-size: 40pt;
+				text-align: center;
+				font-family: 'Alice',serif;
+			}
+			#buy div {
+				display: inline-block;
+				font-size: 12pt;
 				padding: 8px;
 				background: rgba(128,240,64,0.5);
 				border-radius: 8px;
 				text-align: center;
 				width: 220px;
+				height: 60px;
+				vertical-align: middle;
 			}
-			#buy a:first-child { font-size: 1.5em; padding-bottom: 5px; }
+			#buy a:first-child { font-size: 1.5em }
+			#buy br { margin: 3px 0; }
 		</style>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
@@ -84,9 +93,17 @@
 		</p>
 
 		<div id="buy">
-			<a  href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4684/picocon-tickets">Buy Tickets Online</a>
-			<br/>
-			(<a href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4683/picocon-tickets---icsf-members">Tickets for ICSF Members</a>)
+			<div>
+				<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4684/picocon-tickets">Buy Tickets Online</a>
+				<br/>
+				(<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4683/picocon-tickets---icsf-members">Tickets for ICSF Members</a>)
+			</div>
+			&amp;
+			<div>
+				<a href="prereg.php" target="_blank">
+					Fill in the online registration form
+				</a>
+			</div>
 		</div>
 
 		<h2>What is Picocon?</h2>
