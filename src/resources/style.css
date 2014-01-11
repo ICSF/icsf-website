@@ -221,10 +221,15 @@ footer
 	-o-column-width: 30em;
 	-webkit-column-width: 30em;
 
-	column-gap: 1.5em;
-	-moz-column-gap: 1.5em;
-	-o-column-gap: 1.5em;
-	-webkit-column-gap: 1.5em;
+	column-gap: 2em;
+	-moz-column-gap: 2em;
+	-o-column-gap: 2em;
+	-webkit-column-gap: 2em;
+
+	column-rule: 1px solid rgba(0,0,0,0.1);
+	-moz-column-rule: 1px solid rgba(0,0,0,0.1);
+	-o-column-rule: 1px solid rgba(0,0,0,0.1);
+	-webkit-column-rule: 1px solid rgba(0,0,0,0.1);
 }
 
 td
