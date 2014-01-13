@@ -54,7 +54,7 @@
 			}
 			#buy a { color: inherit; text-decoration: none; }
 			#buy a:first-child { font-size: 1.5em }
-			#buy br { margin: 3px 0; }
+			#buy hr { margin: 3px 0; border-color: #aaa; }
 		</style>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
@@ -103,8 +103,8 @@
 		<div id="buy">
 			<div>
 				<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4684/picocon-tickets">Buy Tickets Online</a>
-				<br/>
-				(<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4683/picocon-tickets---icsf-members">Tickets for ICSF Members</a>)
+				<hr/>
+				<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4683/picocon-tickets---icsf-members">Tickets for ICSF Members</a>
 			</div>
 			&amp;
 			<div>
