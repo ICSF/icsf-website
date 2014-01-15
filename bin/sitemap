@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+
+echo <<<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+EOF;
+
+$fh = fopen($argv[1], 'rb');
+while ($r = fgetcsv($fh))
+{
+	if (empty($r[0]))
+	{
+		continue;
+	}
+
+	echo '<url>', PHP_EOL;
+	switch (count($r))
+	{
+		case 2:
+			printf('  <priority>%.2f</priority>', $r[1]);
+
+		case 1:
+			echo '  <loc>http://www.union.ic.ac.uk<!--SRVROOT-->', $r[0], '</loc>', PHP_EOL;
+	}
+	echo '</url>', PHP_EOL;
+}
+
+echo '</urlset>', PHP_EOL;

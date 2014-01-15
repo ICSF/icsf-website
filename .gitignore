@@ -3,4 +3,4 @@ build/
 bin/*.class
 bin/validator/cache
 config.php
-
+src/sitemap.xml

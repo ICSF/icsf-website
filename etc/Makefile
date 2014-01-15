@@ -38,7 +38,7 @@ test:
 	SRVROOT="$(SRVROOT)/" bin/validate
 
 clean:
-	rm build src/committee/minutes/index.html -rf
+	rm build src/committee/minutes/index.html src/sitemap.xml -rf
 
 # ======= TOOL BUILDING =======
 
@@ -59,6 +59,10 @@ build/%htaccess : src/%htaccess Makefile stubs
 	var-subst $< $@ SRVROOT=${SRVROOT}
 
 build/%.php : src/%.php Makefile stubs
+	@mkdir -p -v $(@D)
+	var-subst $< $@ SRVROOT=${SRVROOT}
+
+build/%.xml : src/%.xml Makefile stubs
 	@mkdir -p -v $(@D)
 	var-subst $< $@ SRVROOT=${SRVROOT}
 
@@ -94,6 +98,9 @@ build/% : src/%
 	cp $< $@
 
 # ======= SPECIAL FILES =======
+
+src/sitemap.xml : etc/sitemap
+	./bin/sitemap $< > $@
 
 src/committee/minutes/index.html : $(shell ./bin/gettargets-minutes)
 	@echo minute-index > $@

@@ -12,4 +12,5 @@ ${0%/*}/gettargets-gallery
 
 printf 'build/committee/minutes/index.html\n'
 printf 'build/social/gallery/index.html\n'
+printf 'build/sitemap.xml'
 
