@@ -7,7 +7,7 @@
 	$host = @$_SERVER['HTTP_HOST'] ?: '';
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Event">
 	<head>
 		<!--include "stubs/headers.html"-->
 		<title>Picocon 31 - ICSF</title>
@@ -56,6 +56,12 @@
 			#buy a:first-child { font-size: 1.5em }
 			#buy hr { margin: 3px 0; border-color: #aaa; }
 		</style>
+
+		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf" />
+		<meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
+		<meta itemprop="startDate" content="2014-02-22T10:00:00Z" />
+		<meta itemprop="endDate" content="2014-02-22T20:00:00Z" />
+
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
 		<meta property="og:title" content="Picocon 31: 'Survival'" />
@@ -72,15 +78,15 @@
 			College's Student Union. This year's guests are Sarah Pinborough, Charles Stross, and Professor David Southward." />
 		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
 
-		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026" /></script>
-		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js" /></script>
+		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026"></script>
+		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js"></script>
 	</head>
 	<body>
 		<h1>
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			Picocon 31
+			<span itemprop="name">Picocon 31 &mdash; &lsquo;Survival&rsquo;</span>
 			<span id="subtitle">22nd February 2014</span>
 		</h1>
 
@@ -96,7 +102,9 @@
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
-			Picocon 31 will be held on Saturday 22th February 2014,
+			<span itemprop="alternateName">Picocon 31</span>
+			will be held on
+			Saturday 22th February 2014,
 			in Imperial College Union.
 		</p>
 
@@ -115,6 +123,7 @@
 		</div>
 
 		<h2>What is Picocon?</h2>
+		<div itemprop="description">
 		<p>
 			Picocon is the annual one-day Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
@@ -140,6 +149,7 @@
 			<li>Quiz and silly games</li>
 			<li>Student Union bar</li>
 		</ul>
+		</div>
 
 		<div style="height: 30px;">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.union.ic.ac.uk/scc/icsf/picocon/" data-text="" data-via="picocon" data-hashtags="picocon31">Tweet</a>
@@ -148,10 +158,10 @@
 
 		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
-			<div class="no-break clear">
-				<h3>Sarah Pinborough</h3>
-				<img class="hang-left" width=150 height=150 alt="Sarah Pinborough" src="images/pinborough.jpg" />
-				<p>
+			<div class="no-break clear" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+				<h3 itemprop="name">Sarah Pinborough</h3>
+				<img itemprop="image" class="hang-left" width=150 height=150 alt="Sarah Pinborough" src="images/pinborough.jpg" />
+				<p itemprop="description">
 					Sarah Pinborough is an English-born horror writer whose
 					books have found success in the United States.
 					Her works have previously been compared to that of
@@ -166,24 +176,24 @@
 					Dying</em> was short-listed for the Shirley Jackson Award and won the
 					2010 British Fantasy Award for Best Novella.
 				</p>
-				<p><a href="http://sarahpinborough.com">Sarah's Website</a></p>
+				<p><a itemprop="sameAs" href="http://sarahpinborough.com">Sarah's Website</a></p>
 				<p><a href="http://twitter.com/sarahpinborough">You can follow her on Twitter @sarahpinborough</a></p>
 			</div>
-			<div class="no-break clear">
-				<h3>Charles Stross</h3>
-				<img class="hang-left" width=150 height=150 alt="Charles Stross" src="images/stross.jpg" />
-				<p>
+			<div class="no-break clear" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+				<h3 itemprop="name">Charles Stross</h3>
+				<img itemprop="image" class="hang-left" width=150 height=150 alt="Charles Stross" src="images/stross.jpg" />
+				<p itemprop="description">
 					Charlie Stross is a British writer of science fiction,
 					Lovecraftian horror, and fantasy.
 					He was born in Leeds and specialises in hard science
 					fiction and space opera.
 				</p>
-				<p><a href="http://www.antipope.org/charlie/">Charles' Website</a></p>
+				<p><a itemprop="sameAs" href="http://www.antipope.org/charlie/">Charles' Website</a></p>
 			</div>
-			<div class="no-break clear">
-				<h3>Professor David Southwood</h3>
-				<img class="hang-left" width=150 height=150 alt="David Southwood" src="images/southwood.jpg" />
-				<p>
+			<div class="no-break clear" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+				<h3 itemprop="name">Professor David Southwood</h3>
+				<img itemprop="image" class="hang-left" width=150 height=150 alt="David Southwood" src="images/southwood.jpg" />
+				<p itemprop="description">
 					British space scientist and current President of the
 					Royal Astronomical Society, Professor David Southwood
 					is as Senior <abbr title="Research Investigator">RI</abbr>
@@ -200,45 +210,55 @@
 				<table>
 					<tbody>
 						<tr>
-							<td><time datetime="2014-02-22T10:00Z">10:00</time></td>
+							<td itemprop="doorTime" content="2014-02-22T10:00Z">10:00</td>
 							<td>Doors Open</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T10:30Z">10:30</time></td>
-							<td>Charles Stross</td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T10:30Z">10:30</td>
+							<td itemprop="name">Charles Stross</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T11:30Z">11:30</time></td>
-							<td>Sarah Pinborough</td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T11:30Z">11:30</td>
+							<td itemprop="name">Sarah Pinborough</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T12:30Z">12:30</time></td>
-							<td>
-								Destruction Of Dodgy Merchandise<br />Lunch
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T12:30Z">12:30</td>
+							<td itemprop="name">
+								Destruction Of Dodgy Merchandise <br />Lunch
 							</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T14:00Z">14:00</time></td>
-							<td>Prof. David Southwood</td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T14:00Z">14:00</td>
+							<td itemprop="name">Prof. David Southwood</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T15:00Z">15:00</time></td>
-							<td>Guest of Honour Panel <p class="note">with Charles Stross, Sarah Pinborough, and Professor David Southwood</p></td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T15:00Z">15:00</td>
+							<td><span itemprop="name">Guest of Honour Pane</span>
+								<p itemprop="description" class="note">with Charles Stross,
+								Sarah Pinborough, and Professor David Southwood</p>
+							</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T16:00Z">16:00</time></td>
-							<td>Turkey Readings <p class="note">and other abominations</p></td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T16:00Z">16:00</td>
+							<td itemprop="name">Turkey Readings <p class="note">and other abominations</p></td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T16:30Z">16:30</time></td>
-							<td>Silly Games <p class="note">Just a Minute, Mornington Crescent, and other favourites</p></td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T16:30Z">16:30</td>
+							<td>
+								<span itemprop="name">Silly Games</span>
+								<p itemprop="description" class="note">
+									Just a Minute, Mornington Crescent,
+									and other favourites
+								</p>
+							</td>
 						</tr>
-							<td><time datetime="2014-02-22T17:30Z">17:30</time></td>
-							<td>Harmless Fun</td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T17:30Z">17:30</td>
+							<td itemprop="name">Harmless Fun</td>
 						</tr>
-						<tr>
-							<td><time datetime="2014-02-22T18:00Z">18:00</time></td>
-							<td>Pub Quiz</td>
+						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+							<td itemprop="startDate" content="2014-02-22T18:00Z">18:00</td>
+							<td itemprop="name">Pub Quiz</td>
 						</tr>
 					</tbody>
 				</table>
@@ -350,14 +370,15 @@
 			<a class="sans" href="mailto:picocon@icsf.org.uk">picocon@icsf.org.uk</a>.
 		</p>
 		<p>Our mail address is the following:</p>
-		<blockquote>
+		<blockquote itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
 			ICSF<br />
 			Student Activities Centre<br />
-			Imperial College Students' Union<br />
-			Beit Quad<br />
-			Prince Consort Road<br />
-			SW7 2BB London<br />
-			UK
+			<span itemprop="name">Imperial College Students' Union</span><br />
+			<span itemprop="streetAddress">Beit Quad<br />
+			Prince Consort Road</span><br />
+			<span itemprop="addressRegion">London</span><br />
+			<span itemprop="postalCode">SW7 2BB</span><br />
+			<span itemprop="addressCountry">UK</span>
 		</blockquote>
 
 		<footer>
