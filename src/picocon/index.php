@@ -57,7 +57,7 @@
 			#buy hr { margin: 3px 0; border-color: #aaa; }
 		</style>
 
-		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf" />
+		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf/picocon/" />
 		<meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
 		<meta itemprop="startDate" content="2014-02-22T10:00:00Z" />
 		<meta itemprop="endDate" content="2014-02-22T20:00:00Z" />
