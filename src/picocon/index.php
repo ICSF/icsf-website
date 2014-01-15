@@ -155,9 +155,19 @@
 					Sarah Pinborough is an English-born horror writer whose
 					books have found success in the United States.
 					Her works have previously been compared to that of
-					Bentley Little, Richard Laymon and Dean Koontz.
+					Bentley Little, Richard Laymon and Dean Koontz, and have appeared in
+					several anthologies.
+					She also writes screenplays, including episodes of New Tricks, an
+					upcoming horror film Cracked, and other works in progress (drop this
+					clause?)
+
+					She has won a selection of awards, including the 2009 British Fantasy
+					Award for Best Short Story, and her novella <em>The Language of
+					Dying</em> was short-listed for the Shirley Jackson Award and won the
+					2010 British Fantasy Award for Best Novella.
 				</p>
 				<p><a href="http://sarahpinborough.com">Sarah's Website</a></p>
+				<p><a href="http://twitter.com/sarahpinborough">You can follow her on Twitter @sarahpinborough</a></p>
 			</div>
 			<div class="no-break clear">
 				<h3>Charles Stross</h3>
