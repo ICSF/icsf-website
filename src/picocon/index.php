@@ -168,8 +168,7 @@
 					Bentley Little, Richard Laymon and Dean Koontz, and have appeared in
 					several anthologies.
 					She also writes screenplays, including episodes of New Tricks, an
-					upcoming horror film Cracked, and other works in progress (drop this
-					clause?)
+					upcoming horror film Cracked, and other works in progress.
 
 					She has won a selection of awards, including the 2009 British Fantasy
 					Award for Best Short Story, and her novella <em>The Language of
