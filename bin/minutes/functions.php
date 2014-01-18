@@ -94,7 +94,7 @@
 		else
 		{
 			if ($lvl < count($levels))
-			{	
+			{
 				while (count($levels) > $lvl + 1)
 					close_level();
 				echo '</li>';
@@ -103,7 +103,7 @@
 			{
 				if ($lvl > count($levels))
 				{
-					err('Level requested (' . $lvl . 
+					err('Level requested (' . $lvl .
 					') is too deep for containing level ' . count($levels) - 1);
 					$lvl = count($levels);
 				}

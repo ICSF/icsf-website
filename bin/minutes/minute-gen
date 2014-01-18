@@ -1,6 +1,6 @@
 #!/usr/bin/php -f
 <?php
-	
+
 	DEFINE('HEADER_PATTERN', '/^([a-z]+):(.+)$/');
 	DEFINE('BODY_PATTERN', '/^(?<ws>\s*)(?<inst>.)(?<content>.+)$/');
 
@@ -47,7 +47,7 @@
 		}
 		else
 		{
-			err('Bad Header', $line); 
+			err('Bad Header', $line);
 		}
 	}
 
@@ -59,13 +59,13 @@
 
 	if (!isset($headers['opened']))
 	{
-		err('No \'committee\' header set');
+		err('No \'opened\' header set');
 		exit(3);
 	}
 
 	if (!isset($headers['closed']))
 	{
-		err('No \'committee\' header set');
+		err('No \'closed\' header set');
 		exit(3);
 	}
 
