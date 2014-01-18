@@ -71,56 +71,52 @@ div.peoples
 
 .passed
 {
-	background: #efe;
+	background: rgba(64, 255, 80, 0.3);
 }
 
 .passed::before
 {
-	content: url('<!--SRVROOT-->/resources/tick.png') " MOTION: ";
+	content: "\2714 MOTION: ";
 }
 
 .failed
 {
-	background: #fee;
+	background: rgba(255, 80, 64, 0.3);
 }
 
 .failed::before
 {
-	content: url('<!--SRVROOT-->/resources/cross.png') " MOTION: ";
+	content: "\2718 MOTION: ";
 }
 
-.actions
-{
-	float: right;
-}
-
-.actions:hover
+.actions, #actions
 {
 	border: 1px solid black;
 	position: absolute;
-	right: 4%;
-	background-color: #f0f0ff;
+	right: 20px;
+	top: 0;
+	background-color: rgba(240, 240, 255, 0.8);
 	padding: 0px 20px;
 }
 
-.actions>ul
+.actions>ul, #actions>ul
 {
 	display: none;
 }
 
-.actions>h3::after
+.actions>h3::after, #actions>h3::after
 {
-	content: '(Hover to show)';
+	content: "(Hover to show)";
 	font-size: 12pt;
 	padding-left: 10px;
 }
 
-.actions:hover>h3::after
+.actions:hover>h3::after, #actions:hover>h3::after
 {
 	content: "";
 }
 
-.actions:hover>ul
+.actions:hover>ul, #actions:hover>ul, #actions:target>ul
 {
 	display: block;
 }
