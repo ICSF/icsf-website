@@ -24,7 +24,15 @@
 	{
 		$search  = array('/^ACT:(.+)$/', '/^MOT<(.+)>:(.+)$/');
 		$replace = array('<span class="action">$1</span>', '<span class="motion $1">$2</span>');
-		return preg_replace($search, $replace, $content);
+		$count   = 0;
+		$content = preg_replace($search, $replace, $content, -1, $count);
+
+		if ($count > 0)
+		{
+			global $actions;
+			$actions [] = $content;
+		}
+		return $content;
 	}
 
 	function close_level($forget=true, $unindent =0)
@@ -141,3 +149,12 @@
 		$need_reopen = true;
 	}
 
+	function print_actions($actions)
+	{
+		echo PHP_EOL, tabs(2), '<a onclick="window.location.hash = (window.location.hash == \'#actions\' ? \'\' : \'#actions\')" id="actions"><h3>Motions &amp; Actions</h3><ul>', PHP_EOL;
+		foreach ($actions as $action)
+		{
+			echo tabs(3), '<li>', $action, '</li>', PHP_EOL;
+		}
+		echo tabs(2), '</ul></a>', PHP_EOL;
+	}

@@ -74,6 +74,8 @@
 	$headers['type']   = isset($headers['type']) ? $headers['type'] : '';
 	$comment = isset($headers['comment']) ? $headers['comment'] : '';
 
+	$actions = array();
+
 	require('head.html');
 	require('functions.php');
 
@@ -108,6 +110,8 @@
 
 	while (count($levels) > 0)
 		close_level();
+
+	print_actions($actions);
 
 	require('foot.html');
 
