@@ -175,8 +175,12 @@
 					Dying</em> was short-listed for the Shirley Jackson Award and won the
 					2010 British Fantasy Award for Best Novella.
 				</p>
-				<p><a itemprop="sameAs" href="http://sarahpinborough.com">Sarah's Website</a></p>
-				<p><a href="http://twitter.com/sarahpinborough">You can follow her on Twitter @sarahpinborough</a></p>
+				<p>
+					You can find Sarah on
+					<a itemprop="sameAs" href="http://sarahpinborough.com">Her Website</a>
+					or <a href="http://twitter.com/sarahpinborough">@sarahpinborough</a>
+					on Twitter.
+				</p>
 			</div>
 			<div class="no-break clear" itemprop="performer" itemscope itemtype="http://schema.org/Person">
 				<h3 itemprop="name">Charles Stross</h3>
