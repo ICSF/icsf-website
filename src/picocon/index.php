@@ -186,23 +186,29 @@
 				<h3 itemprop="name">Charles Stross</h3>
 				<img itemprop="image" class="hang-left" width=150 height=150 alt="Charles Stross" src="images/stross.jpg" />
 				<p itemprop="description">
-					Charlie Stross is a British writer of science fiction,
-					Lovecraftian horror, and fantasy.
-					He was born in Leeds and specialises in hard science
-					fiction and space opera.
+					Charles Stross is a full-time science fiction writer and resident of Edinburgh,
+					Scotland. The author of six Hugo-nominated novels and winner of the 2005 and
+					2010 Hugo awards for best novella, he has won numerous other awards and been
+					translated into at least 12 other languages. Stross writes in a variety of
+					sub-genres and styles, including Lovecraftian horror, space opera and fantasy.
 				</p>
-				<p><a itemprop="sameAs" href="http://www.antipope.org/charlie/">Charles' Website</a></p>
+				<p>
+					You can find Charles on
+					<a itemprop="sameAs" href="http://www.antipope.org/charlie/">His Website</a></p>
+					or <a href="http://twitter.com/cstross">@cstross</a>
+					on Twitter.
 			</div>
 			<div class="no-break clear" itemprop="performer" itemscope itemtype="http://schema.org/Person">
 				<h3 itemprop="name">Professor David Southwood</h3>
 				<img itemprop="image" class="hang-left" width=150 height=150 alt="David Southwood" src="images/southwood.jpg" />
 				<p itemprop="description">
-					British space scientist and current President of the
-					Royal Astronomical Society, Professor David Southwood
-					is as Senior <abbr title="Research Investigator">RI</abbr>
-					at Imperial with interests have been in solar–terrestrial
-					physics and planetary science, including building the
-					magnetic field instrument for the Cassini Saturn orbiter.
+					Professor David Southwood is a British space scientist and current President of
+					the Royal Astronomical Society. He has interests in solar–terrestrial physics
+					and planetary science, and accomplishments include building the magnetic field
+					instrument for the Cassini Saturn orbiter. Until 2011 he was Director of
+					Science and Robotic Exploration at the European Space Agency, and he now holds
+					the post of Senior Research Investigator at Imperial College London. He is also
+					a patron of the Science Fiction Foundation.
 				</p>
 			</div>
 		</div>
