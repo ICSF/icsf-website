@@ -15,6 +15,12 @@
 		</nav>
 
 <?php
+
+	if ('UTC' === date_default_timezone_get()
+	{
+		date_default_timezone_set('UTC');
+	}
+
 	$year  = (int)date('Y');
 	$years = $year - 1975;
 
