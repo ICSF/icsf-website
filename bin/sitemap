@@ -4,6 +4,7 @@
 echo <<<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 EOF;
 
 $fh = fopen($argv[1], 'rb');
@@ -18,10 +19,10 @@ while ($r = fgetcsv($fh))
 	switch (count($r))
 	{
 		case 2:
-			printf('  <priority>%.2f</priority>', $r[1]);
+			echo "\t", '<priority>', sprintf('%.2f', $r[1]), '</priority>', PHP_EOL;
 
 		case 1:
-			echo '  <loc>http://www.union.ic.ac.uk<!--SRVROOT-->', $r[0], '</loc>', PHP_EOL;
+			echo "\t", '<loc>https://www.union.ic.ac.uk<!--SRVROOT-->', $r[0], '</loc>', PHP_EOL;
 	}
 	echo '</url>', PHP_EOL;
 }

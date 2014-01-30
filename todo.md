@@ -2,7 +2,6 @@
 
  - Make the code pass the validation
  - Add description and keyword tags
- - Add an XML sitemap
  - Add an HTML sitemap
  - Look through old/library/resources for anything interesting
 
