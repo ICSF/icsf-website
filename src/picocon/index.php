@@ -5,6 +5,9 @@
 
 	$protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
 	$host = @$_SERVER['HTTP_HOST'] ?: '';
+
+	date_default_timezone_set('UTC');
+	$days_to_picocon = 52 - date('z');
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Event">
@@ -319,18 +322,17 @@
 					<span class="tube-line" style="background-color: rgba(0, 114, 41, 0.8);">District</span>, and
 					<span class="tube-line" style="background-color: rgba(0, 25, 168, 0.8); color: #eee">Piccadilly</span>
 					lines.
+					There are
+					<strong>
+						<a href="http://www.tfl.gov.uk/tfl/livetravelnews/realtime/track.aspx?offset=<?=$days_to_picocon;?>">planned engineering works</a>
+						on some other Underground lines
+					</strong>.
 				</p>
 				<p>
 					These maps show the routes we suggest from both
 					<a href="http://g.co/maps/ne7kr">Gloucester Road Station</a>
 					and from
 					<a href="http://g.co/maps/akrjw">South Kensington Station</a>.
-				</p>
-				<p>
-					N.B.
-					Most London tube closures are scheduled at weekends.
-					We will provide information on planned closures here once
-					it is available from Transport for London.
 				</p>
 			</div>
 			<div class="no-break clear">
