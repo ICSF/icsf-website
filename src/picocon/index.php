@@ -58,6 +58,30 @@
 			#buy a { color: inherit; text-decoration: none; }
 			#buy a:first-child { font-size: 1.5em }
 			#buy hr { margin: 3px 0; border-color: #aaa; }
+			#jpForm {
+				display: inline-block;
+				background: #eee;
+				color:#113B92;
+				border: 1px solid #103994;
+				border-radius: 4px;
+				box-shadow: 2px 2px 3px 1px #ccc;
+				padding: 0 10px 15px;
+				text-align: center;
+			}
+			#jpForm input[type="submit"] {
+				border-style: none;
+				background-color: #157DB9;
+				display: inline-block;
+				padding: 4px 11px;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 3px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+				border-bottom: 1px solid rgba(0,0,0,0.25);
+				font: bold  13px/1 Arial,Helvetica,sans-serif;
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+				margin-top: 5px;
+			}
 		</style>
 
 		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf/picocon/" />
@@ -335,18 +359,54 @@
 					<a href="http://g.co/maps/akrjw">South Kensington Station</a>.
 				</p>
 			</div>
+			<div class="center">
+				<form action="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2" id="jpForm" method="post" target="tfl" style="">
+					<h2 style="color: rgb(36, 66, 102);">TfL Journey Planner</h2>
+					<input type="hidden" name="language" value="en" /><!-- in language = english -->
+					<input type="hidden" name="execInst" value="" />
+					<input type="hidden" name="sessionID" value="0" />
+					<input type="hidden" name="ptOptionsActive" value="-1" />
+					<input type="hidden" name="name_destination" value="SW7 2BB" />
+					<input name="type_destination" value="locator" type="hidden"/>
+					<input type="hidden" name="place_destination" value="London" />
+					<input type="hidden" name="itdTripDateTimeDepArr" value="arr" />
+					<input type="hidden" name="itdDate" value="20140222" />
+					<input type="hidden" name="itdTimeHour" value="10" />
+					<input type="hidden" name="itdTimeMinute" value="00" />
+
+					<div style="padding-right: 15px; padding-left: 15px">
+						<input type="text" name="name_origin" placeholder="From" />
+						<select name="type_origin">
+							<option value="stop">Station or stop</option>
+							<option value="locator">Postcode</option>
+							<option value="address">Address</option>
+							<option value="poi">Place of interest</option>
+						</select>
+						<input type="hidden" name="place_origin" value="London" />
+					</div>
+
+					<a style="display: block;" target="tfl"
+						href="//journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&amp;ptOptionsActive=1"
+						onclick="javascript:document.getElementById('jpForm').ptOptionsActive.value='1';document.getElementById('jpForm').execInst.value='readOnly';document.getElementById('jpForm').submit(); return false">
+						More options
+						<img src="//www.tfl.gov.uk/tfl-global/images/options-icons.gif" alt="More Options" />
+					</a>
+
+					<input type="submit" title="Plan your Journey" value="Plan your Journey"/>
+				</form>
+			</div>
 			<div class="no-break clear">
 				<h3>By Public Bus</h3>
 				<img src="<!--SRVROOT-->/resources/tfl/buses.svg" width="80" height="65" alt="TfL Buses" class="hang-left" />
 				<p>
 					Both the
-					<a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/royalalberthall-12445.pdf">Royal Albert Hall</a>
+					<a href="//www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/royalalberthall-12445.pdf">Royal Albert Hall</a>
 					and the
-					<a href="http://www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/southkensington-2236.pdf">South Kensington</a>
+					<a href="//www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/southkensington-2236.pdf">South Kensington</a>
 					bus stop groups are near by - the Royal Albert Hall itself
 					is next door to the Union.
 					From South Kensington stops, follow the route map from
-					<a href="http://g.co/maps/akrjw">South Kensington Station</a>.
+					<a href="//g.co/maps/akrjw">South Kensington Station</a>.
 				</p>
 				<p>
 					These stop are served by buses
