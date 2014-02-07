@@ -348,33 +348,33 @@
 					lines.
 					There are
 					<strong>
-						<a href="http://www.tfl.gov.uk/tfl/livetravelnews/realtime/track.aspx?offset=<?=$days_to_picocon;?>">planned engineering works</a>
+						<a href="http://www.tfl.gov.uk/tfl/livetravelnews/realtime/track.aspx?offset=<?=$days_to_picocon;?>" target="map">planned engineering works</a>
 						on some other Underground lines
 					</strong>.
 				</p>
 				<p>
 					These maps show the routes we suggest from both
-					<a href="http://g.co/maps/ne7kr">Gloucester Road Station</a>
+					<a href="http://g.co/maps/ne7kr" target="map">Gloucester Road Station</a>
 					and from
-					<a href="http://g.co/maps/akrjw">South Kensington Station</a>.
+					<a href="http://g.co/maps/akrjw" target="map">South Kensington Station</a>.
 				</p>
 			</div>
 			<div class="center">
-				<form action="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2" id="jpForm" method="post" target="tfl" style="">
-					<h2 style="color: rgb(36, 66, 102);">TfL Journey Planner</h2>
+				<form action="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2" id="jpForm" method="post" target="tfl">
+					<h2 style="color:#244266">TfL Journey Planner</h2>
 					<input type="hidden" name="language" value="en" /><!-- in language = english -->
 					<input type="hidden" name="execInst" value="" />
 					<input type="hidden" name="sessionID" value="0" />
 					<input type="hidden" name="ptOptionsActive" value="-1" />
 					<input type="hidden" name="name_destination" value="SW7 2BB" />
-					<input name="type_destination" value="locator" type="hidden"/>
+					<input type="hidden" name="type_destination" value="locator" />
 					<input type="hidden" name="place_destination" value="London" />
 					<input type="hidden" name="itdTripDateTimeDepArr" value="arr" />
 					<input type="hidden" name="itdDate" value="20140222" />
 					<input type="hidden" name="itdTimeHour" value="10" />
 					<input type="hidden" name="itdTimeMinute" value="00" />
 
-					<div style="padding-right: 15px; padding-left: 15px">
+					<div style="padding: 0 15px">
 						<input type="text" name="name_origin" placeholder="From" />
 						<select name="type_origin">
 							<option value="stop">Station or stop</option>
@@ -387,7 +387,7 @@
 
 					<a style="display: block;" target="tfl"
 						href="//journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2?language=en&amp;ptOptionsActive=1"
-						onclick="javascript:document.getElementById('jpForm').ptOptionsActive.value='1';document.getElementById('jpForm').execInst.value='readOnly';document.getElementById('jpForm').submit(); return false">
+						onclick="var x = document.getElementById('jpForm'); x.ptOptionsActive.value='1';x.execInst.value='readOnly';x.submit(); return false">
 						More options
 						<img src="//www.tfl.gov.uk/tfl-global/images/options-icons.gif" alt="More Options" />
 					</a>
@@ -400,13 +400,13 @@
 				<img src="<!--SRVROOT-->/resources/tfl/buses.svg" width="80" height="65" alt="TfL Buses" class="hang-left" />
 				<p>
 					Both the
-					<a href="//www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/royalalberthall-12445.pdf">Royal Albert Hall</a>
+					<a href="http://www.tfl.gov.uk/gettingaround/maps/buses/pdf/royalalberthall-a4.pdf" target="map">Royal Albert Hall</a>
 					and the
-					<a href="//www.tfl.gov.uk/tfl/gettingaround/maps/buses/pdf/southkensington-2236.pdf">South Kensington</a>
+					<a href="http://www.tfl.gov.uk/gettingaround/maps/buses/pdf/southkensington-a4.pdf" target="map">South Kensington</a>
 					bus stop groups are near by - the Royal Albert Hall itself
 					is next door to the Union.
 					From South Kensington stops, follow the route map from
-					<a href="//g.co/maps/akrjw">South Kensington Station</a>.
+					<a href="//g.co/maps/akrjw" target="map">South Kensington Station</a>.
 				</p>
 				<p>
 					These stop are served by buses
