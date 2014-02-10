@@ -131,7 +131,7 @@
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
 			<span itemprop="alternateName">Picocon 31</span>
 			will be held on
-			Saturday 22th February 2014,
+			Saturday 22nd February 2014,
 			in Imperial College Union.
 		</p>
 
@@ -269,7 +269,7 @@
 						</tr>
 						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 							<td itemprop="startDate" content="2014-02-22T15:00Z">15:00</td>
-							<td><span itemprop="name">Guest of Honour Pane</span>
+							<td><span itemprop="name">Guest of Honour Panel</span>
 								<p itemprop="description" class="note">with Charles Stross,
 								Sarah Pinborough, and Professor David Southwood</p>
 							</td>
