@@ -103,13 +103,3 @@ break (for example, suexec won't run CGI scripts that are group writable).
 ```Da+x``` - Directories are executable by everyone. For a directory, being executable
 means that up can open it; the read flag on a directory means that you can get a list
 of contents (and is only useful if you already have +x)
-
-Structural TODOs
-----------------
-
- - makefile to not include readme.md files (so they can be used for comments)
-
-Structural Ideas
-----------------
-
- - Have the building step validation CSS and HTML files
