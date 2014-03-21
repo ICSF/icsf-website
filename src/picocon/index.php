@@ -92,7 +92,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
 		<meta property="og:title" content="Picocon 31: 'Survival'" />
-		<meta property="og:description" content="Picocon 31 will be on the 22nd Feburary 2014, with Sarah Pinborough, Charles Stross, and Professor David Southwood. Picocon is a small London convention hosted at each year Imperial College." />
+		<meta property="og:description" content="Picocon 31 was on the 22nd Feburary 2014, with Sarah Pinborough, Charles Stross, and Professor David Southwood. Picocon is a small London convention hosted at each year Imperial College." />
 		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" />
 
 		<meta property="twitter:card" content="summary_large_image" />
@@ -130,24 +130,10 @@
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
 			<span itemprop="alternateName">Picocon 31</span>
-			will be held on
+			was held on
 			Saturday 22nd February 2014,
 			in Imperial College Union.
 		</p>
-
-		<div id="buy">
-			<div>
-				<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4684/picocon-tickets">Buy Tickets Online</a>
-				<hr/>
-				<a target="_blank" href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/4683/picocon-tickets---icsf-members">Tickets for ICSF Members</a>
-			</div>
-			&amp;
-			<div>
-				<a href="prereg.php" target="_blank">
-					Fill in the online registration form
-				</a>
-			</div>
-		</div>
 
 		<h2>What is Picocon?</h2>
 		<div itemprop="description">
@@ -255,7 +241,7 @@
 						</tr>
 						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 							<td itemprop="startDate" content="2014-02-22T11:30Z">11:30</td>
-							<td itemprop="name">Sarah Pinborough</td>
+							<td itemprop="name">Sarah Pinborough: <i>Mixing business with pleasure; why selling books doesn’t have to mean selling out</i></td>
 						</tr>
 						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 							<td itemprop="startDate" content="2014-02-22T12:30Z">12:30</td>
@@ -265,7 +251,7 @@
 						</tr>
 						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 							<td itemprop="startDate" content="2014-02-22T14:00Z">14:00</td>
-							<td itemprop="name">Prof. David Southwood</td>
+							<td itemprop="name">Prof. David Southwood: <i>Science Fiction and Fact</i></td>
 						</tr>
 						<tr itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 							<td itemprop="startDate" content="2014-02-22T15:00Z">15:00</td>
