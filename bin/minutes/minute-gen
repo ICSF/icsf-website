@@ -1,4 +1,4 @@
-#!/usr/bin/php -f
+#!/usr/bin/env php
 <?php
 
 	DEFINE('HEADER_PATTERN', '/^([a-z]+):(.+)$/');
