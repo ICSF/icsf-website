@@ -136,6 +136,7 @@
 		</p>
 
 		<h2>What is Picocon?</h2>
+		<div class="columns">
 		<div itemprop="description">
 		<p>
 			Picocon is the annual one-day Science Fiction &amp; Fantasy convention
@@ -157,11 +158,14 @@
 
 		<ul>
 		<li>Guests of Honour doing talks and panels</li>
-			<li>The Destruction of Dodgy Merchandise, typically using liquid nitrogen and an enormous hammer. (You're welcome to bring along donations!)</li>
+			<li>The Destruction of Dodgy Merchandise, typically with liquid nitrogen and an enormous hammer. (Donations welcome!)</li>
 			<li>Stalls selling books, ICSF t-shirts, and other stuff</li>
 			<li>Quiz and silly games</li>
 			<li>Student Union bar</li>
 		</ul>
+		</div>
+
+		<img src="picocon32.svg" style="display: block; width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon Poster" />
 		</div>
 
 		<div style="height: 30px;">
@@ -171,24 +175,39 @@
 
 		<h2 id="goh">Guests of Honour</h2>
 		<div class="columns">
-		     To be announced.
+		<ul>
+			<li>Cory Doctorow (author, technology blogger and journalist, well known for his eerily prescient young adult novels Little Brother and Pirate Cinema)</li>
+			<li>Frances Hardringe (another young adult author, who will be promoting her new novel Cuckoo Song)</li>
+			<li>Ian McDonald (writer of political hard science fiction, and distinguished by being the only author of a novel (that your correspondent is aware of) in which Imperial College features (River of Gods))</li>
+			<li>Kari Sperring (fantasy author and long standing friend of the society)</li>
+			<li>and <a href=http://youtube.com/ashens>Stuart Ashen</a> presenting the Destruction of Dodgy Merchandise</li>
+		</ul>
 		</div>
 
 		<div class="columns">
 			<div class="no-break">
 				<h2 id="timetable">Timetable</h2>
-				Also to be announced.
+				To be announced.
 			</div>
 			<div class="no-break">
 				<h2 id="prices">Prices</h2>
 
 				<p>
-					Entry for the day will cost (subject to change up to Feb 2015):
+					Entry for one day:
 				</p>
 				<ul>
-					<li><b>&#x00A3;5</b> for ICSF members;</li>
-					<li><b>&#x00A3;8</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
-					<li><b>&#x00A3;10</b> full price;</li>
+					<li><b>&#x00A3;8</b> for ICSF members;</li>
+					<li><b>&#x00A3;10</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
+					<li><b>&#x00A3;12</b> full price;</li>
+					<li><b>FREE</b> for past Guests of Honour.</li>
+				</ul>
+				<p>
+					Entry for both days:
+				</p>
+				<ul>
+					<li><b>&#x00A3;15</b> for ICSF members;</li>
+					<li><b>&#x00A3;18</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
+					<li><b>&#x00A3;20</b> full price;</li>
 					<li><b>FREE</b> for past Guests of Honour.</li>
 				</ul>
 				<p>
