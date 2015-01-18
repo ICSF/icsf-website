@@ -114,6 +114,7 @@
 	add_event('Feb 2011', 'Picocon 28', '<!--SRVROOT-->/history/picocon/picocon28.html');
 	add_event('Feb 2012', 'Picocon 29', '<!--SRVROOT-->/history/picocon/picocon29.html');
 	add_event('Feb 2013', 'Picocon 30', '<!--SRVROOT-->/history/picocon/picocon30.html');
+	add_event('Feb 2014', 'Picocon 31', '<!--SRVROOT-->/history/picocon/picocon31.html');
 ?>
 				</td>
 			</tr>

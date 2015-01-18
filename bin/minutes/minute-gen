@@ -1,5 +1,11 @@
-#!/usr/bin/php -f
+#!/usr/bin/env php
 <?php
+
+	if ( ini_get( 'date.timezone' ) === false )
+	{
+		fprintf( STDOUT, 'Set date.timezone' );
+		exit( 1 );
+	}
 
 	DEFINE('HEADER_PATTERN', '/^([a-z]+):(.+)$/');
 	DEFINE('BODY_PATTERN', '/^(?<ws>\s*)(?<inst>.)(?<content>.+)$/');

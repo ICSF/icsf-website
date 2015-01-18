@@ -1,36 +1,41 @@
-#!/bin/sh
-#
-# HTML variable substitution script
-#
-# Usage:
-#  input output [name=value]
-#
-# Replaces <!--NAME--> with value
+#!/usr/bin/perl -w
 
-if [ ! -f "$1" ]; then
-	printf 'File %s not found\n' "$1" >&2
-	exit 1
-fi
+# Usage: var-subst input [NAME=value]
+# Replaces NAME for value
 
-INPUT=$1
-OUTPUT=$2
+use strict;
+use warnings;
 
-shift 2
+sub replace {
+	my ($line,%replacements) = @_;
+	if ($line =~ /<!--include "(.+)"-->/) {
+		open(my $splice,"<",$1) or die("Can't open splicee");
+		while (<$splice>) {
+			replace($_,%replacements);
+		}
+		close($splice);
+	}
+	else {
+		for (keys(%replacements)) {
+			$line =~ s/<!--$_-->/$replacements{$_}/g;
+		}
+		print $line;
+	}
+}
 
-if [ $# -eq 0 ]; then
-	cp $INPUT $OUTPUT
-	exit 0
-fi
+scalar(@ARGV) >= 1 or die("Insufficient arguments");
 
-FLAGS=''
+open(my $input,"<",shift @ARGV) or die("Can't open input");
 
-while [ $# -gt 0 ];
-do
-	FLAG=$(echo "$1" | cut -d'=' -f1- --output-delimiter="-->|")
-	FLAGS="$FLAGS -e s|<!--$FLAG|g"
-	shift
-done
+my %replacements;
+for (@ARGV) {
+	$_ =~ /^.+=.+$/ or die("Not a substitution");
+	my @find_replace = split(/=/,$_,2);
+	$replacements{$find_replace[0]} = $find_replace[1];
+}
 
-sed -n -e '/<!--include "\(.\+\)"-->/ { =; s:<!--include "\(.\+\)"-->:r \1:p; } ' $INPUT | \
-sed -e 'N;s/\n//' | sed -f - $INPUT | sed -e '/<!--include ".\+"-->/d' | sed $FLAGS  > "$OUTPUT"
+while (my $line = <$input>) {
+	replace($line,%replacements);
+}
 
+close($input);
