@@ -99,7 +99,7 @@
 		<meta property="twitter:site" content="@picocon" />
 		<meta property="twitter:creator" content="@picocon" />
 		<meta property="twitter:title" content="Picocon 32: 'Duality' - 14th and 15th Feburary" />
-		<meta property="twitter:description" content="Picocon is the annual one-day Science Fiction &amp; Fantasy convention
+		<meta property="twitter:description" content="Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
 			It usually takes place on a Saturday in February, in Imperial
 			College's Student Union." />
@@ -139,7 +139,7 @@
 		<div class="columns">
 		<div itemprop="description">
 		<p>
-			Picocon is the annual one-day Science Fiction &amp; Fantasy convention
+			Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
 			It usually takes place on a Saturday in February, in Imperial
 			College's Student Union.
@@ -177,7 +177,7 @@
 		<div class="columns">
 		<ul>
 			<li>Cory Doctorow (author, technology blogger and journalist, well known for his eerily prescient young adult novels Little Brother and Pirate Cinema)</li>
-			<li>Frances Hardringe (another young adult author, who will be promoting her new novel Cuckoo Song)</li>
+			<li>Frances Hardinge (another young adult author, who will be promoting her new novel Cuckoo Song)</li>
 			<li>Ian McDonald (writer of political hard science fiction, and distinguished by being the only author of a novel (that your correspondent is aware of) in which Imperial College features (River of Gods))</li>
 			<li>Kari Sperring (fantasy author and long standing friend of the society)</li>
 			<li>and <a href=http://youtube.com/ashens>Stuart Ashen</a> presenting the Destruction of Dodgy Merchandise</li>

@@ -64,7 +64,7 @@ err:
 <html>
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>Picocon 31 - Pre-Registration</title>
+		<title>Picocon 32 - Pre-Registration</title>
 		<style type="text/css">
 			fieldset {
 				display: inline-block;
@@ -102,14 +102,14 @@ err:
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			Picocon 31 &mdash; Pre&ndash;registration
+			Picocon 32 &mdash; Pre&ndash;registration
 			<span id="subtitle">Register Now!</span>
 		</h1>
 
 		<nav>
 			<!--include "stubs/nav-main.html"-->
 			<hr />
-			<a href="<!--SRVROOT-->/picocon/">Picocon 31</a>
+			<a href="<!--SRVROOT-->/picocon/">Picocon 32</a>
 			<a href="<!--SRVROOT-->/picocon/#tickets">Buy Tickets</a>
 		</nav>
 
@@ -119,7 +119,7 @@ err:
 
 			<input  type="submit" value="Submit Pre-Registration" style="float: right; margin: 0" />
 			<p>
-				Pre-register for <a href="index.php">Picocon 31</a>.
+				Pre-register for <a href="index.php">Picocon 32</a>.
 			</p>
 			<p>
 				Newer browsers should highlight fields they consider invalid in a light peachy-red.
@@ -184,7 +184,7 @@ err:
 
 				<label for="contact">
 					<input type="checkbox" id="contact" name="contact" checked="checked" />
-					Picocon 31
+					Picocon 32
 				</label>
 				<label for="contact_all">
 					<input type="checkbox" id="contact_all" name="contact_all" />
@@ -205,11 +205,11 @@ err:
 				<p>Name the first thing which comes to mind for each category</p>
 
 				<p>Name... </p>
-				<label for="ff1"><input  type="text" name="ff_1" id="ff1" maxlength="64" />A sole survivor</label>
-				<label for="ff2"><input  type="text" name="ff_2" id="ff2" maxlength="64" />Your anti-zombie weapon of choice</label>
-				<label for="ff3"><input  type="text" name="ff_3" id="ff3" maxlength="64" />Someone who survives against all odds</label>
-				<label for="ff4"><input  type="text" name="ff_4" id="ff4" maxlength="64" />The first to die</label>
-				<label for="ff5"><input  type="text" name="ff_5" id="ff5" maxlength="64" />A sci-fi show that survived against the odds</label>
+				<label for="ff1"><input  type="text" name="ff_1" id="ff1" maxlength="64" />A pair of twins</label>
+				<label for="ff2"><input  type="text" name="ff_2" id="ff2" maxlength="64" />A city with an unseen side to it</label>
+				<label for="ff3"><input  type="text" name="ff_3" id="ff3" maxlength="64" />Two mortal enemies</label>
+				<label for="ff4"><input  type="text" name="ff_4" id="ff4" maxlength="64" />A famous pair of clones</label>
+				<label for="ff5"><input  type="text" name="ff_5" id="ff5" maxlength="64" />A character with an evil alternate universe version of themselves</label>
 			</fieldset>
 		</div>
 		</section>
