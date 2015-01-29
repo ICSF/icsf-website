@@ -27,7 +27,8 @@
 			'email' => null,
 			'name' => null,
 			'group' => null,
-			'aff' => null
+			'aff' => null,
+			'film' => null
 		);
 
 		foreach ($_POST as $k=>$v)
@@ -212,6 +213,22 @@ err:
 				<label for="ff5"><input  type="text" name="ff_5" id="ff5" maxlength="64" />A character with an evil alternate universe version of themselves</label>
 			</fieldset>
 		</div>
+		</div>
+			</fieldset>
+				<legend>Cinema!</legend>
+				<p>
+					This year, we are also having a cinema showing.
+					To decide what will be shown, pick from the following:
+				</p>
+				<input type="radio" name="film" value="The Matrix">The Matrix (1999)</input>
+				<input type="radio" name="film" value="A Scanner Darkly">A Scanner Darkly (2007)</input>
+				<input type="radio" name="film" value="Coraline">Coraline (2009)</input>
+				<input type="radio" name="film" value="They Live">They Live (1988)</input>
+				<input type="radio" name="film" value="Pans Labyrinth">Pans Labyrinth (2006)</input>
+				<input type="radio" name="film" value="AI">A.I. (2001)</input>
+				<input type="radio" name="film" value="Galaxy Quest">Galaxy Quest (1999)</input>
+				<input type="radio" name="film" value="Brazil">Brazil (1985)</input>
+				<input type="radio" name="film" value="Being John Malkovich">Being John Malkovich (1999)</input>
 		</section>
 		<input  type="submit" value="Submit Pre-Registration" style="margin: 10px;" />
 		</form>

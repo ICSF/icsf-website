@@ -187,7 +187,72 @@
 		<div class="columns">
 			<div class="no-break">
 				<h2 id="timetable">Timetable</h2>
-				To be announced.
+					<h3>Saturday</h3>
+					<table>
+						<tbody>
+							<tr>
+								<td>9:00</td>
+								<td>Doors open</td>
+							</tr>
+							<tr>
+								<td>10:00</td>
+								<td>Frances Hardinge</td>
+							</tr>
+							<tr>
+								<td>11:00</td>
+								<td>Cory Doctorow</td>
+							</tr>
+							<tr>
+								<td>12:00</td>
+								<td>The Destruction of Dodgy Merchandise, with Stuart Ashen <br /> Lunch</td>
+							</tr>
+							<tr>
+								<td>13:30</td>
+								<td>Ellen Pendersen "Golem"<br /> Steve Cutts "Life on Mars"</td>
+							</tr>
+							<tr>
+								<td>14:30</td>
+								<td>Saturday authors panel and book signing</td>
+							</tr>
+							<tr>
+								<td>16:00</td>
+								<td>Turkey readings</td>
+							</tr>
+							<tr>
+								<td>18:00</td>
+								<td>Film viewing feat. IC Cinema</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Sunday</h3>
+					<table>
+						<tbody>
+							<tr>
+								<td>10:00</td>
+								<td>Kari Sperring</td>
+							</tr>
+							<tr>
+								<td>11:00</td>
+								<td>Ian McDonald</td>
+							</tr>
+							<tr>
+								<td>12:00</td>
+								<td>Lunch</td>
+							</tr>
+							<tr>
+								<td>13:30</td>
+								<td>Sunday authors panel and book signing</td>
+							</tr>
+							<tr>
+								<td>14:30</td>
+								<td>Silly games</td>
+							</tr>
+							<tr>
+								<td>16:00</td>
+								<td>Pub quiz</td>
+							</tr>
+						</tbody>
+					</table>
 			</div>
 			<div class="no-break">
 				<h2 id="prices">Prices</h2>

@@ -7,7 +7,7 @@
 
 	header('Content-Type: text/plain');
 
-	$fields = array('contact', 'contact_all', 'ww', 'rpg', 'group', 'aff', 'ff_1','ff_2','ff_3','ff_4','ff_5');
+	$fields = array('contact', 'contact_all', 'ww', 'rpg', 'group', 'aff', 'ff_1','ff_2','ff_3','ff_4','ff_5','film');
 
 	foreach ($fields as $field)
 	{
