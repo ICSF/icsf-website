@@ -120,7 +120,7 @@
 		<nav>
 			<!--include "stubs/nav-main.html"-->
 			<hr />
-			<a href="#buy">Buy Tickets</a>
+			<a href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/8982/picocon-tickets">Buy Tickets</a>
 			<a href="#goh">Guests</a>
 			<a href="#timetable">Timetable</a>
 			<a href="#prices">Prices</a>
