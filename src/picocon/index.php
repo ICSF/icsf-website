@@ -13,7 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Event">
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>Picocon 32 - ICSF</title>
+		<title>Picocon 33 - ICSF</title>
 		<style type="text/css">
 			@font-face
 			{
@@ -113,8 +113,8 @@
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			<span itemprop="name">Picocon 32 &mdash; &lsquo;Duality&rsquo;</span>
-			<span id="subtitle">14th and 15th February 2015</span>
+			<span itemprop="name">Picocon 33 &mdash; &lsquo;Origins: in media res&rsquo;</span>
+			<span id="subtitle">20th February 2016</span>
 		</h1>
 
 		<nav>
@@ -129,9 +129,9 @@
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
-			<span itemprop="alternateName">Picocon 32</span>
+			<span itemprop="alternateName">Picocon 33</span>
 			will be held on
-			Saturday 14th and Sunday 15th February 2015,
+			Saturday 20th February 2016,
 			in Imperial College Union.
 		</p>
 
@@ -142,7 +142,7 @@
 			Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
 			It usually takes place on a Saturday in February, in Imperial
-			College's Student Union.
+			College&apos;s Student Union.
 			We try not to clash with other conventions around the same time.
 		</p>
 		<p>
@@ -165,7 +165,7 @@
 		</ul>
 		</div>
 
-		<img src="picocon32.svg" style="display: block; width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon Poster" />
+		<!--<img src="picocon32.svg" style="display: block; width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon Poster" />-->
 		</div>
 
 		<div style="height: 30px;">
@@ -174,20 +174,20 @@
 		</div>
 
 		<h2 id="goh">Guests of Honour</h2>
-		<div class="columns">
+		<!-- <div class="columns">
 		<ul>
 			<li>Cory Doctorow (author, technology blogger and journalist, well known for his eerily prescient young adult novels Little Brother and Pirate Cinema)</li>
 			<li>Frances Hardinge (another young adult author, who will be promoting her new novel Cuckoo Song)</li>
 			<li>Ian McDonald (writer of political hard science fiction, and distinguished by being the only author of a novel (that your correspondent is aware of) in which Imperial College features (River of Gods))</li>
 			<li>Kari Sperring (fantasy author and long standing friend of the society)</li>
 			<li>and <a href=http://youtube.com/ashens>Stuart Ashen</a> presenting the Destruction of Dodgy Merchandise</li>
-		</ul>
+		</ul>-->
 		</div>
 
 		<div class="columns">
 			<div class="no-break">
 				<h2 id="timetable">Timetable</h2>
-					<h3>Saturday</h3>
+				<!--	<h3>Saturday</h3>
 					<table>
 						<tbody>
 							<tr>
@@ -252,10 +252,10 @@
 								<td>Pub quiz</td>
 							</tr>
 						</tbody>
-					</table>
+					</table>-->
 			</div>
 			<div class="no-break">
-				<h2 id="prices">Prices</h2>
+				<h2 id="prices">Prices (TBC)</h2>
 
 				<p>
 					Entry for one day:
@@ -266,7 +266,7 @@
 					<li><b>&#x00A3;12</b> full price;</li>
 					<li><b>FREE</b> for past Guests of Honour.</li>
 				</ul>
-				<p>
+				<!-- for two-day years--><!--<p>
 					Entry for both days:
 				</p>
 				<ul>
@@ -274,7 +274,7 @@
 					<li><b>&#x00A3;18</b> concessions (with valid ID) - students/DWP/OAP/children;</li>
 					<li><b>&#x00A3;20</b> full price;</li>
 					<li><b>FREE</b> for past Guests of Honour.</li>
-				</ul>
+				</ul>-->
 				<p>
 					Discounts for large parties (e.g. other University SF societies)
 					are potentially available
@@ -289,7 +289,7 @@
 
 		<h2 id="directions">Directions to Picocon</h2>
 		<p>
-			Here's a general <a href="http://g.co/maps/7ahv7">map of the area</a>,
+			Here&apos;s a general <a href="http://g.co/maps/7ahv7">map of the area</a>,
 			pointing at the entrance to Beit Quad (which houses the
 			Union) off Prince Consort Road.
 		</p>
@@ -398,7 +398,7 @@
 
 		<h2 id="contact">Contact Us</h2>
 		<p>
-			For more information, please contact <b>Steve Ingram</b>,
+			For more information, please contact <b>Noor NM</b>,
 			the Picocon Sofa (comfier than a chair), at
 			<a class="sans" href="mailto:picocon@icsf.org.uk">picocon@icsf.org.uk</a>.
 		</p>
@@ -417,7 +417,7 @@
 		<footer>
 			<p>
 				The first Picocon was in 1984.
-				If you're curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
+				If you&apos;re curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society</p>
 		</footer>

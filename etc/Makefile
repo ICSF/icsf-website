@@ -3,7 +3,7 @@ SYNC=rsync
 SYNCDEL=--delete-after
 SYNCPERMS=--perms --chmod=a=rX,u+w,Da+x
 SYNCEXCLUDE=etc/exclude
-SYNCFLAGS=-rltc $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
+SYNCFLAGS=-rlc $(SYNCPERMS) $(SYNCDEL) --exclude-from=$(SYNCEXCLUDE) --progress --stats
 
 ifeq ($(shell uname),Darwin)
 	XARGS=xargs
@@ -126,4 +126,3 @@ src/committee/minutes/index.html : $(shell ./bin/gettargets-minutes)
 
 src/social/gallery/%/index.html.php : $(wildcard src/social/gallery/%/*.png) $(wildcard src/social/gallery/%/*.jpg) stubs
 	cp stubs/gallery.html.php $@
-
