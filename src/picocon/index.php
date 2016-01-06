@@ -86,24 +86,23 @@
 
 		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf/picocon/" />
 		<!-- <meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" /> -->
-		<meta itemprop="startDate" content="2015-02-14T10:00:00Z" />
-		<meta itemprop="endDate" content="2015-02-15T20:00:00Z" />
-
+		<meta itemprop="startDate" content="2016-02-20T10:00:00Z" />
+		<meta itemprop="endDate" content="2016-02-20T20:00:00Z" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
-		<meta property="og:title" content="Picocon 32: 'Duality'" />
-		<meta property="og:description" content="Picocon 32 will be on the 14th and 15th of Feburary 2015. Picocon is a small London convention hosted at each year Imperial College." />
-		<!-- <meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" /> -->
+		<meta property="og:title" content="Picocon 33: 'Origins'" />''
+		<meta property="og:description" content="Picocon 33 will be on the 20th of Feburary 2016. Picocon is a small London convention hosted at each year Imperial College." />
+		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon33.png" />
 
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:site" content="@picocon" />
 		<meta property="twitter:creator" content="@picocon" />
-		<meta property="twitter:title" content="Picocon 32: 'Duality' - 14th and 15th Feburary" />
+		<meta property="twitter:title" content="Picocon 33: 'Origins' - 20th Feburary" />
 		<meta property="twitter:description" content="Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
 			It usually takes place on a Saturday in February, in Imperial
 			College's Student Union." />
-		<!-- <meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon32.png" /> -->
+		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon33.png" />
 
 		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026"></script>
 		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js"></script>
@@ -148,8 +147,8 @@
 		<p>
 			It is a small (hence the name), affordable and convenient convention
 			for students and fans in or near London.
-			Registration opens at 10am, with the first scheduled events kicking
-			off at around 10:30.
+			Registration opens at 9am, with the first scheduled events kicking
+			off at around 9:30.
 			The schedule concludes in the evening.
 		</p>
 		<p>
@@ -174,20 +173,20 @@
 		</div>
 
 		<h2 id="goh">Guests of Honour</h2>
-		<!-- <div class="columns">
+                <p>Speaking at Picocon 33, exploring storytelling and this year&apos;s theme ("Origins") across various media, will be:</p>
+		<div class="columns">
 		<ul>
-			<li>Cory Doctorow (author, technology blogger and journalist, well known for his eerily prescient young adult novels Little Brother and Pirate Cinema)</li>
-			<li>Frances Hardinge (another young adult author, who will be promoting her new novel Cuckoo Song)</li>
-			<li>Ian McDonald (writer of political hard science fiction, and distinguished by being the only author of a novel (that your correspondent is aware of) in which Imperial College features (River of Gods))</li>
-			<li>Kari Sperring (fantasy author and long standing friend of the society)</li>
+			<li><a href="http://www.michellepaver.com/">Michelle Paver</a> - Author of 'The Chronicles of Ancient Darness', 'Dark Matter' and more. With a first class degree in Biochemistry, she unites the sciences with creativity in her writing and on the panel. </li>
+			<li><a href="http://www.paulcornell.com">Paul Cornell</a> - Previous screen-writer for Doctor Who, he has written for several comics (including the 'Demon Knights' comics) and is now author of the Shadow Police series and several standalone novels. He brings unparalleled variety of writing and experience to the panel.</li>
+			<li><a href="http://carriehopefletcher.com">Carrie Hope Fletcher</a> - With her debut fantasy novel, 'On The Other Side' to come out in March, (her previous publication being a non-fiction book 'All I Know Now'), and her role as Beth in the War of the Worlds Musical tour, she brings in a new aspect of storytelling and media. She is currently playing Eponine in Les Miserables in the West End. </li>
 			<li>and <a href=http://youtube.com/ashens>Stuart Ashen</a> presenting the Destruction of Dodgy Merchandise</li>
-		</ul>-->
+		</ul>
 		</div>
 
 		<div class="columns">
 			<div class="no-break">
-				<h2 id="timetable">Timetable</h2>
-				<!--	<h3>Saturday</h3>
+				<h2 id="timetable">Provisional Timetable</h2>
+				<!--for two-day Picocons--><!--	<h3>Saturday</h3>-->
 					<table>
 						<tbody>
 							<tr>
@@ -195,36 +194,65 @@
 								<td>Doors open</td>
 							</tr>
 							<tr>
+								<td>09:30</td>
+								<td rowspan=6>Authors&apos; talks</td>
+							</tr>
+							<tr>
 								<td>10:00</td>
-								<td>Frances Hardinge</td>
+							</tr>
+							<tr>
+								<td>10:30</td>
 							</tr>
 							<tr>
 								<td>11:00</td>
-								<td>Cory Doctorow</td>
 							</tr>
 							<tr>
 								<td>12:00</td>
-								<td>The Destruction of Dodgy Merchandise, with Stuart Ashen <br /> Lunch</td>
+							</tr>
+							<tr>
+								<td>12:30</td>
+								<td rowspan=2>Lunch<br/>Destruction of Dodgy Mechandise</td>
+							</tr>
+							<tr>
+								<td>13:00</td>
 							</tr>
 							<tr>
 								<td>13:30</td>
-								<td>Ellen Pendersen "Golem"<br /> Steve Cutts "Life on Mars"</td>
+                                                                <td rowspan=3>Authors Panel</td>
+							</tr>
+							<tr>
+								<td>14:00</td>
 							</tr>
 							<tr>
 								<td>14:30</td>
-								<td>Saturday authors panel and book signing</td>
+							</tr>
+							<tr>
+								<td>15:00</td>
+                                                                <td rowspan=5>Turkey Readings/Silly Games</td>
+							</tr>
+							<tr>
+								<td>15:30</td>
 							</tr>
 							<tr>
 								<td>16:00</td>
-								<td>Turkey readings</td>
+							</tr>
+							<tr>
+								<td>16:30</td>
+							</tr>
+							<tr>
+								<td>17:00</td>
+							</tr>
+							<tr>
+								<td>17:30</td>
+                                                                <td>Harmless Fun (<em>definitely not a fish duel</em>)</td>
 							</tr>
 							<tr>
 								<td>18:00</td>
-								<td>Film viewing feat. IC Cinema</td>
+								<td>Pub quiz</td>
 							</tr>
 						</tbody>
 					</table>
-					<h3>Sunday</h3>
+					<!--Two-day Picocons only!--><!--<h3>Sunday</h3>
 					<table>
 						<tbody>
 							<tr>
