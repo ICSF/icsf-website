@@ -112,8 +112,8 @@
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			<span itemprop="name">Picocon 33 &mdash; &lsquo;Origins: in media res&rsquo;</span>
-			<span id="subtitle">20th February 2016</span>
+			<span itemprop="name">Picocon 34 &mdash; &lsquo;Oh, the humanity!&rsquo;</span>
+			<span id="subtitle">18th February 2017</span>
 		</h1>
 
 		<nav>
@@ -128,10 +128,10 @@
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
-			<span itemprop="alternateName">Picocon 33</span>
+			<span itemprop="alternateName">Picocon 34</span>
 			will be held on
-			Saturday 20th February 2016,
-			in Imperial College Union.
+			Saturday 18th February 2017,
+			in the Imperial College Union.
 		</p>
 
 		<h2>What is Picocon?</h2>
@@ -173,12 +173,12 @@
 		</div>
 
 		<h2 id="goh">Guests of Honour</h2>
-                <p>Speaking at Picocon 33, exploring storytelling and this year&apos;s theme ("Origins") across various media, will be:</p>
+                <p>Speaking at Picocon 34 this year will be:</p>
 		<div class="columns">
 		<ul>
-			<li><a href="http://www.michellepaver.com/">Michelle Paver</a> - Author of 'The Chronicles of Ancient Darness', 'Dark Matter' and more. With a first class degree in Biochemistry, she unites the sciences with creativity in her writing and on the panel. </li>
-			<li><a href="http://www.paulcornell.com">Paul Cornell</a> - Previous screen-writer for Doctor Who, he has written for several comics (including the 'Demon Knights' comics) and is now author of the Shadow Police series and several standalone novels. He brings unparalleled variety of writing and experience to the panel.</li>
-			<li><a href="http://carriehopefletcher.com">Carrie Hope Fletcher</a> - With her debut fantasy novel, 'On The Other Side' to come out in March, (her previous publication being a non-fiction book 'All I Know Now'), and her role as Beth in the War of the Worlds Musical tour, she brings in a new aspect of storytelling and media. She is currently playing Eponine in Les Miserables in the West End. </li>
+			<li><a href="http://www.unlikelyworlds.co.uk/">Paul McAuley</a> -</li>
+			<li><a href="http://www.jainefenn.com">Jaine Fenn</a> - /li>
+			<li><a href="http://carriehopefletcher.com">TBC</a> - </li>
 			<li>and <a href=http://youtube.com/ashens>Stuart Ashen</a> presenting the Destruction of Dodgy Merchandise</li>
 		</ul>
 		</div>
