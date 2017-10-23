@@ -91,7 +91,7 @@ header('Cache-control: no-cache', false, 404);
 		</p>
 		<p>
 			If you think this page should exist, please contact the
-			<a href="mailto:techpriest@icsf.org.uk">sysadmin</a>.
+			<a href="mailto:icsf.techpriest@gmail.com">sysadmin</a>.
 		</p>
 	</body>
 </html>
