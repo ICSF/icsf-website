@@ -64,7 +64,10 @@ err:
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--include "stubs/headers.html"-->
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
+		<link href="//fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="/scc/icsf/resources/logo.png" />
 		<title>Picocon 32 - Pre-Registration</title>
 		<style type="text/css">
 			fieldset {
@@ -100,18 +103,26 @@ err:
 	</head>
 	<body>
 		<h1>
-			<a href="<!--SRVROOT-->/">
-				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
+			<a href="/scc/icsf/">
+				<img id="logo" src="/scc/icsf/resources/logo.png" alt="ICSF Logo" />
 			</a>
 			Picocon 32 &mdash; Pre&ndash;registration
 			<span id="subtitle">Register Now!</span>
 		</h1>
 
 		<nav>
-			<!--include "stubs/nav-main.html"-->
-			<hr />
-			<a href="<!--SRVROOT-->/picocon/">Picocon 32</a>
-			<a href="<!--SRVROOT-->/picocon/#tickets">Buy Tickets</a>
+			<a href="/scc/icsf/">Home</a>
+			<a href="/scc/icsf/events/">Events</a>
+			<a href="/scc/icsf/library/">Library</a>
+			<a href="/scc/icsf/committee/">Committee</a>
+			<a href="/scc/icsf/publications/">Publications</a>
+			<a href="/scc/icsf/picocon/">Picocon</a>
+			<a href="/scc/icsf/social/quotes/">Quotes</a>
+			<a href="/scc/icsf/social/gallery/">Gallery</a>
+			<a href="/scc/icsf/history/">History</a>
+			<a href="/scc/icsf/steampunk/">Steampunk</a>			<hr />
+			<a href="/scc/icsf/picocon/">Picocon 32</a>
+			<a href="/scc/icsf/picocon/#tickets">Buy Tickets</a>
 		</nav>
 
 		<form method="post" action="#">
