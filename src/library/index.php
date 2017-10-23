@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
-		<!--include "stubs/headers.html"-->
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
+		<link href="//fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="/scc/icsf/resources/logo.png" />
 		<title>ICSF Library - ICSF</title>
 	</head>
 	<body>
-		<!--include "stubs/h1-start.html"-->
+		<h1>
+			<a id="logo" href="/scc/icsf/">
+				<img src="/scc/icsf/resources/logo.png" alt="ICSF Logo" width="93" height="60" />
+			</a>
+			ICSF
+			<span id="subtitle">
 			Library
-		<!--include "stubs/h1-end.html"-->
+			</span>
+		</h1>
 
 		<nav>
-			<!--include "stubs/nav-main.html"-->
+			<a href="/scc/icsf/">Home</a>
+			<a href="/scc/icsf/events/">Events</a>
+			<a href="/scc/icsf/library/">Library</a>
+			<a href="/scc/icsf/committee/">Committee</a>
+			<a href="/scc/icsf/publications/">Publications</a>
+			<a href="/scc/icsf/picocon/">Picocon</a>
+			<a href="/scc/icsf/social/quotes/">Quotes</a>
+			<a href="/scc/icsf/social/gallery/">Gallery</a>
+			<a href="/scc/icsf/history/">History</a>
 			<hr />
-			<!--include "stubs/nav-lib.html"-->
+			<h3>Library</h3>
+			<a href="/scc/icsf/library/getting-to.html">Finding Us</a>
+			<a href="/scc/icsf/library/search.php">Database Search</a>
+			<a href="/scc/icsf/library/new-items.php">New Items</a>
+			<a href="/scc/icsf/library/request-list.php">Request List</a>
+			<a href="/scc/icsf/library/bookshops.html">Bookshops</a>
 		</nav>
 <?php
 	include 'database/database.inc';
@@ -38,7 +60,7 @@
 			and we'll see what we can do.
 
 			If you have any queries please contact email the
-			<a href="mailto:librarian@icsf.co.uk">librarian</a>.
+			<a href="mailto:icsf.librarian@gmail.com">librarian</a>.
 
 			If you happen to be looking for bookshops, see
 			<a href="bookshops.html">our bookshop guide</a>.
@@ -55,8 +77,9 @@
 			Feel free to pop in at any time!
 		</p>
 
-		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
-		width="320" height="240" alt="ICSF Library Webam" />
+		<img class="hang-right" src="/scc/icsf/webcam.jpeg"
+		width="320" height="240" alt="ICSF Library Webam" /> 
+
 		<h2>Library Webcam</h2>
 
 		<p>
@@ -66,14 +89,14 @@
 		</p>
 		<p>
 			You can also view the webcam at full size on the
-			<a href="<!--SRVROOT-->/webcam.php">Webcam page</a>
+			<a href="/scc/icsf/webcam.php">Webcam page</a>
 		</p>
 
 		<h2>Membership and Loans</h2>
 
 		<p>
 			Membership costs only &pound;8 per academic year; you can
-			<a href="https://www.imperialcollegeunion.org/science-fiction-235/category.html">purchase membership</a>
+			<a href="https://www.imperialcollegeunion.org/activities/a-to-z/science-fiction-and-fantasy">purchase membership</a>
 			from the Imperial College Union website, and entitles
 			you to borrow books, videos, DVDs, graphic novels and audio books.
 			You may borrow up to three items at a time, one of which may be
@@ -81,9 +104,9 @@
 		</p>
 		<p>
 			If you want to see some of the things we do before joining, just
-			<a href="<!--SRVROOT-->/library/getting-to.html">drop-in to the library</a>
+			<a href="/scc/icsf/library/getting-to.html">drop-in to the library</a>
 			at lunchtime, or join us for one of our bar nights or other
-			<a href="<!--SRVROOT-->/events/">events</a>.
+			<a href="/scc/icsf/events/">events</a>.
 		</p>
 		<p>
 			Books can be borrowed for up to 30 days, non-books for 2 college
@@ -92,7 +115,13 @@
 			the items due for returned at the beginning of the next term.
 		</p>
 
-		<!--include "stubs/footer.html"-->
+		<footer>
+			<p class="copyright">
+			Imperial College Science Fiction Society. Please report issues to
+			<a href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a>
+			</p>
+		</footer>
+
 	</body>
 </html>
 

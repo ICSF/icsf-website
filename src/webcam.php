@@ -2,24 +2,32 @@
 <html>
 	<head>
 		<meta http-equiv="refresh" content="10" />
-		<!--include "stubs/headers.html"-->
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
+		<link href="//fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="/scc/icsf/resources/logo.png" />
 	</head>
 	<body class="no-nav">
 		<h1>Webcam</h1>
 
 		<p style="margin: 1em 0; text-align: center;">
-			<a href="<!--SRVROOT-->/">Back to ICSF Website</a>
+			<a href="/scc/icsf/">Back to ICSF Website</a>
 		</p>
 
 		<img style="display: block; width: 95%; max-width: 640px; max-height: 480px; margin: 0 auto;"
-		src="<!--SRVROOT-->/webcam.jpeg" alt="Library Webcam" width="640" height="480" />
-
+		src="/scc/icsf/webcam.jpeg" alt="Library Webcam" width="640" height="480" /> 
 		<p style="margin: 1em 0; text-align: center;">
 			This page will automatically reload every 10 seconds<br />
-			<a href="<!--SRVROOT-->/">Back to ICSF Website</a>
+			<a href="/scc/icsf/">Back to ICSF Website</a>
 		</p>
 
-		<!--include "stubs/footer.html"-->
+		<footer>
+			<p class="copyright">
+			Imperial College Science Fiction Society. Please report issues to
+			<a href="mailto:techpriest@icsf.org.uk">techpriest@icsf.org.uk</a>
+			</p>
+		</footer>
+
 	</body>
 </html>
 

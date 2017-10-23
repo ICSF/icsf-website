@@ -12,13 +12,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Event">
 	<head>
-		<!--include "stubs/headers.html"-->
-		<title>Picocon 33 - ICSF</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
+		<link href="//fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="/scc/icsf/resources/logo.png" />
+		<title>Picocon 35 - ICSF</title>
 		<style type="text/css">
 			@font-face
 			{
 			    font-family: "Johnston";
-			    src: url(<!--SRVROOT-->/resources/London-Tube.ttf);
+			    src: url(/scc/icsf/resources/London-Tube.ttf);
 			}
 			.tube-line
 			{
@@ -85,41 +88,48 @@
 		</style>
 
 		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf/picocon/" />
-		<!-- <meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" /> -->
+		<!-- <meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/images/picocon31.png" /> -->
 		<meta itemprop="startDate" content="2016-02-20T10:00:00Z" />
 		<meta itemprop="endDate" content="2016-02-20T20:00:00Z" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
-		<meta property="og:title" content="Picocon 33: 'Origins'" />''
-		<meta property="og:description" content="Picocon 33 will be on the 20th of Feburary 2016. Picocon is a small London convention hosted at each year Imperial College." />
-		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon33.png" />
+		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/" />
+		<meta property="og:title" content="Picocon 34: 'Origins'" />''
+		<meta property="og:description" content="Picocon 35 will be on the 17th of February 2018. Picocon is a small London convention hosted at each year at Imperial College." />
+		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/images/picocon33.png" />
 
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:site" content="@picocon" />
 		<meta property="twitter:creator" content="@picocon" />
-		<meta property="twitter:title" content="Picocon 33: 'Origins' - 20th Feburary" />
+		<meta property="twitter:title" content="Picocon 35: 'Harmony' - 17th Feburary" />
 		<meta property="twitter:description" content="Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
 			It usually takes place on a Saturday in February, in Imperial
-			College's Student Union." />
-		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon33.png" />
+			College's Blackett Building." />
+		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/images/picocon33.png" />
 
 		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026"></script>
 		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js"></script>
 	</head>
 	<body>
 		<h1>
-			<a href="<!--SRVROOT-->/">
-				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
+			<a href="/scc/icsf/">
+				<img id="logo" src="/scc/icsf/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			<span itemprop="name">Picocon 34 &mdash; &lsquo;Oh, the humanity!&rsquo;</span>
-			<span id="subtitle">18th February 2017</span>
+			<span itemprop="name">Picocon 35 &mdash; &lsquo;Harmony&rsquo;</span>
+			<span id="subtitle">17th February 2018</span>
 		</h1>
 
 		<nav>
-			<!--include "stubs/nav-main.html"-->
-			<hr />
-			<a href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/8982/picocon-tickets">Buy Tickets</a>
+			<a href="/scc/icsf/">Home</a>
+			<a href="/scc/icsf/events/">Events</a>
+			<a href="/scc/icsf/library/">Library</a>
+			<a href="/scc/icsf/committee/">Committee</a>
+			<a href="/scc/icsf/publications/">Publications</a>
+			<a href="/scc/icsf/picocon/">Picocon</a>
+			<a href="/scc/icsf/social/quotes/">Quotes</a>
+			<a href="/scc/icsf/social/gallery/">Gallery</a>
+			<a href="/scc/icsf/history/">History</a>	<hr />
+			<!--** <a href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/15840/picocon-34-ticket">Buy Tickets</a> **-->
 			<a href="#goh">Guests</a>
 			<a href="#timetable">Timetable</a>
 			<a href="#prices">Prices</a>
@@ -128,20 +138,20 @@
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
-			<span itemprop="alternateName">Picocon 34</span>
+			<span itemprop="alternateName">Picocon 35</span>
 			will be held on
-			Saturday 18th February 2017,
-			in the Imperial College Union.
+			Saturday 17th February 2018,
+			in Imperial College's Blackett Building.
 		</p>
 
 		<h2>What is Picocon?</h2>
-		<div class="columns">
+		<!--<div class="columns">-->
 		<div itemprop="description">
 		<p>
 			Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
 			It usually takes place on a Saturday in February, in Imperial
-			College&apos;s Student Union.
+			College&apos;s Blackett Building.
 			We try not to clash with other conventions around the same time.
 		</p>
 		<p>
@@ -160,28 +170,30 @@
 			<li>The Destruction of Dodgy Merchandise, typically with liquid nitrogen and an enormous hammer. (Donations welcome!)</li>
 			<li>Stalls selling books, ICSF t-shirts, and other stuff</li>
 			<li>Quiz and silly games</li>
-			<li>Student Union bar</li>
+			<li>h bar</li>
 		</ul>
-		</div>
+		<!--** </div>
 
-		<!--<img src="picocon32.svg" style="display: block; width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon Poster" />-->
-		</div>
+		<img src="picocon34_bw.png" style="display: block; max-width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon 34 logo" />
+		</div> **-->
 
-		<div style="height: 30px;">
+		<!--<div style="height: 30px;">-->
+		<div style="text-align:center">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.union.ic.ac.uk/scc/icsf/picocon/" data-text="" data-via="picocon" data-hashtags="picocon32">Tweet</a>
 			<div class="fb-like" data-href="https://www.union.ic.ac.uk/scc/icsf/picocon/" data-send="true" data-width="380" data-show-faces="false"></div>
 		</div>
 
-		<h2 id="goh">Guests of Honour</h2>
+		<!-- <h2 id="goh">Guests of Honour</h2>
                 <p>Speaking at Picocon 34 this year will be:</p>
 		<div class="columns">
 		<ul>
-			<li><a href="http://www.unlikelyworlds.co.uk/">Paul McAuley</a> -</li>
-			<li><a href="http://www.jainefenn.com">Jaine Fenn</a> - /li>
-			<li><a href="http://carriehopefletcher.com">TBC</a> - </li>
+			<li><a href="https://www.jainefenn.com/">Jaine Fenn</a> is the author of numerous published short stories and the Hidden Empire series of character-driven Space Opera novels. After studying linguistics and astronomy her first career was in IT, an experience which has left her with a distrust of technology unusual in an SF author. She was originally a guest at Picocon in 2009, shortly after the first Hidden Empire book, Principles of Angels, came out from Gollancz.   </li> <img src="fenn.jpg" style="max-width: 20%; max-height: 400px; margin: 5px auto;" alt="Jaine Fenn"/>
+			<li><a href="http://www.unlikelyworlds.co.uk/">Paul McAuley</a> , one of the most widely-praised authors in British science fiction, has published more than twenty novels, over a hundred short stories, and a BFI Film Classic monograph on Terry Gilliam’s film Brazil. His fiction has been nominated for numerous prizes and has won the Arthur C. Clarke Award, the Philip K Dick Memorial Award, and many others. After working as a research biologist and university lecturer in botany, he is now a full-time writer. </li> <img src="mcauley.jpg" style="max-width: 20%; max-height: 400px; margin: 5px auto;" alt="Paul McAuley" />
+			<li><a href="http://www.allumination.co.uk/">Al Robertson</a> is a writer, poet, and marketer,  whose first novel ,'Crashing Heaven, came out last June. His second novel, ‘Waking Hell’, was released last October with Gollancz. He's been publishing SF, fantasy and horror stories and novellas for the last ten years or so - these have appeared in Interzone, Black Static, Postscripts and elsewhere. </li> <img src="robertson.JPG" style="block; max-width: 20%; max-height: 400px; margin: 5px auto;" alt="Al Robertson" />
+			<li><a href="http://www.justinarobson.co.uk/">Justina Robson </a>  has spent a lot of her life writing Science Fiction. This has included ten novels, a collection of short stories, and a Transformers book. Her debut novel, Silver Screen, was shortlisted for the Arthur C Clarke award and the BSFA award. She currently lives in Leeds. </li> <img src="robson.JPG" style="block; max-width: 20%; max-height: 400px; margin: 5px auto;" alt="Justina Robson" />
 			<li>and <a href=http://youtube.com/ashens>Stuart Ashen</a> presenting the Destruction of Dodgy Merchandise</li>
 		</ul>
-		</div>
+		</div> -->
 
 		<div class="columns">
 			<div class="no-break">
@@ -191,50 +203,59 @@
 						<tbody>
 							<tr>
 								<td>9:00</td>
-								<td>Doors open</td>
+								<td>Front Desk/registration opens</td>
 							</tr>
 							<tr>
 								<td>09:30</td>
-								<td rowspan=6>Authors&apos; talks</td>
+                                <td rowspan=2>Author&apos;s Talk <!-- - Jaine Fenn --></td>
 							</tr>
 							<tr>
 								<td>10:00</td>
 							</tr>
 							<tr>
 								<td>10:30</td>
+								<td rowspan=2>Author&apos;s Talk <!-- - Paul McAuley --></td>
 							</tr>
 							<tr>
 								<td>11:00</td>
+							</tr>
+							<tr>
+								<td>11:30</td>
+								<td rowspan=2>Author&apos;s Talk <!-- - Al Robertson --></td>
 							</tr>
 							<tr>
 								<td>12:00</td>
 							</tr>
 							<tr>
 								<td>12:30</td>
-								<td rowspan=2>Lunch<br/>Destruction of Dodgy Mechandise</td>
+								<td rowspan=3>Lunch<br/><br/>Destruction of Dodgy Merchandise (starts 13:00)</td>
 							</tr>
 							<tr>
 								<td>13:00</td>
 							</tr>
 							<tr>
 								<td>13:30</td>
-                                                                <td rowspan=3>Authors Panel</td>
+
 							</tr>
 							<tr>
 								<td>14:00</td>
+                <td rowspan=2>Author&apos;s Talk <!-- - Justina Robson --></td>
 							</tr>
 							<tr>
 								<td>14:30</td>
+
 							</tr>
 							<tr>
 								<td>15:00</td>
-                                                                <td rowspan=5>Turkey Readings/Silly Games</td>
+                <td rowspan=2>Authors&apos; Panel</td>
 							</tr>
 							<tr>
 								<td>15:30</td>
+
 							</tr>
 							<tr>
 								<td>16:00</td>
+								<td rowspan=3>Turkey Readings<br/><br/>Silly Games</td>
 							</tr>
 							<tr>
 								<td>16:30</td>
@@ -244,11 +265,14 @@
 							</tr>
 							<tr>
 								<td>17:30</td>
-                                                                <td>Harmless Fun (<em>definitely not a fish duel</em>)</td>
+                <td>Harmless Fun (<em>definitely not a fish duel</em>)</td>
 							</tr>
 							<tr>
 								<td>18:00</td>
-								<td>Pub quiz</td>
+								<td rowspan=2>Pub quiz (with authors leading teams!)</td>
+							</tr>
+							<tr>
+								<td>18:30</td>
 							</tr>
 						</tbody>
 					</table>
@@ -283,10 +307,10 @@
 					</table>-->
 			</div>
 			<div class="no-break">
-				<h2 id="prices">Prices (TBC)</h2>
+				<h2 id="prices">Prices</h2>
 
 				<p>
-					Entry for one day:
+					Entry<!-- for one day-->:
 				</p>
 				<ul>
 					<li><b>&#x00A3;8</b> for ICSF members;</li>
@@ -303,6 +327,7 @@
 					<li><b>&#x00A3;20</b> full price;</li>
 					<li><b>FREE</b> for past Guests of Honour.</li>
 				</ul>-->
+                <!--<p>You can buy tickets <a href="https://www.imperialcollegeunion.org/shop/club-society-project-products/science-fiction-and-fantasy-products/12251/picocon-33-tickets">here</a>.-->
 				<p>
 					Discounts for large parties (e.g. other University SF societies)
 					are potentially available
@@ -313,6 +338,18 @@
 					all are welcome.
 				</p>
 			</div>
+			<div class="no-break">
+				<h2 id="menu">Fast-track lunch menu</h2>
+				<p>Food will be served between 12:30-13:30 in h-bar. </p>
+				<!-- <ul>
+					<li>Beef Burger &amp; Chips -£4.75</li>
+					<li>Chicken Burger &amp; Chips - £4.80</li>
+					<li>Vege Burger &amp; Chips - £4.25</li>
+					<li>Mediterranean roasted vegetable &amp; tomato pasta - £3.95</li>
+				</ul>
+				<p>Please note, anyone purchasing any other items from the menu will need to wait as normal as these will be prepared in the main kitchen.</p>
+				-->
+</div>
 		</div>
 
 		<h2 id="directions">Directions to Picocon</h2>
@@ -324,7 +361,7 @@
 		<div class="columns" style="margin: 1em 0;">
 			<div class="no-break clear">
 				<h3>By London Underground</h3>
-				<img src="<!--SRVROOT-->/resources/tfl/underground.svg" width="80" height="65" alt="London Underground" class="hang-left" />
+				<img src="/scc/icsf/resources/tfl/underground.svg" width="80" height="65" alt="London Underground" class="hang-left" />
 				<p>
 					The tube is probably easiest way to get to Picocon; both
 					Gloucester Road Station and South Kensington Station are
@@ -349,10 +386,10 @@
 					<a href="http://g.co/maps/akrjw" target="map">South Kensington Station</a>.
 				</p>
 			</div>
-			<div class="center">
+			<!--<div class="center">
 				<form action="http://journeyplanner.tfl.gov.uk/user/XSLT_TRIP_REQUEST2" id="jpForm" method="post" target="tfl">
 					<h2 style="color:#244266">TfL Journey Planner</h2>
-					<input type="hidden" name="language" value="en" /><!-- in language = english -->
+					<input type="hidden" name="language" value="en" />
 					<input type="hidden" name="execInst" value="" />
 					<input type="hidden" name="sessionID" value="0" />
 					<input type="hidden" name="ptOptionsActive" value="-1" />
@@ -383,11 +420,11 @@
 					</a>
 
 					<input type="submit" title="Plan your Journey" value="Plan your Journey"/>
-				</form>
-			</div>
+				</form> 
+			</div> -->
 			<div class="no-break clear">
 				<h3>By Public Bus</h3>
-				<img src="<!--SRVROOT-->/resources/tfl/buses.svg" width="80" height="65" alt="TfL Buses" class="hang-left" />
+				<img src="/scc/icsf/resources/tfl/buses.svg" width="80" height="65" alt="TfL Buses" class="hang-left" />
 				<p>
 					Both the
 					<a href="http://www.tfl.gov.uk/gettingaround/maps/buses/pdf/royalalberthall-a4.pdf" target="map">Royal Albert Hall</a>
@@ -399,20 +436,23 @@
 					<a href="//g.co/maps/akrjw" target="map">South Kensington Station</a>.
 				</p>
 				<p>
-					These stop are served by buses
+					These stops are served by buses
 					C1, 9, 10, 49, 52, 70, 74,
 					345, 360, 414, 430, and 452.
 				</p>
 			</div>
 			<div class="no-break clear">
-				<h3>By &lsquo;Boris&rsquo;/&lsquo;Barclays&rsquo; Bike</h3>
-				<img src="<!--SRVROOT-->/resources/tfl/cycle-hire.svg" width="80" height="66" alt="Barclay's Bike Hire" class="hang-left" />
+				<h3>By Bike</h3>
+				<img src="santander.jpg" width="80" height="80" alt="Santander Bike Hire" class="hang-left" />
 				<p>
 					There are three hire cycle docking stations on Prince
 					Consort Road, which also houses the Union.
 					Search for 'SW7 2BB' on the
 					<a href="https://web.barclayscyclehire.tfl.gov.uk/maps">Cycle Map</a>.
 				</p>
+			</div>
+			<div>
+			<script>(function(w){w.to='Beit+Quadrangle,+Imperial+College+Road,+London+SW7+2BB,+UK';w.url='https://tfl.gov.uk'; return w; })(window.tfl = window.tfl || {});</script><script src='https://tfl.gov.uk/cdn/static/scripts/specific/widgets/jp-widget.js'></script>
 			</div>
 		</div>
 		<p>
@@ -426,7 +466,7 @@
 
 		<h2 id="contact">Contact Us</h2>
 		<p>
-			For more information, please contact <b>Noor NM</b>,
+			For more information, please contact <b>Edward da Fonseca</b>,
 			the Picocon Sofa (comfier than a chair), at
 			<a class="sans" href="mailto:picocon@icsf.org.uk">picocon@icsf.org.uk</a>.
 		</p>
@@ -445,7 +485,7 @@
 		<footer>
 			<p>
 				The first Picocon was in 1984.
-				If you&apos;re curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
+				If you&apos;re curious, we have a record of <a href="/scc/icsf/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society</p>
 		</footer>
