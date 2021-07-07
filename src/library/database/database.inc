@@ -27,7 +27,7 @@
 		 * The function returns the _total_ number of matches for the search
 		 * (including those before offset and after offset+limit
 		 */
-		function search(SearchConditions $conditions, &$results)
+		static function search(SearchConditions $conditions, &$results)
 		{
 			$query = 'SELECT SQL_CALC_FOUND_ROWS
 			items.ItemKey as id, items.Title, items.Series, items.SeriesNum,
@@ -63,7 +63,7 @@
 			return $count;
 		}
 
-		function latest($page = 1)
+		static function latest($page = 1)
 		{
 			$data = self::$conn->query('SELECT items.ItemKey as id, items.Title, items.Series, items.SeriesNum, authors.Author, items.TypeKey, items.AcquireDate FROM items JOIN authors USING (AuthorKey) WHERE Retired = 0 ORDER BY AcquireDate DESC LIMIT ' . ((int)$page - 1)*50 . ', 50');
 			$results = array();
@@ -73,7 +73,7 @@
 			return $results;
 		}
 
-		function makeFilter($field, $str)
+		static function makeFilter($field, $str)
 		{
 			$str = explode(' ', $str);
 			$str = array_map(function ($s) use ($field) { return sprintf('%s LIKE "%%%s%%"', $field, $s); }, $str);

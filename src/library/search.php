@@ -20,7 +20,7 @@
 			<table>
 			<tr>
 				<td>Title:</td>
-				<td><input name="title" value="<?php echo $_GET['title']; ?>" /></td>
+				<td><input name="title" value="<?php echo isset($_GET['title']) ? $_GET['title'] : ""; ?>" /></td>
 				<td rowspan="3">
 					<input type="submit" style="
 						font-size:1.5em;
@@ -38,11 +38,11 @@
 			</tr>
 			<tr>
 				<td>Author:</td>
-				<td><input name="author" value="<?php echo $_GET['author']; ?>" /></td>
+				<td><input name="author" value="<?php echo isset($_GET['author']) ? $_GET['author'] : ""; ?>" /></td>
 			</tr>
 			<tr>
 				<td>Series:</td>
-				<td><input name="series" value="<?php echo $_GET['series']; ?>" /></td>
+				<td><input name="series" value="<?php echo isset($_GET['series']) ? $_GET['series'] : ""; ?>" /></td>
 			</tr>
 			</table>
 		</form>
