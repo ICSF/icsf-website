@@ -44,11 +44,11 @@
 ?>
 		<p>
 			Welcome to the ICSF history book.
-			The society was founded almost 40 years ago and has grown over the
+			The society was founded over 40 years ago and has grown over the
 			year from modest beginnings with a few books in a cupboard to a
 			library of over 13000, and acquiring a lot of history along the
-			way. Some of that history even has a tendency to turn up a Picocon
-			and natter on about the good all days.
+			way. Some of that history even has a tendency to turn up at Picocon
+			and natter on about the good old days.
 
 			The society history page contains the records that we've been told,
 			and can still remember once we've recovered from the hangover the
@@ -59,7 +59,7 @@
 		<p>
 			The information, however, is still incomplete.
 			If you've got anything you can contribute, drop the secretary an
-			email at <a href="mailto:secretary@icsf.co.uk">secretary@icsf.co.uk</a>.
+			email at <a href="mailto:icsf.secretary@gmail.com">icsf.secretary@gmail.com</a>.
 		</p>
 
 		<div id="book"><table class="timeline">
@@ -126,4 +126,3 @@
 		<!--include "stubs/footer.html"-->
 	</body>
 </html>
-

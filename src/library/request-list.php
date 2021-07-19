@@ -17,9 +17,14 @@
 		</nav>
 
 		<p>
-			The online request list has yet to be ported to the current version
-			of the website. However, don't worry: you can pop down to the
-			library and add your request to the physical list there
+			Sometimes the library won't have the item you're looking for.
+			But don't worry! You can just ask our friendly neighbourhood
+			librarian, or come down to the West Basement and add it to the
+			request list in person. It's usually just inside the door.
+		</p>
+
+		<p>
+			You also have the option of using <a target="_blank" href="https://forms.gle/RFChGe6Y71tQxcBB9">this handy form</a> to make a request.
 		</p>
 
 		<!--include "stubs/footer.html"-->
