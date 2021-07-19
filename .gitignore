@@ -4,3 +4,4 @@ bin/*.class
 bin/validator/cache
 config.php
 src/sitemap.xml
+.ipynb_checkpoints
