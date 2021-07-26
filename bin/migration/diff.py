@@ -10,7 +10,7 @@ hd = difflib.HtmlDiff(tabsize=4, wrapcolumn=50)
 local_prefix = "http://localhost/"
 remote_prefix = "https://www.union.ic.ac.uk/scc/icsf/"
 
-local_url = "http://localhost/"
+local_url = "http://localhost/history/"
 now = requests.get(local_url).text
 new = requests.get(remote_prefix + local_url[len(local_prefix):]).text.replace("/scc/icsf", "")
 # -
