@@ -116,6 +116,13 @@
 	add_event('Feb 2013', 'Picocon 30', '<!--SRVROOT-->/history/picocon/picocon30.html');
 	add_event('Feb 2014', 'Picocon 31', '<!--SRVROOT-->/history/picocon/picocon31.html');
 	add_event('Feb 2015', 'Picocon 32', '<!--SRVROOT-->/history/picocon/picocon32.html');
+	add_event('Feb 2016', 'Picocon 33', '<!--SRVROOT-->/history/picocon/picocon33.html');
+	add_event('Feb 2017', 'Picocon 34', '<!--SRVROOT-->/history/picocon/picocon34.html');
+	add_event('Feb 2018', 'Picocon 35', '<!--SRVROOT-->/history/picocon/picocon35.html');
+	add_event('Jul 2018', 'ICSF Podcast Begins (Again)');
+	add_event('Feb 2019', 'Picocon 36', '<!--SRVROOT-->/history/picocon/picocon36.html');
+	add_event('Feb 2020', 'Picocon 37', '<!--SRVROOT-->/history/picocon/picocon37.html');
+	add_event('Feb 2021', 'Picocon 38', '<!--SRVROOT-->/history/picocon/picocon38.html');
 
 ?>
 				</td>
