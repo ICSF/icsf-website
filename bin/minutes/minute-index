@@ -26,6 +26,8 @@
 			<a href="<!--SRVROOT-->/committee/#constitution">Constitution</a>
 		</nav>
 
+		From 2020-21 onwards, you can find minutes in <a href="https://drive.google.com/drive/folders/0B46WxFgNZXDXWXB1a0JWXzd3Z2M?resourcekey=0-UX3VYVEhBxI0sJFFi87fRw&usp=sharing" target="_blank">this Google Drive folder</a>.
+
 <?php
 	function tabs($num)
 	{
@@ -112,7 +114,7 @@ foreach ($argv as $file):
 		echo tabs(2) . '<ul>' . PHP_EOL;
 
 	// Put this line in for this file
-	echo index($file, $path); 
+	echo index($file, $path);
 
 endforeach;
 ?>
@@ -121,4 +123,3 @@ endforeach;
 		<!--include "stubs/footer.html"-->
 	</body>
 </html>
-
