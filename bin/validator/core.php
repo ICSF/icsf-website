@@ -35,11 +35,11 @@ abstract class Validator
 
 	protected function error($line, $warning, $message)
 	{
-		$this->result->add(new Error($this->file, $line, $warning, $message));
+		$this->result->add(new ValidatorError($this->file, $line, $warning, $message));
 	}
 }
 
-class Error
+class ValidatorError
 {
 	public $file;
 	public $line;
@@ -69,7 +69,7 @@ class Result implements Iterator, Countable
 		// Nothing to see here. Move along, citizen!
 	}
 
-	public function add(Error $err)
+	public function add(ValidatorError $err)
 	{
 		$this->entries [] = $err;
 		if ($err->warning)

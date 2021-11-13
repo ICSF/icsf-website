@@ -38,7 +38,7 @@
 			and we'll see what we can do.
 
 			If you have any queries please contact email the
-			<a href="mailto:librarian@icsf.co.uk">librarian</a>.
+			<a href="mailto:icsf.librarian@gmail.com">librarian</a>.
 
 			If you happen to be looking for bookshops, see
 			<a href="bookshops.html">our bookshop guide</a>.
@@ -56,7 +56,7 @@
 		</p>
 
 		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
-		width="320" height="240" alt="ICSF Library Webam" />
+		width="320" height="240" alt="ICSF Library Webcam" />
 		<h2>Library Webcam</h2>
 
 		<p>
@@ -73,7 +73,7 @@
 
 		<p>
 			Membership costs only &pound;8 per academic year; you can
-			<a href="https://www.imperialcollegeunion.org/science-fiction-235/category.html">purchase membership</a>
+			<a href="https://www.imperialcollegeunion.org/activities/a-to-z/science-fiction-and-fantasy">purchase membership</a>
 			from the Imperial College Union website, and entitles
 			you to borrow books, videos, DVDs, graphic novels and audio books.
 			You may borrow up to three items at a time, one of which may be
@@ -95,4 +95,3 @@
 		<!--include "stubs/footer.html"-->
 	</body>
 </html>
-

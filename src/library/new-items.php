@@ -17,7 +17,7 @@
 		</nav>
 <?php
 
-	if ('UTC' === date_default_timezone_get()
+	if ('UTC' === date_default_timezone_get())
 	{
 		date_default_timezone_set('UTC');
 	}

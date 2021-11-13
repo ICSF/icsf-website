@@ -29,7 +29,7 @@ open(my $input,"<",shift @ARGV) or die("Can't open input");
 
 my %replacements;
 for (@ARGV) {
-	$_ =~ /^.+=.+$/ or die("Not a substitution");
+	$_ =~ /^.+=.*$/ or die("Not a substitution");
 	my @find_replace = split(/=/,$_,2);
 	$replacements{$find_replace[0]} = $find_replace[1];
 }
