@@ -369,7 +369,7 @@ others, and is a regular columnist for The Engineer.</p>
 				If you&apos;re curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society. Please report issues to
-			<a href="mailto:icsflibrary@gmail.com">icsflibrary@gmail.com</a></p>
+			<a href="mailto:icsflibrary@gmail.com">icsf.techpriest@gmail.com</a></p>
 		</footer>
 
 	</body>
