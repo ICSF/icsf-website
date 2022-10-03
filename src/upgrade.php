@@ -35,11 +35,11 @@ $regexmap = array(
 
 $url = $_SERVER['REQUEST_URI']; // Get requested url
 $url = rtrim(trim($url), '/'); // Clean up
-$url = preg_replace('@^<!--SRVROOT-->(/old)?@', '', $url); // Strip out the non-relative part of the url
+$url = preg_replace('@^/scc/icsf(/old)?@', '', $url); // Strip out the non-relative part of the url
 
 if (array_key_exists($url, $mapping))
 {
-	header('Location: <!--SRVROOT-->' . $mapping[$url], false, 301);
+	header('Location: /scc/icsf' . $mapping[$url], false, 301);
 	exit;
 }
 
@@ -48,7 +48,7 @@ foreach ($regexmap as $rule => $rewrite)
 	if (preg_match($rule, $url))
 	{
 		$url = preg_replace($rewrite[0], $rewrite[1], $url);
-		header('Location: <!--SRVROOT-->' . $url, false, 301);
+		header('Location: /scc/icsf' . $url, false, 301);
 		exit;
 	}
 }
@@ -56,14 +56,14 @@ foreach ($regexmap as $rule => $rewrite)
 $other = ltrim(str_replace('.php', '.html', $url), '/');
 if (file_exists($other))
 {
-	header('Location: <!--SRVROOT-->/' . $other, false, 301);
+	header('Location: /scc/icsf/' . $other, false, 301);
 	exit;
 }
 
 $other = ltrim(str_replace('.html', '.php', $url), '/');
 if (file_exists($other))
 {
-	header('Location: <!--SRVROOT-->/' . $other, false, 301);
+	header('Location: /scc/icsf/' . $other, false, 301);
 	exit;
 }
 
@@ -83,11 +83,11 @@ header('Cache-control: no-cache', false, 404);
 		</p>
 		<p>
 			You can see if this page exists on the
-			<a href="<!--SRVROOT-->/old<?php echo $url ?>">archived version of
+			<a href="/scc/icsf/old<?php echo $url ?>">archived version of
 			the old site.</a>
 		</p>
 		<p>
-			Our new website is <a href="<!--SRVROOT-->">here</a>.
+			Our new website is <a href="/scc/icsf">here</a>.
 		</p>
 		<p>
 			If you think this page should exist, please contact the
