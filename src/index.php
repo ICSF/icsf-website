@@ -33,13 +33,6 @@
 			<a href="/scc/icsf/history/">History</a>
 		</nav>
 
-		<div class="hang-right" style="width: 320px;">
-			<img src="/scc/icsf/webcam.jpeg" alt="ICSF Library Webcam"
-				width="320" height="240" />
-			<a style="display: block; text-align: center;"
-				href="/scc/icsf/webcam.php">Webcam Page</a>
-		</div>
-
 		<div id="discord-widget">
 			<img id="discord-logo" src="resources/discord_logo.png" alt="Discord server logo" />
 			<a href="https://discord.gg/Wy7VXpM" target="_blank" title="Join our Discord server" id="discord-join">Join</a>
