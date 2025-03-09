@@ -55,20 +55,6 @@
 			Feel free to pop in at any time!
 		</p>
 
-		<img class="hang-right" src="<!--SRVROOT-->/webcam.jpeg"
-		width="320" height="240" alt="ICSF Library Webcam" />
-		<h2>Library Webcam</h2>
-
-		<p>
-			The webcam, shown right, can be used to find out if the library is
-			currently open, how busy it is and &mdash; if you can tell from a
-			single frame &mdash; what people are watching.
-		</p>
-		<p>
-			You can also view the webcam at full size on the
-			<a href="<!--SRVROOT-->/webcam.php">Webcam page</a>
-		</p>
-
 		<h2>Membership and Loans</h2>
 
 		<p>
