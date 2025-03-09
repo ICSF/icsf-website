@@ -16,19 +16,13 @@
 			<!--include "stubs/nav-main.html"-->
 		</nav>
 
-		<div id="discord-widget">
-			<img id="discord-logo" src="resources/discord_logo.png" alt="Discord server logo" />
-			<a href="https://discord.gg/Wy7VXpM" target="_blank" title="Join our Discord server" id="discord-join">Join</a>
-			Sci Fi & Fantasy Society<br>
-			<div id="discord-indicator"></div><span><?php echo json_decode(file_get_contents('https://discord.com/api/guilds/430437751603724319/widget.json'), true)['presence_count'];?> members online</span>
-		</div>
 
-		<p>
+		<!-- <p>
 			<strong>In person events may not happen anytime soon, but we are still active! Join our
  			Discord server to chat about all the stuff we usually chat about (in text channels 24/7 and
 			in voice channels on Wednesdays), games nights on Fridays, and any other events we (or you)
 			can think about!</strong>
-		</p>
+		</p> -->
 
 		<p>
 			ICSF is the centre for science fiction, fantasy and horror fans at
@@ -72,6 +66,13 @@
 			<a href="https://twitter.com/Imperial_SciFi" target="_blank">Twitter</a>
 			<br>
 			<a href="https://www.instagram.com/imperial_scifi/" target="_blank">Instagram</a>
+		  <br>
+			<div id="discord-widget">
+				<img id="discord-logo" src="resources/discord_logo.png" alt="Discord server logo" />
+				<a href="https://discord.gg/Wy7VXpM" target="_blank" title="Join our Discord server" id="discord-join">Join</a>
+				Sci Fi & Fantasy Society<br>
+				<div id="discord-indicator"></div><span><?php echo json_decode(file_get_contents('https://discord.com/api/guilds/430437751603724319/widget.json'), true)['presence_count'];?> members online</span>
+		</div>
 		</p>
 
 		<!--include "stubs/footer.html"-->
