@@ -16,13 +16,6 @@
 			<!--include "stubs/nav-main.html"-->
 		</nav>
 
-		<div class="hang-right" style="width: 320px;">
-			<img src="<!--SRVROOT-->/webcam.jpeg" alt="ICSF Library Webcam"
-				width="320" height="240" />
-			<a style="display: block; text-align: center;"
-				href="<!--SRVROOT-->/webcam.php">Webcam Page</a>
-		</div>
-
 		<div id="discord-widget">
 			<img id="discord-logo" src="resources/discord_logo.png" alt="Discord server logo" />
 			<a href="https://discord.gg/Wy7VXpM" target="_blank" title="Join our Discord server" id="discord-join">Join</a>
