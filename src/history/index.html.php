@@ -123,7 +123,10 @@
 	add_event('Feb 2019', 'Picocon 36', '<!--SRVROOT-->/history/picocon/picocon36.html');
 	add_event('Feb 2020', 'Picocon 37', '<!--SRVROOT-->/history/picocon/picocon37.html');
 	add_event('Feb 2021', 'Picocon 38', '<!--SRVROOT-->/history/picocon/picocon38.html');
-
+	add_event('Mar 2022', 'Picocon 39', '<!--SRVROOT-->/history/picocon/picocon39.html');
+	add_event('Mar 2023', 'Picocon 40', '<!--SRVROOT-->/history/picocon/picocon40.html');
+	add_event('Mar 2024', 'Picocon 41', '<!--SRVROOT-->/history/picocon/picocon41.html');
+	add_event('Mar 2025', 'Picocon 42', '<!--SRVROOT-->/history/picocon/picocon42.html');
 ?>
 				</td>
 			</tr>
