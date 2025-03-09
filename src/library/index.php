@@ -1,40 +1,18 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
-		<link href="//fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css" />
-		<link rel="icon" href="/scc/icsf/resources/logo.png" />
+		<!--include "stubs/headers.html"-->
 		<title>ICSF Library - ICSF</title>
 	</head>
 	<body>
-		<h1>
-			<a id="logo" href="/scc/icsf/">
-				<img src="/scc/icsf/resources/logo.png" alt="ICSF Logo" width="93" height="60" />
-			</a>
-			ICSF
-			<span id="subtitle">
+		<!--include "stubs/h1-start.html"-->
 			Library
-			</span>
-		</h1>
+		<!--include "stubs/h1-end.html"-->
 
 		<nav>
-			<a href="/scc/icsf/">Home</a>
-			<a href="/scc/icsf/events/">Events</a>
-			<a href="/scc/icsf/library/">Library</a>
-			<a href="/scc/icsf/committee/">Committee</a>
-			<a href="/scc/icsf/publications/">Publications</a>
-			<a href="/scc/icsf/picocon/">Picocon</a>
-			<a href="/scc/icsf/social/quotes/">Quotes</a>
-			<a href="/scc/icsf/social/gallery/">Gallery</a>
-			<a href="/scc/icsf/history/">History</a>
+			<!--include "stubs/nav-main.html"-->
 			<hr />
-			<h3>Library</h3>
-			<a href="/scc/icsf/library/getting-to.html">Finding Us</a>
-			<a href="/scc/icsf/library/search.php">Database Search</a>
-			<a href="/scc/icsf/library/new-items.php">New Items</a>
-			<a href="/scc/icsf/library/request-list.php">Request List</a>
-			<a href="/scc/icsf/library/bookshops.html">Bookshops</a>
+			<!--include "stubs/nav-lib.html"-->
 		</nav>
 <?php
 	include 'database/database.inc';
@@ -89,9 +67,9 @@
 		</p>
 		<p>
 			If you want to see some of the things we do before joining, just
-			<a href="/scc/icsf/library/getting-to.html">drop-in to the library</a>
+			<a href="<!--SRVROOT-->/library/getting-to.html">drop-in to the library</a>
 			at lunchtime, or join us for one of our bar nights or other
-			<a href="/scc/icsf/events/">events</a>.
+			<a href="<!--SRVROOT-->/events/">events</a>.
 		</p>
 		<p>
 			Books can be borrowed for up to 30 days, non-books for 2 college
@@ -100,11 +78,6 @@
 			the items due for returned at the beginning of the next term.
 		</p>
 
-		<footer>
-			<p class="copyright">
-			Imperial College Science Fiction Society. Please report issues to
-			<a href="mailto:icsf.techpriest@gmail.com">icsf.techpriest@gmail.com</a>
-			</p>
-		</footer>
+		<!--include "stubs/footer.html"-->
 	</body>
 </html>

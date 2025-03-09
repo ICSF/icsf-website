@@ -85,44 +85,36 @@
 		</style>
 
 		<meta itemprop="url" content="https://www.union.ic.ac.uk/scc/icsf/picocon/" />
-		<!-- <meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/images/picocon31.png" /> -->
+		<!-- <meta itemprop="image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/images/picocon31.png" /> -->
 		<meta itemprop="startDate" content="2016-02-20T10:00:00Z" />
 		<meta itemprop="endDate" content="2016-02-20T20:00:00Z" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/" />
+		<meta property="og:url" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/" />
 		<meta property="og:title" content="Picocon 33: 'Origins'" />''
 		<meta property="og:description" content="Picocon 33 will be on the 20th of Feburary 2016. Picocon is a small London convention hosted at each year Imperial College." />
-		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/picocon38.png" />
+		<meta property="og:image" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/picocon38.png" />
 
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:site" content="@picocon" />
 		<meta property="twitter:creator" content="@picocon" />
 		<meta property="twitter:title" content="Picocon 38: <automata> - 20th Feburary" />
 		<meta property="twitter:description" content="Picocon 38 will be on the 20th of February 2021. Picocon is a small London convention hosted each year at Imperial College." />
-		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?>/scc/icsf/picocon/picocon33.png" />
+		<meta property="twitter:image:src" content="<?php echo $protocol; ?>://<?php echo $host; ?><!--SRVROOT-->/picocon/picocon33.png" />
 
 		<script async="async" defer="defer" src="//connect.facebook.net/en_GB/all.js#appId=269862736478026"></script>
 		<script async="async" defer="defer" src="//platform.twitter.com/widgets.js"></script>
 	</head>
 	<body>
 		<h1>
-			<a href="/scc/icsf/">
-				<img id="logo" src="/scc/icsf/resources/logo.png" alt="ICSF Logo" />
+			<a href="<!--SRVROOT-->/">
+				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
 			<span itemprop="name">Picocon 39 - Apocalypse and Dystopia</span>
 			<span id="subtitle">5th March 2022</span>
 		</h1>
 
 		<nav>
-			<a href="/scc/icsf/">Home</a>
-			<a href="/scc/icsf/events/">Events</a>
-			<a href="/scc/icsf/library/">Library</a>
-			<a href="/scc/icsf/committee/">Committee</a>
-			<a href="/scc/icsf/publications/">Publications</a>
-			<a href="/scc/icsf/picocon/">Picocon</a>
-			<a href="/scc/icsf/social/quotes/">Quotes</a>
-			<a href="/scc/icsf/social/gallery/">Gallery</a>
-			<a href="/scc/icsf/history/">History</a>
+			<!--include "stubs/nav-main.html"-->
 			<hr />
 			<a href="https://www.imperialcollegeunion.org/shop/student-groups/429">Buy Tickets</a>
 			<a href="#goh">Guests</a>
@@ -369,7 +361,7 @@ others, and is a regular columnist for The Engineer.</p>
 				If you&apos;re curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society. Please report issues to
-			<a href="mailto:icsf.techpriest@gmail.com">icsf.techpriest@gmail.com</a></p>
+			<a href="mailto:icsflibrary@gmail.com">icsf.techpriest@gmail.com</a></p>
 		</footer>
 
 	</body>

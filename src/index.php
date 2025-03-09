@@ -1,36 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="/scc/icsf/resources/style.css" />
-		<link href="//fonts.googleapis.com/css?family=Lora|Alice" rel="stylesheet" type="text/css" />
-		<link rel="icon" href="/scc/icsf/resources/logo.png" />
+		<!--include "stubs/headers.html"-->
 		<title>ICSF - Imperial College Science Fiction and Fantasy</title>
 		<meta name="description" content="The Imperial Colege Science Fiction and Fantasy Society, the home of SF fandom in Imperial College Union" />
 		<meta name="keywords" content="ICSF, Imperial College, Imperial College Union, Science Fiction, Fantasy, Gothic Horror, HG Wells Society, Library, Science Fiction Library" />
 		<meta name="google-site-verification" content="e3csTa2fVLhBeYfRA-WNlSU3MGBHFhwxndGdHwLa7Ws" />
 	</head>
 	<body>
-		<h1>
-			<a id="logo" href="/scc/icsf/">
-				<img src="/scc/icsf/resources/logo.png" alt="ICSF Logo" width="93" height="60" />
-			</a>
-			ICSF
-			<span id="subtitle">
+		<!--include "stubs/h1-start.html"-->
 			Imperial College Science Fiction, Fantasy, and Gothic Horror Society
-			</span>
-		</h1>
+		<!--include "stubs/h1-end.html"-->
 
 		<nav>
-			<a href="/scc/icsf/">Home</a>
-			<a href="/scc/icsf/events/">Events</a>
-			<a href="/scc/icsf/library/">Library</a>
-			<a href="/scc/icsf/committee/">Committee</a>
-			<a href="/scc/icsf/publications/">Publications</a>
-			<a href="/scc/icsf/picocon/">Picocon</a>
-			<a href="/scc/icsf/social/quotes/">Quotes</a>
-			<a href="/scc/icsf/social/gallery/">Gallery</a>
-			<a href="/scc/icsf/history/">History</a>
+			<!--include "stubs/nav-main.html"-->
 		</nav>
 
 		<div id="discord-widget">
@@ -57,18 +40,18 @@
 		</p>
 		<p>
 			The social side of the society is equally active &ndash; the
-			<a href="/scc/icsf/library/">library</a> is open every
+			<a href="<!--SRVROOT-->/library/">library</a> is open every
 			lunchtime on weekdays and we have regular video showings
 			(often weird or esoteric stuff you should have seen but won't
 			have). Film night are on Fridays, and we have large themed events
 			for Halloween and Christmas.
 			We also run events like mass outings to the cinema and end
 			of term dinners; you can see what is coming up on the
-			<a href="/scc/icsf/events/">events page</a>.
+			<a href="<!--SRVROOT-->/events/">events page</a>.
 		</p>
 		<p>
 			The
-			largest event of the year is <a href="/scc/icsf/picocon/">Picocon</a>,
+			largest event of the year is <a href="<!--SRVROOT-->/picocon/">Picocon</a>,
 			our one-day convention held in February, which usually attracts around 200 attendees.
 		</p>
 		<p>
@@ -78,7 +61,7 @@
 			Interested?  We can be found in our purpose built library in the
 			West Wing Basement of Beit Quad (the Students Union building),
 			opposite IC Radio. Click for <a
-			href="/scc/icsf/library/getting-to.html">directions to the library</a>.
+			href="<!--SRVROOT-->/library/getting-to.html">directions to the library</a>.
 		</p>
 
 		<p>
@@ -91,11 +74,6 @@
 			<a href="https://www.instagram.com/imperial_scifi/" target="_blank">Instagram</a>
 		</p>
 
-		<footer>
-			<p class="copyright">
-			Imperial College Science Fiction Society. Please report issues to
-			<a href="mailto:icsf.techpriest@gmail.com">icsf.techpriest@gmail.com</a>
-			</p>
-		</footer>
+		<!--include "stubs/footer.html"-->
 	</body>
 </html>
