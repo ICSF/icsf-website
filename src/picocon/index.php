@@ -13,7 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Event">
 	<head>
 		<!--include "stubs/headers.html"-->
-		<title>Picocon 38 - ICSF</title>
+		<title>Picocon 39 - ICSF</title>
 		<style type="text/css">
 			@font-face
 			{
@@ -109,8 +109,8 @@
 			<a href="<!--SRVROOT-->/">
 				<img id="logo" src="<!--SRVROOT-->/resources/logo.png" alt="ICSF Logo" />
 			</a>
-			<span itemprop="name">Picocon 38 - &lt;automata&gt;</span>
-			<span id="subtitle">20th February 2017</span>
+			<span itemprop="name">Picocon 39 - Apocalypse and Dystopia</span>
+			<span id="subtitle">5th March 2022</span>
 		</h1>
 
 		<nav>
@@ -119,14 +119,15 @@
 			<a href="https://www.imperialcollegeunion.org/shop/student-groups/429">Buy Tickets</a>
 			<a href="#goh">Guests</a>
 			<a href="#timetable">Timetable</a>
-			<a href="#prices">Prices</a>
+			<a href="#tickets">Tickets</a>
 			<a href="#contact">Contact Us</a>
 		</nav>
 
 		<p style="font-variant: small-caps; font-size: 16pt; text-align: center;">
-			<span itemprop="alternateName">Picocon 38</span>
+			<span itemprop="alternateName">Picocon 39</span>
 			will be held on
-			Saturday 20th February 2021,
+			Saturday 5th March, 2022, 
+			10am - 6pm @ Blackett LT1,
 			online.
 		</p>
 
@@ -136,28 +137,43 @@
 		<p>
 			Picocon is the annual Science Fiction &amp; Fantasy convention
 			run by the Imperial College Science Fiction and Fantasy Society, ICSF.
-			It usually takes place on a Saturday in February, in Imperial
-			College&apos;s Student Union. This year it will be taking place online.
 			We try not to clash with other conventions around the same time.
 		</p>
-		<p>
+		<!-- <p>
 			It is a small (hence the name), affordable and convenient convention
 			for students and fans in or near London.
 			Events begin at
-			around 11:00.
+			around 10:00.
 			The schedule concludes in the evening.
-		</p>
+		</p> -->
 		<p>
-			At the online Picocon you will encounter:
+			Our annual convention, Picocon 39 will be held this year at 
+			10am-6pm on March the 5th in person,
+			with the theme of Apocalypse and Dystopia.
+		</p>
+
+		<p>
+			For those who have not been to a Picocon before we will have
 		</p>
 
 		<ul>
-			<li>Guests of Honour doing talks and panels</li>
-			<li>Pub Quiz and silly games</li>
-        	<li>Fun online charity events</li>
+			<li>Talks from various authors.</li>
+			<li>A variety of charity games across the day, including 
+				rebuilding and destroying a cardboard civilization</li>
+			<li>A sci-fi and fantasy themed quiz</li>
+			<li>A panel discussion by the authors.</li>
+			<li>Tabletop society will also be running loads of games 
+				for the duration of the day. </li>
 		</ul>
+    
+		<p>
+			As it will be held in person we will be limiting attendees to 
+			100 and will require evidence of a negative Covid test
+			from all attendees. 
+		</p>
+
 		</div>
-		<img src="picocon38.png" style="display: block; max-width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon 38 logo" />
+		<!-- <img src="picocon39.jpeg" style="display: block; max-width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon 39 logo" /> -->
 		</div>
 
 		<div style="height: 30px;">
@@ -165,12 +181,66 @@
 			<div class="fb-like" data-href="https://www.union.ic.ac.uk/scc/icsf/picocon/" data-send="true" data-width="380" data-show-faces="false"></div>
 		</div>
 
-		<h2 id="goh">Guests of Honour</h2>
-                <p>Speaking at Picocon 34 this year will be:</p>
+		<hr style="width:50%;text-align:centre;border: 1px solid;border-radius:1px">
+
+
 		<div class="columns">
-			<ul>
-				<li>Jeff Somers</li><li>Dan Moren</li><li>SJ Kincaid</li><li>David Brian Johnson</li>
-			</ul>
+			<h2 id="goh">Guests of Honour</h2>
+                <p>Speaking at Picocon 39 this year will be:</p>
+
+			<h3 style="text-decoration: underline">Bryony Pearce</h3>
+			<h4><a href="http://www.bryonypearce.co.uk/" target="_blank">http://www.bryonypearce.co.uk/</a></h4>
+			<p>Bryony Pearce is a multi-award-winning novelist working in 
+				both the YA and Adult markets. She writes science 
+				fiction short stories, adult thrillers and a mixture of 
+				young adult dystopia, horror and thrillers. 
+				She teaches the course writing for children at City 
+				University and has performed at the Edinburgh Literary 
+				Festival, The Wychwood Festival, Comicon, YALC, 
+				the Sci Fi Weekender, The Just So Festival and 
+				a number of other festivals and events. </p>  
+			
+			<h3 style="text-decoration: underline">Louise Mumford</h3>
+			<h4><a href="https://www.louisemumfordauthor.com/" target="_blank">https://www.louisemumfordauthor.com/</a></h4>
+			<p>Previously a teacher Louise was discovered as a writer at the
+				Primadonna festival 2019. 
+				Her debut novel, Sleepless, a “frighteningly inventive” thriller
+				inspired by her own insomnia, was published in December 2020 by
+				 HQ HarperCollins and became a UK Amazon Kindle bestseller. </p>
+				 
+			<h3 style="text-decoration: underline">Gareth Powell</h3>
+			<h4><a href="https://www.garethlpowell.com/" target="_blank">https://www.garethlpowell.com/</a></h4>
+			<p>Gareth Powell is an award winning British Sci-Fi author, most
+well known for his two Trilogies Embers of War & Ack-Ack
+Macaque. To date he has written and published nine novels, two
+short story collections, and has even tried his hand at screenplays and comic.
+Gareth has also written freelance for The Guardian amongst
+others, and is a regular columnist for The Engineer.</p>
+			
+			<h3 style="text-decoration: underline">Matthew Wraith</h3>			
+			<p>Matthew Wraith is a seasonal lecturer in science fiction, 
+			culture and at imperial this includes running the Science Fiction
+			 horizons course in first year. Their area of knowledge includes
+			  futurism, particularly within science fiction. </p>  
+ 
+			<h4>Joining us online:</h4>
+
+			<h3 style="text-decoration: underline">A.J. Flowers</h3>
+			<h4><a href="https://aj-flowers.com/" target="_blank">https://aj-flowers.com/</a></h4>
+			<p>A.J. Flowers is a USA Today Bestselling fantasy author based out
+				of Detroit. She writes young adult and epic fantasy books as 
+				well as post-apocalyptic thrillers under the name Eva Storm.</p>  	
+
+			<h3 style="text-decoration: underline">Brendan Dubois</h3>
+			<h4><a href="https://brendandubois.com/" target="_blank">https://brendandubois.com/</a></h4>
+			<p>Brendan DuBois is the New York Times bestselling author of 
+			twenty-four novels including the dark victory sci fi trilogy. 
+			He has won the Shamus Award from the Private Eye Writers of 
+			America, two Barry Awards, two Derringer Awards, the Ellery Queen 
+			Readers Award, and three Edgar Allan Poe Award nominations 
+			from the Mystery Writers of America. </p> 
+
+			<img src="picocon39.jpeg" style="display: block; max-width: 80%; max-height: 400px; margin: 5px auto;" alt="Picocon 39 logo" />
 
 			<div class="no-break">
 				<h2 id="timetable">Timetable</h2>
@@ -178,36 +248,36 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>11:00-14:00</td>
-								<td>Fun and Games</td>
+								<td>10:00</td>
+								<td>Guest Talk 1<br/><i>Bryony Pearce</i></td>
 							</tr>
 							<tr>
-								<td>14:30-15:30</td>
-								<td>Guest Talk 1<br/><i>Jeff Somers</i></td>
+								<td>11:00</td>
+								<td>Guest Talk 2<br/><i>Matthew Wraith</i></td>
 							</tr>
 							<tr>
-								<td>15:30-16:00</td>
-								<td>Guest Talk 2<br/><i>Dan Moren</i></td>
+								<td>11:50</td>
+								<td>Guest Talk 3<br/><i>Louise Mumford</i></td>
 							</tr>
 							<tr>
-								<td>16:15-17:00</td>
-								<td>Charity Events</td>
+								<td>12:40</td>
+								<td>Guest Talk 3<br/><i>Gareth Powell</i></td>
 							</tr>
 							<tr>
-								<td>17:00-17:45</td>
-								<td>Guest Talk 3<br/><i>SJ Kincaid</i></td>
+								<td>13:20 - 15:00</td>
+								<td>Lunch, Games, Charity Events</td>
 							</tr>
 							<tr>
-								<td>18:00-18:45</td>
-								<td>Guest Talk 4<br/><i>Brian David Johnson</i></td>
+								<td>15:00</td>
+								<td>Guest Talk 4<br/><i>A.J. Flowers</i></td>
 							</tr>
 							<tr>
-								<td>20:00-21:00</td>
+								<td>16:00</td>
 								<td>Panel</td>
-							</tr>
+							</tr>							
 							<tr>
-								<td>21:00-23:00</td>
-								<td>Pub Quiz</td>
+								<td>17:00</td>
+								<td>Quiz</td>
 							</tr>
 						</tbody>
 					</table>
@@ -243,25 +313,32 @@
 			</div>
 
 			<div class="no-break">
-				<h2 id="prices">Prices</h2>
+				<h2 id="tickets">Tickets</h2>
 
-				<p>
-					The event is <strong>free</strong> this year, and all are welcome!
-				</p>
+				<p>Tickets for Picocon can be purchased here:</p>
+				<a 
+				href="https://www.imperialcollegeunion.org/shop/csp/science-fiction-and-fantasy/picocon-39-members-tickets"
+				target = "blank_">For Members</a>
+				<br>
+				<a 
+				href="https://www.imperialcollegeunion.org/shop/csp/science-fiction-and-fantasy/picocon-39-tickets-non-members-0"
+				target = "blank_">For Non members</a>				
 			</div>
 
 			<h2 id="directions">Links to access Picocon</h2>
-	        <p>
-			The event will be streamed on the streaming platform Crowdcast, in combination with the Picocon Discord Server for our other games & the pub quiz.<br><br>
-	        Crowdcast link: <a href="http://bit.ly/Picocon38" target="_blank">http://bit.ly/Picocon38</a><br>
-	        Discord link: <a href="https://discord.com/invite/HFvfBS7hB8" target="_blank">https://discord.com/invite/HFvfBS7hB8</a><br>
-	        <!--Donate to charity here: <a href="https://www.union.ic.ac.uk/scc/icsf/donate/" target="_blank">https://www.union.ic.ac.uk/scc/icsf/donate/</a><br><br>-->
-	        You can sign up for both the Crowdcast and Discord now!
-	        </p>
+
+			<p>Additionally, for those who cannot attend in person we will 
+			be streaming the talks. </p>
+
+			<p>All the talks and panel discussion will be streamed live on our 
+				<a href="https://www.youtube.com/channel/UC5FNfruFX1GXtIHPwiV0Rrw">Youtube channel</a></p>
+
+			<div class="g-ytsubscribe" data-channelid="UC5FNfruFX1GXtIHPwiV0Rrw"
+			 data-layout="full" data-count="hidden" style="min-height: 50px"></div>
 
 			<h2 id="contact">Contact Us</h2>
 			<p>
-				For more information, please contact <b>Ibraheem Wazir</b>,
+				For more information, please contact <b>Thomas Blore</b>,
 				the Picocon Sofa (comfier than a chair), at
 				<a class="sans" href="mailto:icsf.picoconsofa@gmail.com">icsf.picoconsofa@gmail.com</a>.
 			</p>
@@ -284,7 +361,7 @@
 				If you&apos;re curious, we have a record of <a href="<!--SRVROOT-->/history/">Picocons of years gone by</a>.
 			</p>
 			<p class="copyright">Imperial College Science Fiction Society. Please report issues to
-			<a href="mailto:icsf.techpriest@gmail.com">icsf.techpriest@gmail.com</a></p>
+			<a href="mailto:icsflibrary@gmail.com">icsflibrary@gmail.com</a></p>
 		</footer>
 
 	</body>
